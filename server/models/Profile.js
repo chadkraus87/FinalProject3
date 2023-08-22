@@ -19,13 +19,17 @@ const profileSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  skills: [
+  skills: [ 
     {
       type: String,
       trim: true,
     },
   ],
 });
+
+// Remove skills or update across mutations and typedefs if needed.
+
+// Code snippet from resolver
 
 // set up pre-save middleware to create password
 profileSchema.pre('save', async function (next) {

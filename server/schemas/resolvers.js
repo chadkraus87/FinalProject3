@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Profile } = require('../models');
+const { Profile, Product } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -18,6 +18,14 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
+    getProduct: async (parent, { _id }) => {
+      return Product.findOne({  _id });
+    },
+
+    getAllProducts: async (parent) => {
+      return Product.find();
+    }
   },
 
   Mutation: {
@@ -44,6 +52,11 @@ const resolvers = {
       return { token, profile };
     },
 
+    createProduct: async (parent, { productdata }) => {
+      const product = await Product.create(productdata);
+      return product;
+    },
+      
     // Add a third argument to the resolver to access data in our `context`
     addSkill: async (parent, { profileId, skill }, context) => {
       // If context has a `user` property, that means the user executing this mutation has a valid JWT and is logged in

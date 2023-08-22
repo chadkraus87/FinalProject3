@@ -43,7 +43,7 @@ const typeDefs = gql`
     addSkill(profileId: ID!, skill: String!): Profile
     removeProfile: Profile
     removeSkill(skill: String!): Profile
-    createProduct(input: CreateProductInput!): Product
+    createProduct(productdata: CreateProductInput!): Product
   }
 `;
 
