@@ -1,4 +1,5 @@
 const { gql } = require('apollo-server-express');
+const productSchema = require('./productSchema');
 
 const typeDefs = gql`
   type Profile {
