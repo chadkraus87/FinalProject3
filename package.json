@@ -1,51 +1,27 @@
 {
-  "name": "restaurant",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@apollo/server": "^4.9.1",
-    "@mui/material": "^5.14.5",
-    "@mui/styled-engine-sc": "^5.12.0",
-    "@react-three/fiber": "^7.0.29",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^11.0.0",
-    "@testing-library/user-event": "^13.5.0",
-    "bcrypt": "^5.1.1",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "mongoose": "^7.4.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-material-ui-carousel": "^3.4.2",
-    "react-scripts": "5.0.1",
-    "redux": "^4.2.1",
-    "styled-components": "^5.3.11",
-    "tailwindcss": "^3.3.3",
-    "three": "^0.155.0",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "finalproject3",
+  "version": "1.0.0",
+  "description": "Final Group Collab Project using React, MongoDB, and JWT for authentication.",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadkraus87/FinalProject3.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadkraus87/FinalProject3/issues"
+  },
+  "homepage": "https://github.com/chadkraus87/FinalProject3#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
   }
 }
