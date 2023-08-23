@@ -1,0 +1,71 @@
+import React from 'react';
+import { GiBalloonDog } from 'react-icons/gi';
+import { useState, useEffect, useRef } from 'react';
+
+function Header() {
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+    const dropdownRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+    return (
+        <div className="flex justify-evenly items-center bg-paleBlue p-6">
+        <h1 className="text-2xl font-semibold text-dark">Overview</h1>
+        <div className="flex items-center">
+          <span className="text-sm mr-2 text-smoke">Show:</span>
+          <div className="relative">
+            <select className="text-xs border rounded pl-3 pr-8 py-1 bg-paleBlue hover:border-gray-400 focus:outline-none focus:border-teal-500 text-smoke">
+              <option>This Month</option>
+              <option>Last Month</option>
+              <option>Last 3 Months</option>
+              <option>Last 6 Months</option>
+              <option>This Year</option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-1 text-gray-700">
+              <svg className="fill-current h-2 w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 5">
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center relative">
+  <GiBalloonDog className="text-darkBlue mr-2 text-2xl" />
+  <div className="text-darkBlue flex items-center mb-2 text-sm" ref={dropdownRef}>
+    Admin User
+    <button
+      onClick={() => setDropdownOpen(!isDropdownOpen)}
+      className="flex items-center ml-2"
+    >
+      <svg className="fill-current h-2 w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+      </svg>
+    </button>
+    {isDropdownOpen && (
+      <div className="absolute bg-tan border rounded mt-20 w-24">
+        <a href="/profile" className="block p-2 hover:bg-lightOrange text-xs">Profile</a>
+        <a href="/store-front" className="block p-2 hover:bg-lightOrange text-xs">Store Front</a>
+        <a href="/logout" className="block p-2 hover:bg-lightOrange text-xs">Logout</a>
+        
+      </div>
+    )}
+  </div>
+</div>
+
+      </div>
+      
+    );
+  }
+  
+  export default Header;
