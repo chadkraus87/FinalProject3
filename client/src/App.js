@@ -1,12 +1,12 @@
 import './App.css';
 //client/src/userFront/component/3DModels.jsx
-import Animals from './userFront/component/Animals'
+import Example from './userFront/component/Carosel'
 
 
 function App() {
   return (
     <div>
-      <Animals />
+      <Example />
     </div>
   );
 }
