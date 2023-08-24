@@ -1,12 +1,12 @@
 import './App.css';
 //client/src/userFront/component/3DModels.jsx
-import Example from './userFront/component/Carosel'
+import OutlinedCard from './userFront/component/ProductCard'
 
 
 function App() {
   return (
     <div>
-      <Example />
+      <OutlinedCard />
     </div>
   );
 }
