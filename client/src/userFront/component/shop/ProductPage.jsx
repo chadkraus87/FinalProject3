@@ -3,17 +3,13 @@ import SizeButtons from './Sizes'
 import ColorButtons from './Colors'
 // import IconLabelButtons from './CheckoutBtn'
 import Display from './ProductDisplay'
-import Stack from '@mui/material/Stack';
 import { useCart } from './cartContext';
-import Button from '@mui/material/Button';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import BannerIcons from './BannerIcons';
 import ProductButtons from './ProductButtons';
+import CheckoutBtn from './CheckoutBtn';
 
 
 
-const sizes = ['Small', 'Medium', 'Large']
-const colors = ['Red', 'Blue', 'White', 'Black',]
 
 //Getting the Data from the server
 
@@ -37,8 +33,11 @@ const colors = ['Red', 'Blue', 'White', 'Black',]
 
 
 function ProductPage() {
-    const { addToCart } = useCart(); // 1. Access addToCart from the cart context
 
+    
+    
+    const { addToCart } = useCart();
+    
     const [selectedSize, setSelectedSize] = React.useState(null);
     const [selectedColor, setSelectedColor] = React.useState(null);
 
@@ -93,7 +92,7 @@ function ProductPage() {
         <div>
             <BannerIcons />
             {/* Name of Business*/}
-            <div style={name}>Furry Feet Friends</div>
+            <div id="furff" style={name}>Furry Feet Friends</div>
             <div style={btns}>
                 <ProductButtons />
                 <div style={productContainer}>
@@ -105,31 +104,15 @@ function ProductPage() {
                             This is where the product description goes
                         </div>
                         <div id='rightSideStuff'>
-                            <div id='sizesContainer'>            
+                            <div id='sizesContainer'>
                                 <SizeButtons />
                             </div>
                             <div id='colorContainer'>
-                                <h2>Colors</h2>
-                                <Stack direction="row" spacing={2}>
-                                    {colors.map((color) => (
-                                        <ColorButtons
-                                            key={color}
-                                            label={color}
-                                            onClick={() => handleColorClick(color)}
-                                            selected={color === selectedColor}  // Same as above, but for colors.
-                                        />
-                                    ))}
-                                </Stack>
+                                <ColorButtons />
                             </div>
 
                             <div style={{ paddingTop: '2%' }}>
-                                <Button
-                                    variant="outlined"
-                                    startIcon={<ShoppingCartIcon />}
-                                    onClick={handleAddToCart}
-                                >
-                                    ADD TO CART
-                                </Button>
+                            <CheckoutBtn />
                             </div>
                         </div>
                     </div>

@@ -11,3 +11,26 @@
 body {
     background-color: rgb(247, 235, 216);
 }
+
+#furff {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%; /* Circular look */
+    padding: 0.6em; 
+    /* display: inline-block; */
+    font-weight: bold;
+    font-size: 0.32em;  /* Reduce the font size */
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    position: absolute;
+  }
+  

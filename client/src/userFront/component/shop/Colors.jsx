@@ -1,16 +1,26 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 export default function ColorButtons({ label }) {
   return (
     <div>
-    <Stack direction="row" spacing={2}>
-      <Button variant="outlined">
-      {label}
-      </Button>
-    </Stack>
+      <FormControl component="fieldset">
+        <FormLabel component="legend" id="productColors">Colors</FormLabel>
+        <RadioGroup
+          row 
+          aria-labelledby="colors"
+          defaultValue="small"
+          name="product-colors"
+        >
+          <FormControlLabel value="Red" control={<Radio />} label="Red" />
+          <FormControlLabel value="Blue" control={<Radio />} label="Blue" />
+          <FormControlLabel value="Green" control={<Radio />} label="Green" />
+        </RadioGroup>
+      </FormControl>
     </div>
   );
 }
-

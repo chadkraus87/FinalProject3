@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -24,15 +25,19 @@ function Home() {
 
   return (
     <div style={centerStyle}>
-      <div style={Name}>Furry Feet 
+      <div id='furff' style={Name}>Furry Feet 
       < br/>Friends</div>
       <Stack direction="row" spacing={2}>
+        <Link to="/about">
         <Button variant="outlined">
           About Us
         </Button>
+        </Link>
+        <Link to="/shop">
         <Button variant="outlined">
-          Buy
+          Shop
         </Button>
+        </Link>
       </Stack>
     </div>
   );
