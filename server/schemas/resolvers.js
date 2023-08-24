@@ -20,10 +20,10 @@ const resolvers = {
     },
 
     getProduct: async (parent, { _id }) => {
-      return Product.findOne({  _id });
+      return Product.findOne({ _id });
     },
 
-    getAllProducts: async (parent) => {
+    getAllProducts: async () => {
       return Product.find();
     }
   },
@@ -61,17 +61,6 @@ const resolvers = {
     removeProfile: async (parent, args, context) => {
       if (context.user) {
         return Profile.findOneAndDelete({ _id: context.user._id });
-      }
-      throw new AuthenticationError('You need to be logged in!');
-    },
-    // Make it so a logged in user can only remove a skill from their own profile
-    removeSkill: async (parent, { skill }, context) => {
-      if (context.user) {
-        return Profile.findOneAndUpdate(
-          { _id: context.user._id },
-          { $pull: { skills: skill } },
-          { new: true }
-        );
       }
       throw new AuthenticationError('You need to be logged in!');
     },
