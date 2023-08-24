@@ -7,8 +7,9 @@ export default function IconLabelButtons() {
   return (
     <Stack direction="row" spacing={2}>
       <Button variant="outlined" startIcon={<ShoppingCartIcon />}>
-        BUY NOW
+        ADD TO CART
       </Button>
     </Stack>
   );
 }
+

@@ -34,11 +34,17 @@ const colors = ['Red', 'Blue', 'White', 'Black',]
 
 function ProductPage() {
     return (
-        <div style={{ display: 'flex', padding: '1%', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', padding: '1%', paddingTop:'15%', paddingLeft:'5%', justifyContent: 'space-between' }}>
             {/* <h4>On the left</h4> */}
             <Display />
             <div style={{ flex: 1, padding:'2%'}}>
+                {/* Product name gets rendered here */}
                 <h1 style={{ fontSize: '2em' }}>Dog Clogs</h1>
+                {/* Who make the product gets rendered here */}
+                <h2>Clogs4All</h2> 
+                <div>
+                    This is where the product description goes
+                </div>
                 <div id='rightSideStuff'>
                     <div id='sizesContainer'>
                         <h2>Sizes</h2>
@@ -56,7 +62,10 @@ function ProductPage() {
                             ))}
                         </Stack>
                     </div>
+                    <div style={{paddingTop:'2%'}}>
                     <IconLabelButtons />
+                    </div>
+                    
                 </div>
             </div>
         </div>

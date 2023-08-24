@@ -55,10 +55,10 @@ function Camera() {
   return null;
 }
 
-export default function App() {
+export default function Display() {
   return (
     <Canvas 
-      style={{ width: '50vw', height: '50vh' }}
+      style={{ width: '50vw', height: '60vh' }}
       backgroundColor={'#FFA500'} >
          
       <Suspense fallback={null}>
