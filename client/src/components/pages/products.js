@@ -14,13 +14,13 @@ function Products() {
     };
 
     const dogProducts = [
-        { name: 'Dog Clogs', price: 50, image: dogClogs },
-        { name: 'Dog Socks', price: 30, image: dogSocks }
+        { name: 'Dog Clogs', description: 'Protect your dogs paws when out on walks and keep them fasionable with these latex free rubber crocks for dogs!', price: 50, image: dogClogs },
+        { name: 'Dog Socks', description:'Some time our furry friends need to keep their paws covered and warm. Dog socks to the rescue made from quality sourced cotton.', price: 30, image: dogSocks }
     ];
 
     const catProducts = [
-        { name: 'Kitten Mittens', price: 25, image: kittenMittens },
-        { name: 'Cat Hat', price: 30, image: catHat }
+        { name: 'Kitten Mittens', description: 'When you need to keep those claws at bay kitten mittens are just the thing. With fashion and safety in mind you kitty can play on furniture without you having to worry about a claw snagging anything', price: 25, image: kittenMittens },
+        { name: 'Cat Hat', description: 'Every cat deserves to have their own wardrobe and no outfit is complete without a hat! Made from locally sourced materials.', price: 30, image: catHat }
     ];
 
              {/* Add product modal */}
@@ -45,6 +45,7 @@ function Products() {
                                 <img src={product.image} alt={product.name} style={imageStyle} />
                                 <div className="ml-4">
                                     <h3 className="text-lg font-semibold">{product.name}</h3>
+                                    <p className="text-md">{product.description}</p>
                                     <p className="text-md">${product.price}.00</p>
                                     <button className="text-teal" onClick={() => handleEditClick(product)}>Edit</button>
                                     <button className="text-teal ml-2">Delete</button>
@@ -66,6 +67,7 @@ function Products() {
                                 <img src={product.image} alt={product.name} style={imageStyle} />
                                 <div className="ml-4">
                                     <h3 className="text-lg font-semibold">{product.name}</h3>
+                                    <p className="text-md">{product.description}</p>
                                     <p className="text-md">${product.price}.00</p>
                                     <button className="text-teal" onClick={() => handleEditClick(product)}>Edit</button>
                                     <button className="text-teal ml-2">Delete</button>

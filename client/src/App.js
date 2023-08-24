@@ -1,12 +1,12 @@
 import './App.css';
 //client/src/userFront/component/3DModels.jsx
-import Example from './userFront/component/Carosel'
+import AdminDashboard from './components/adminDashboard';
 
 
 function App() {
   return (
     <div>
-      <Example />
+      <AdminDashboard />
     </div>
   );
 }

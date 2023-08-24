@@ -40,7 +40,7 @@ function Orders ({ totalSales, totalOrders, totalProductsSold, latestOrders = []
     <h2 className="text-lg text-dark font-semibold mb-4">Latest Order Details</h2>
     <table className="min-w-full">
       <thead>
-        <tr className='text-md text-smoke'>
+        <tr className='text-md text-smoke flex justify-between'>
           <th>ID</th>
           <th>Name</th>
           <th>Email</th>
@@ -49,7 +49,7 @@ function Orders ({ totalSales, totalOrders, totalProductsSold, latestOrders = []
           <th>Date</th>
         </tr>
       </thead>
-      <div className='bg-tan'>
+      <div className='bg-tan flex justify-between'>
       <tbody >
         {latestOrders.map((order) => (
           <tr key={order.id} className="border-b border-dotted">

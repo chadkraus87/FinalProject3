@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function AddProductModal({ showModal, setShowModal }) {
   const navigate = useNavigate();
+
+const [isCustomColorSelected, setIsCustomColorSelected] = useState(false);
 
   const handleAddProduct = (e) => {
     e.preventDefault();
@@ -12,6 +14,8 @@ function AddProductModal({ showModal, setShowModal }) {
   };
 
   if (!showModal) return null;
+
+  
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
@@ -24,6 +28,12 @@ function AddProductModal({ showModal, setShowModal }) {
         <div className="mb-4">
           <label htmlFor="title" className="block text-sm font-bold mb-2">Product Title:</label>
           <input type="text" id="title" name="title" className="w-full p-2 border rounded" />
+        </div>
+
+        Product Description
+        <div className="mb-4">
+          <label htmlFor="description" className="block text-sm font-bold mb-2">Description:</label>
+          <input type="text" id="description" name="description" className="w-full p-2 border rounded" />
         </div>
 
         {/* Upload Model/Image */}
@@ -59,11 +69,13 @@ function AddProductModal({ showModal, setShowModal }) {
         </div>
 
         {/* Color Selection */}
-        <div className="mb-4">
+        <div className="mb-4 flex flex-wrap">
+          <div className=''>
           <label className="block text-sm font-bold mb-2">Color:</label>
+          
           <label className="inline-flex items-center mr-4">
             <input type="checkbox" name="color" value="yellow" className="form-checkbox" />
-            <span className="ml-2 text-sm">Yellow</span>
+            <span className="ml-2 text-sm"> Yellow</span>
           </label>
           <label className="inline-flex items-center mr-4">
             <input type="checkbox" name="color" value="black" className="form-checkbox" />
@@ -81,6 +93,25 @@ function AddProductModal({ showModal, setShowModal }) {
             <input type="checkbox" name="color" value="blue" className="form-checkbox" />
             <span className="ml-2 text-sm">Blue</span>
           </label>
+          <label className="inline-flex items-center">
+          <input
+            type="checkbox"
+            name="color"
+            value="custom color"
+            className="form-checkbox ml-2"
+            onChange={(e) => setIsCustomColorSelected(e.target.checked)}
+          />
+          <span className="ml-2 text-sm">Custom Color</span>
+        </label>
+        {isCustomColorSelected && (
+          <input
+            type="text"
+            name="customColor"
+            placeholder="Enter custom color"
+            className="form-input ml-4 bg-offWhite rounded"
+          />
+        )}
+          </div>
         </div>
 
         {/* Price Input */}

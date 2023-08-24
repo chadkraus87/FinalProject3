@@ -4,8 +4,10 @@ import { useNavigate } from 'react-router-dom';
 function EditProductModal({ product, showEditModal, setShowEditModal }) {
     const navigate = useNavigate();
     const [title, setTitle] = useState(product?.name || '');
+    const [description, setDescription] = useState(product?.description || '');
     const [price, setPrice] = useState(product?.price || 0);
 
+    const [isCustomColorSelected, setIsCustomColorSelected] = useState(false); 
 
     const handleUpdateProduct = (e) => {
       e.preventDefault();
@@ -21,11 +23,20 @@ function EditProductModal({ product, showEditModal, setShowEditModal }) {
             <div className="bg-offWhite p-6 rounded-lg shadow-lg z-10">
           <form onSubmit={handleUpdateProduct}>
           <h2 className="text-xl font-bold mb-4">Update Product</h2>
+
           {/* Product Title */}
           <div className="mb-4">
           <label htmlFor="title" className="block text-sm font-bold mb-2">Product Title:
           <input type="text" value={title} className="w-full p-2 border rounded" onChange={(e) => setTitle(e.target.value)}/>
           </label>
+        </div>
+
+        {/* Product Description */}
+        <div className="mb-4">
+          <label htmlFor="description" className="block text-sm font-bold mb-2">Description:</label>
+          <input type="text" value={description} 
+           className="w-full p-2 border rounded"
+           onChange={(e) => setDescription(e.target.value)} />
         </div>
 
          {/*  Model/Image */}
@@ -83,6 +94,24 @@ function EditProductModal({ product, showEditModal, setShowEditModal }) {
             <input type="checkbox" name="color" value="blue" className="form-checkbox" />
             <span className="ml-2 text-sm">Blue</span>
           </label>
+          <label className="inline-flex items-center">
+          <input
+            type="checkbox"
+            name="color"
+            value="custom color"
+            className="form-checkbox ml-2"
+            onChange={(e) => setIsCustomColorSelected(e.target.checked)}
+          />
+          <span className="ml-2 text-sm">Custom Color</span>
+        </label>
+        {isCustomColorSelected && (
+          <input
+            type="text"
+            name="customColor"
+            placeholder="Enter custom color"
+            className="form-input ml-4 bg-offWhite rounded"
+          />
+        )}
         </div>
 
             {/* Price Input */}

@@ -1,9 +1,12 @@
-
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AdminNav from './pages/adminNav';
 import Header from './pages/header';
 import Orders from './pages/orders';
 import Products from './pages/products';
+import Customers from './pages/customer';
+import Messages from './pages/messages';
+import AdminReviews from './pages/reviews';
 
 function AdminDashboard() {
     return (
@@ -26,6 +29,18 @@ function AdminDashboard() {
           <Route 
             path="/products" 
             element={<Products />}
+                />
+          <Route 
+            path="/customers" 
+            element={<Customers />}
+                />
+          <Route 
+            path="/messages" 
+            element={<Messages />}
+                />
+          <Route 
+            path="/reviews" 
+            element={<AdminReviews />}
                 />
           
       </Routes>
