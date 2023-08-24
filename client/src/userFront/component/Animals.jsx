@@ -59,8 +59,8 @@ export default function Display() {
   return (
     <Canvas 
       style={{ width: '50vw', height: '60vh' }}
-      backgroundColor={'#FFA500'} >
-         
+      // backgroundColor={'#FFA500'}
+       >
       <Suspense fallback={null}>
       <Background /> 
         <Camera />

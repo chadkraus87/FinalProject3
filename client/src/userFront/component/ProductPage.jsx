@@ -67,32 +67,35 @@ function ProductPage() {
 
     return (
         <div>
+        <div style={{fontFamily: "'Marck Script', cursive", fontSize:'5rem', textAlign: 'center'}}>Furry Feet Friends</div>
+            <div style={{padding: '1%', paddingTop: '1%', paddingLeft: '5%'}}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+    <Stack direction="row" spacing={6}>
+        <Button
+            variant="outlined"
+            // onClick={newProduct}
+            startIcon={<PetsIcon />}
+        >
+            Dog Socks
+        </Button>
+        <Button
+            variant="outlined"
+            // onClick={newProduct}
+            startIcon={<PetsIcon />}
+        >
+            Cat Hats
+        </Button>
+        <Button
+            variant="outlined"
+            // onClick={newProduct}
+            startIcon={<PetsIcon />}
+        >
+            Kitten Mittens
+        </Button>
+    </Stack>
+</div>
 
-            <div style={{padding: '1%', paddingTop: '15%', paddingLeft: '5%'}}>
-            <Button
-                variant="outlined"
-                // onClick={newProduct}
-                startIcon={<PetsIcon />}
-
-            >
-                Dog Socks
-            </Button>
-            <Button
-                variant="outlined"
-                // onClick={newProduct}
-                startIcon={<PetsIcon />}
-            >
-                Cat Hats
-            </Button>
-            <Button
-                variant="outlined"
-                // onClick={newProduct}
-                startIcon={<PetsIcon />}
-            >
-                Kitten Mittens
-            </Button>
-
-            <div style={{ display: 'flex', padding: '1%', paddingTop: '15%', paddingLeft: '5%', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', padding: '1%', paddingTop: '5%', paddingLeft: '5%', justifyContent: 'space-between' }}>
                 {/* <h4>On the left</h4> */}
 
                 <Display />
