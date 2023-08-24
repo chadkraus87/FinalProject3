@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AdminNav from './pages/adminNav';
 import Header from './pages/header';
 import Orders from './pages/orders';
-import Products from './products';
+import Products from './pages/products';
 
 function AdminDashboard() {
     return (
