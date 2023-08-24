@@ -7,20 +7,9 @@ import Shop from './userFront/component/Pages/Shop';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route 
-          path="/shop" 
-          element={
-            <CartProvider>
-              <Shop />
-            </CartProvider>
-          } 
-        />
-      </Routes>
-    </Router>
+    <div>
+      <Example />
+    </div>
   );
 }
 
