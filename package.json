@@ -1,5 +1,5 @@
 {
-  "name": "furry feet designs",
+  "name": "finalproject3",
   "version": "1.0.0",
   "description": "Final Group Collab Project using React, MongoDB, and JWT for authentication.",
   "main": "index.js",
@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/chadkraus87/FinalProject3/issues"
   },
