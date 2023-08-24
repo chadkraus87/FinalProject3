@@ -1,14 +1,10 @@
-import './App.css';
-//client/src/userFront/component/3DModels.jsx
-import Example from './userFront/component/Carosel'
-
-
+import React from 'react';
+import AdminDashboard from './components/adminDashboard';
 function App() {
   return (
-    <div>
-      <Example />
+    <div className="App">
+      <AdminDashboard />
     </div>
   );
 }
-
 export default App;
