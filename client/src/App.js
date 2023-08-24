@@ -1,13 +1,12 @@
 import React from 'react';
-import AdminNav from './components/pages/adminNav';
-import Header from './components/pages/header';
+import AdminDashboard from './components/adminDashboard';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <AdminNav />
+      <AdminDashboard />
+      
     </div>
   );
 }

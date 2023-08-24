@@ -18,7 +18,10 @@ module.exports = {
         deepCoral: 'rgb(231, 111, 81)', 
         lightOrange: 'rgb(244, 162, 97)', 
         dark: 'rgb(45, 52, 54)',
-        smoke: 'rgb(99, 99, 99)'
+        smoke: 'rgb(99, 99, 99)',
+        delivered: 'rbg(177, 227, 139)',
+        cancelled: 'rgb(236, 201, 193)',
+        offWhite: 'rgb(250, 250, 250)'
       }
     },
   },
