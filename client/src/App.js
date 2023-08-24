@@ -1,13 +1,17 @@
 import './App.css';
-//client/src/userFront/component/3DModels.jsx
-import ProductPage from './userFront/component/ProductPage'
-
+import ProductPage from './userFront/component/ProductPage';
+import Cart from './userFront/component/Cart'; // Assuming this is the correct path to your Cart component
+import { CartProvider } from './userFront/component/cartContext'; // Assuming this is the correct path to your cartContext file
 
 function App() {
   return (
-    <div>
-      <ProductPage />
-    </div>
+    <CartProvider>
+      <div>
+        <ProductPage />
+        <Cart />
+      </div>
+    </CartProvider>
   );
 }
+
 export default App;

@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 
-export default function SizeButtons({ label }) {
+export default function ColorButtons({ label }) {
   return (
     <div>
     <Stack direction="row" spacing={2}>
