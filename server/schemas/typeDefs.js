@@ -17,6 +17,7 @@ const typeDefs = gql`
     _id: ID!
     productType: String
     animalType: String
+    size: String
     color: String
   }
 
@@ -29,14 +30,13 @@ const typeDefs = gql`
   input CreateProductInput {
     productType: String!
     animalType: String!
+    size: String!
     color: String!
   }
 
   type Query {
     profiles: [Profile]!
     profile(profileId: ID!): Profile
-    # Because we have the context functionality in place to check a JWT and decode its data,
-    # we can use a query that will always find and return the logged in user's data
     me: Profile
     getProduct(_id: ID!): Product
     getAllProducts: [Product]

@@ -20,10 +20,10 @@ const resolvers = {
     },
 
     getProduct: async (parent, { _id }) => {
-      return Product.findOne({  _id });
+      return Product.findOne({ _id });
     },
 
-    getAllProducts: async (parent) => {
+    getAllProducts: async () => {
       return Product.find();
     }
   },
