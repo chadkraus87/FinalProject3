@@ -19,15 +19,7 @@ const profileSchema = new Schema({
     required: true,
     minlength: 5,
   },
-  skills: [ 
-    {
-      type: String,
-      trim: true,
-    },
-  ],
 });
-
-// Remove skills or update across mutations and typedefs if needed.
 
 // Code snippet from resolver
 
