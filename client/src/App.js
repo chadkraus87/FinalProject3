@@ -1,9 +1,12 @@
-import React from 'react';
-import AdminDashboard from './components/adminDashboard';
+import './App.css';
+//client/src/userFront/component/3DModels.jsx
+import Example from './userFront/component/Carosel'
+
+
 function App() {
   return (
-    <div className="App">
-      <AdminDashboard />
+    <div>
+      <Example />
     </div>
   );
 }

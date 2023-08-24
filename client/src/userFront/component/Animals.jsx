@@ -58,7 +58,7 @@ function Camera() {
 export default function App() {
   return (
     <Canvas 
-      style={{ width: '100vw', height: '50vh' }}
+      style={{ width: '50vw', height: '50vh' }}
       backgroundColor={'#FFA500'} >
          
       <Suspense fallback={null}>
