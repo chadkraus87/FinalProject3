@@ -9,6 +9,7 @@ import AdminReviews from './pages/reviews';
 
 function AdminDashboard() {
     return (
+      <div>
        <div className="flex flex-col h-screen">
         <Header />
         <div className="flex flex-grow"> 
@@ -21,6 +22,7 @@ function AdminDashboard() {
             </Routes>
           </div>
         </div>
+      </div>
       </div>
     );
 }

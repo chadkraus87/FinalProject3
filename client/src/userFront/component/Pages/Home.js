@@ -2,10 +2,11 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
+import BannerIcons from '../shop/BannerIcons';
 
 function Home() {
 
-  const Name = {
+  const NameMain = {
     fontFamily: "'Marck Script', cursive",
     fontSize: '8rem',
     fontWeight: '900',
@@ -24,8 +25,10 @@ function Home() {
 
 
   return (
+    <div>
+      <BannerIcons />
     <div style={centerStyle}>
-      <div id='furff' style={Name}>Furry Feet 
+      <div id='furff' style={NameMain}>Furry Feet 
       < br/>Friends</div>
       <Stack direction="row" spacing={2}>
         <Link to="/about">
@@ -39,6 +42,7 @@ function Home() {
         </Button>
         </Link>
       </Stack>
+    </div>
     </div>
   );
 }

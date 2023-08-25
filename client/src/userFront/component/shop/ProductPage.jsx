@@ -4,9 +4,10 @@ import ColorButtons from './Colors'
 // import IconLabelButtons from './CheckoutBtn'
 import Display from './ProductDisplay'
 import { useCart } from './cartContext';
-import BannerIcons from './BannerIcons';
 import ProductButtons from './ProductButtons';
 import CheckoutBtn from './CheckoutBtn';
+import Name from './Name';
+import BannerIcons from './BannerIcons';
 
 
 
@@ -66,14 +67,7 @@ function ProductPage() {
         addToCart(item);
     }
 
-    const name = {
-        fontFamily: "'Marck Script', cursive",
-        fontSize: '5rem',
-        fontWeight: '900',
-        textAlign: 'center',
-        color: '#5271FF',
-        marginTop: '-5rem',
-    }
+
 
     const btns = {
         paddingLeft: '4%',
@@ -92,7 +86,7 @@ function ProductPage() {
         <div>
             <BannerIcons />
             {/* Name of Business*/}
-            <div id="furff" style={name}>Furry Feet Friends</div>
+            <Name />
             <div style={btns}>
                 <ProductButtons />
                 <div style={productContainer}>

@@ -17,12 +17,16 @@ function BannerIcons() {
 
     return (
         <div style={{ ...iconPlacement, ...iconStyle }}>
+             <Link to="/">
             <HomeIcon style={iconStyle} />
+            </Link>
             <Link to="/adminDashboard">
                 <AccountBoxIcon style={iconStyle} />
             </Link>
+            <Link to="/Cart">
             <ShoppingCartIcon style={iconStyle} />
             <CartCount />
+            </Link>
         </div>
     )
 }

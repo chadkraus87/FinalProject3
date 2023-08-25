@@ -19,6 +19,18 @@ const productSchema = new mongoose.Schema({
     enum: ['yellow', 'black', 'purple', 'pink', 'blue'],
     required: true,
   },
+  description: {
+    type: String,
+    required: true,
+  },
+  threedModel: { 
+    type: String,
+    required: false,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model('Product', productSchema);

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dog Clogs",
+    "animalType": "dog",
+    "size": "large",
+    "description": "Clogs for dogs."
+  },
+  {
+    "name": "Dog Socks",
+    "animalType": "dog",
+    "size": "small",
+    "description": "Socks for dogs."
+  },
+  {
+    "name": "Cat Mittens",
+    "animalType": "cat",
+    "size": "small",
+    "description": "Mittens for cats."
+  },
+  {
+    "name": "Cat Hats",
+    "animalType": "Cat",
+    "size": "small",
+    "description": "Hats for cats."
+  }
+]
