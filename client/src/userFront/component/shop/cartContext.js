@@ -18,8 +18,13 @@ export const CartProvider = ({ children }) => {
         setCart(prevCart => [...prevCart, item]);
     };
 
+    const removeFromCart = (itemId) => {
+        //logic to remove an item based on its id or some other unique property
+        setCart(prevCart => prevCart.filter(item => item.id !== itemId));
+    };
+
     return (
-        <CartContext.Provider value={{ cart, addToCart }}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
             {children}
         </CartContext.Provider>
     );
