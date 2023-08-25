@@ -2,7 +2,7 @@ import * as React from 'react';
 import SizeButtons from './Sizes'
 import ColorButtons from './Colors'
 // import IconLabelButtons from './CheckoutBtn'
-import Display from './ProductDisplay'
+// import Display from './ProductDisplay'
 import { useCart } from './cartContext';
 import ProductButtons from './ProductButtons';
 import CheckoutBtn from './CheckoutBtn';
@@ -90,7 +90,7 @@ function ProductPage() {
             <div style={btns}>
                 <ProductButtons />
                 <div style={productContainer}>
-                    <Display />
+                    {/* <Display /> */}
                     <div style={{ flex: 1, padding: '2%' }}>
                         {/* Product name gets rendered here, will need to get from server*/}
                         <h1 style={{ fontSize: '2em' }}>Dog Clogs</h1>
