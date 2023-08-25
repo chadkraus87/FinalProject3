@@ -1,4 +1,4 @@
-const seedData = [
+[
   {
     "name": "Dog Clogs",
     "animalType": "dog",
@@ -8,53 +8,37 @@ const seedData = [
   {
     "name": "Dog Socks",
     "animalType": "dog",
-    "size": "small",
-    "description": "Socks for dogs."
-  },
-  {
-    "name": "Cat Mittens",
-    "animalType": "cat",
-    "size": "small",
-    "description": "Mittens for cats."
-  },
-  {
-    "name": "Cat Hats",
-    "animalType": "cat",
-    "size": "small",
-    "description": "Hats for cats."
-  },
-  {
-    "name": "Dog Socks",
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Comfortable and stylish shoes for your dog.",
-    "threeDModel": "path_to_3dmodel/dogsocks_red_small.model",
+    "model": "/assets/3D/sock.obj",
     "price": 9.99
   },
   {
     "name": "Dog Clogs",
+    "animalType": "dog",
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Perfect clogs for your dogs' everyday adventures.",
-    "threeDModel": "path_to_3dmodel/dogclogs_red_small.model",
+    "model": "/assets/3D/shoe.obj",
     "price": 14.99
   },
   {
     "name": "Kitten Mittens",
+    "animalType": "cat",
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Keep your kittens' paws warm with these mittens.",
-    "threeDModel": "path_to_3dmodel/kittenmittens_red_small.model",
+    "model": "/assets/3D/mitten.obj",
     "price": 7.99
   },
   {
     "name": "Cat Hats",
+    "animalType": "cat",
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Stylish hats for cool cats.",
-    "threeDModel": "path_to_3dmodel/cathats_red_small.model",
+    "model": "/assets/3D/hat.obj",
     "price": 8.99
   }
-];
-
-export { seedData };
+]
