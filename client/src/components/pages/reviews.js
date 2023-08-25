@@ -1,8 +1,123 @@
+// import React, { useState } from 'react';
+// import { PiPawPrintFill, PiPawPrintLight } from 'react-icons/pi';
+
+
+// // Mock Review data
+// const mockReviews = [
+//     {
+//       id: 1,
+//       user: "John Doe",
+//       product: "Dog Clogs",
+//       date: "08/24/2023",
+//       content: "I love this product! It's amazing.",
+//       rating: 5,
+//     },
+//     {
+//       id: 2,
+//       user: "Jane Smith",
+//       product: "Kitten Mittens",
+//       date: "08/22/2023",
+//       content: "This product is good, but I wish it had more color options.",
+//       rating: 4,
+//     },
+//     {
+//         id: 3,
+//         user: "Billy Thorton",
+//         product: "Dog Socks",
+//         date: "08/24/2023",
+//         content: "I love this product! It's amazing.",
+//         rating: 5,
+//       },
+//       {
+//         id: 4,
+//         user: "Sandra Bullock",
+//         product: "Cat Hat",
+//         date: "08/22/2023",
+//         content: "I love it but my cat hates it! At least I got one picture before he destroyed it.",
+//         rating: 4,
+//       },
+   
+//   ];
+
+//   const renderRating = (rating) => (
+//     <div>
+//       {Array.from({ length: rating }).map((_, index) => (
+//         <PiPawPrintFill key={index} className='inline-flex text-yellow' />
+//       ))}
+//       {Array.from({ length: 5 - rating }).map((_, index) => (
+//         <PiPawPrintLight key={index} className='inline-flex text-yellow'/>
+//       ))}
+//     </div>
+//   );
+
+//   function AdminReviews () {
+
+//     const [reviews, setReviews] = useState([
+//         mockReviews
+//       ]);
+//       const [replies, setReplies] = useState({});
+//       const [replyingTo, setReplyingTo] = useState(null);
+//       const [responseContent, setResponseContent] = useState({});
+    
+//     const handleReply = (id) => {
+//         setReplyingTo(id);
+//       };
+    
+//       const handleSendReply = (id) => {
+//         setReplies({
+//           ...replies,
+//           [id]: responseContent
+//         });
+//         setResponseContent('');
+//         setReplyingTo(null);
+//       };
+
+//     return (
+//         <div className="flex flex-col bg-paleBlue">
+//             <div className='bg-darkBlue p-6 m-6  flex flex-col'>
+//         <h2 className='text-xl text-offWhite text-center font-bold'>Reviews</h2>
+//         <div className='bg-offWhite p-4 mr-3 rounded '>
+//         <div className=' p-8 mx-12 my-4'>
+//         {mockReviews.sort((a, b) => new Date(b.date) - new Date(a.date)).map((review) => (
+//         <div key={review.id} className='bg-dark p-4 mb-4 rounded'>
+//         <div className="text-offWhite flex justify-between">
+//           <span>{review.user}</span>
+//           <span>Product: {review.product}</span>
+//           <span>Date: {review.date}</span>
+//         </div>
+//         <p className='text-offWhite'>Review: {review.content}</p>
+//         <div>
+//           {renderRating(review.rating)} {/* Call the renderRating function */}
+//         </div>
+//         {/* Admin Reply to review */}
+//         {replies[review.id] ? (
+//               <p className='text-offWhite'>Reply: {replies[review.id]}</p>
+//               ) : (
+//                 replyingTo === review.id ? (
+//                   <div>
+//                     <textarea value={responseContent} onChange={(e) => setResponseContent(e.target.value)} />
+//                     <button onClick={handleSendReply} className='text-deepCoral'>Send</button>
+//                   </div>
+//                 ) : (
+//                   <button onClick={() => handleReply(review.id)}className='text-deepCoral' >Reply</button>
+//                 )
+//               )}
+//           </div>
+//         ))}
+//     </div>
+
+//         </div>
+//         </div>
+//       </div>
+//     );
+//   }
+
+//   export default AdminReviews;
+
 import React, { useState } from 'react';
-import { PiPawPrintFill, PiPawPrintLight } from 'react-icons/pi';
+import Review from './Review';  // Assuming Review is in the same directory
 
-
-// Mock Review data
+//Mock Review data
 const mockReviews = [
     {
       id: 1,
@@ -39,79 +154,30 @@ const mockReviews = [
    
   ];
 
-  const renderRating = (rating) => (
-    <div>
-      {Array.from({ length: rating }).map((_, index) => (
-        <PiPawPrintFill key={index} className='inline-flex text-yellow' />
-      ))}
-      {Array.from({ length: 5 - rating }).map((_, index) => (
-        <PiPawPrintLight key={index} className='inline-flex text-yellow'/>
-      ))}
-    </div>
-  );
+function AdminReviews() {
+    const [reviews, setReviews] = useState(mockReviews);
+    const [replies, setReplies] = useState({});
 
-  function AdminReviews () {
-
-    const [reviews, setReviews] = useState([
-        mockReviews
-      ]);
-      const [replies, setReplies] = useState({});
-      const [replyingTo, setReplyingTo] = useState(null);
-      const [responseContent, setResponseContent] = useState({});
-    
-    const handleReply = (id) => {
-        setReplyingTo(id);
-      };
-    
-      const handleSendReply = (id) => {
+    const handleSendReply = (reviewId, replyContent) => {
+        // Update the replies state
         setReplies({
-          ...replies,
-          [id]: responseContent
+            ...replies,
+            [reviewId]: replyContent
         });
-        setResponseContent('');
-        setReplyingTo(null);
-      };
+
+        // Update the reviews state with the reply
+        setReviews(prevReviews => prevReviews.map(review => {
+            if (review.id === reviewId) {
+                review.reply = replyContent;
+            }
+            return review;
+        }));
+    };
 
     return (
         <div className="flex flex-col bg-paleBlue">
-            <div className='bg-darkBlue p-6 m-6  flex flex-col'>
-        <h2 className='text-xl text-offWhite text-center font-bold'>Reviews</h2>
-        <div className='bg-offWhite p-4 mr-3 rounded '>
-        <div className=' p-8 mx-12 my-4'>
-        {mockReviews.sort((a, b) => new Date(b.date) - new Date(a.date)).map((review) => (
-        <div key={review.id} className='bg-dark p-4 mb-4 rounded'>
-        <div className="text-offWhite flex justify-between">
-          <span>{review.user}</span>
-          <span>Product: {review.product}</span>
-          <span>Date: {review.date}</span>
         </div>
-        <p className='text-offWhite'>Review: {review.content}</p>
-        <div>
-          {/* Call the renderRating function */}
-          {renderRating(review.rating)} 
-        </div>
-        
-        {/* Admin Reply to review */}
-        {replies[review.id] ? (
-              <p className='text-offWhite'>Reply: {replies[review.id]}</p>
-              ) : (
-                replyingTo === review.id ? (
-                  <div>
-                    <textarea value={responseContent} onChange={(e) => setResponseContent(e.target.value)} />
-                    <button onClick={handleSendReply} className='text-deepCoral'>Send</button>
-                  </div>
-                ) : (
-                  <button onClick={() => handleReply(review.id)}className='text-deepCoral' >Reply</button>
-                )
-              )}
-          </div>
-        ))}
-    </div>
-
-        </div>
-        </div>
-      </div>
     );
-  }
+}
 
-  export default AdminReviews;
+export default AdminReviews;

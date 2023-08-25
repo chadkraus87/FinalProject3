@@ -6,19 +6,38 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
 export default function ColorButtons({ label }) {
+  const [colors, setColors] = React.useState([]);
+
+  React.useEffect(() => {
+      fetch("/api/colors")    // Update to API Endpoint from Chad
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error("Network response was not ok");
+              }
+              return response.json();
+          })
+          .then(data => setColors(data))
+          .catch(error => console.error("Error fetching colors:", error));
+  }, []);
+
   return (
     <div>
       <FormControl component="fieldset">
-        <FormLabel component="legend" id="productColors">Colors</FormLabel>
+        <FormLabel component="legend" id="productColors">{label || 'Colors'}</FormLabel>
         <RadioGroup
           row 
           aria-labelledby="colors"
-          defaultValue="small"
+          defaultValue={colors[0]}
           name="product-colors"
         >
-          <FormControlLabel value="Red" control={<Radio />} label="Red" />
-          <FormControlLabel value="Blue" control={<Radio />} label="Blue" />
-          <FormControlLabel value="Green" control={<Radio />} label="Green" />
+          {colors.map(color => (
+            <FormControlLabel 
+              key={color}
+              value={color} 
+              control={<Radio />} 
+              label={color} 
+            />
+          ))}
         </RadioGroup>
       </FormControl>
     </div>
