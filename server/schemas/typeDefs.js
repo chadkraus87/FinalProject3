@@ -1,6 +1,17 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
+  type Product {
+    _id: ID!
+    productType: String
+    animalType: String
+    size: String
+    color: String
+    description: String
+    threedModel: String
+    price: Float
+  }
+
   type Profile {
     _id: ID
     name: String
@@ -11,14 +22,6 @@ const typeDefs = gql`
   type Auth {
     token: ID!
     profile: Profile
-  }
-
-  type Product {
-    _id: ID!
-    productType: String
-    animalType: String
-    size: String
-    color: String
   }
 
   type Order {
@@ -32,6 +35,9 @@ const typeDefs = gql`
     animalType: String!
     size: String!
     color: String!
+    description: String!
+    threedModel: String
+    price: Float!
   }
 
   type Query {
