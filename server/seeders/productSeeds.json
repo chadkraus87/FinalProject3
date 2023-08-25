@@ -1,11 +1,5 @@
 [
   {
-    "name": "Dog Clogs",
-    "animalType": "dog",
-    "size": "large",
-    "description": "Clogs for dogs."
-  },
-  {
     "name": "Dog Socks",
     "animalType": "dog",
     "sizes": ["small", "medium", "large"],
