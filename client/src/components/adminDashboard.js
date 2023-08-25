@@ -2,10 +2,14 @@ import { Route, Routes } from 'react-router-dom';
 import AdminNav from './pages/adminNav';
 import Header from './pages/header';
 import Orders from './pages/orders';
-import Products from './products';
+import Products from './pages/products';
+import Customers from './pages/customer';
+import Messages from './pages/messages';
+import AdminReviews from './pages/reviews';
 
 function AdminDashboard() {
     return (
+      <div>
        <div className="flex flex-col h-screen">
         <Header />
         <div className="flex flex-grow"> 
@@ -18,6 +22,7 @@ function AdminDashboard() {
             </Routes>
           </div>
         </div>
+      </div>
       </div>
     );
 }

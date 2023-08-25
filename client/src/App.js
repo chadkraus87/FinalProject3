@@ -6,12 +6,25 @@ import About from './userFront/component/Pages/About';
 import Shop from './userFront/component/Pages/shop';
 import AdminDashboard from './components/adminDashboard';
 
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" 
+               element={
+                  <CartProvider>
+                    <Home />
+                  </CartProvider>
+               } 
+        />
+        <Route path="/about" 
+               element={
+                  <CartProvider>
+                    <About />
+                  </CartProvider>
+               } 
+        />
         <Route path="/shop" 
                element={
                   <CartProvider>
