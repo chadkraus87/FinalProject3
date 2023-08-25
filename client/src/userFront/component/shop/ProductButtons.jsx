@@ -1,15 +1,23 @@
+import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import PetsIcon from '@mui/icons-material/Pets';
 
-const products = ['Dog Socks', 'Cat Hats', 'Kitten Mittens'];
-
 function ProductButtons() {
+    const [products, setProducts] = useState([]);
+    
+    useEffect(() => {
+        fetch("/api/products") //replace with api endpoint from chad
+            .then(response => response.json())
+            .then(data => setProducts(data))
+            .catch(error => console.error("Error fetching products:", error));
+    }, []);
+
     const containerStyle = {
         display: 'flex',
-        flexDirection: 'column',  // stack children vertically
-        alignItems: 'center',     // center children horizontally
-        justifyContent: 'center', // center children vertically
+        flexDirection: 'column',
+        alignItems: 'center', 
+        justifyContent: 'center',
         height: '100%',
     };
 
@@ -17,12 +25,19 @@ function ProductButtons() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '100%',  // ensure it takes the full width
+        width: '100%',
     };
+
+    const productTitle = { 
+        marginBottom: '1rem', 
+        fontFamily: 'Arial, sans-serif',
+        fontWeight: '600',
+        fontSize: "1.5rem"
+    }
 
     return (
         <div style={containerStyle}>
-            <div style={{ marginBottom: '1rem' }}>More Products</div>
+            <div style={productTitle}>More Products</div>
             <div style={btnContainerStyle}>
                 <Stack direction="row" spacing={5}>
                     {products.map(product => (
