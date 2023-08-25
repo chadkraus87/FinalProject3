@@ -2,9 +2,6 @@ import React from 'react';
 import Name from '../shop/Name';
 import BannerIcons from '../shop/BannerIcons';
 
-// You can optionally create a CSS module for this component.
-// For demonstration, I'll continue using inline styles.
-
 const styles = {
   container: {
     padding: '20px',
@@ -34,31 +31,22 @@ function About() {
     <div>
       <BannerIcons />
       <div style={styles.container}>
-      <Name />
-
-      <h1 style={styles.header}>About Us</h1>
-
-      <p style={styles.paragraph}>
-        Welcome to [Your Company Name]! We're thrilled to have you here.
-      </p>
-
-      <p style={styles.paragraph}>
-        Since our inception in [Year of Establishment], we've been committed to [Brief about the mission]. Our dedicated team ensures that [specific quality].
-      </p>
-
-      <p style={styles.paragraph}>
-        Our core beliefs revolve around community, trust, and unmatched value. These tenets guide us as we continue to serve and evolve.
-      </p>
-
-      <p style={styles.paragraph}>
-        Thank you for choosing [Your Company Name]. We're honored to accompany you on this journey.
-      </p>
-
-      <h2 style={styles.teamTitle}>Meet Our Team</h2>
-      <p style={styles.paragraph}>
-        Comprising individuals with a shared passion for [specific domain], our team boasts expertise in [specific departments]. Day and night, we're here to ensure you receive the best possible experience.
-      </p>
-    </div>
+        <Name />
+        <h1 style={styles.header}>About Us</h1>
+        <p style={styles.paragraph}>
+          Welcome to Furry Feet Friends! We're thrilled to have you here.
+        </p>
+        <p style={styles.paragraph}>
+          Since our inception in 2003, we've been on a unique journey. Our company took root at the UT coding bootcamp, where we developed an innovative Ecommerce platform with a primary focus on showcasing products in a 3D perspective.
+        </p>
+        <p style={styles.paragraph}>
+          Our core beliefs revolve around community, trust, and unmatched value. These tenets guide us as we continue to serve and evolve.
+        </p>
+        <p style={styles.paragraph}>
+          Thank you for choosing Furry Feet Friends. We're honored to accompany you on this journey.
+        </p>
+      
+      </div>
     </div>
   );
 }

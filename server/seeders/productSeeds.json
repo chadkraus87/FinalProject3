@@ -8,19 +8,37 @@
   {
     "name": "Dog Socks",
     "animalType": "dog",
-    "size": "small",
-    "description": "Socks for dogs."
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
+    "description": "Comfortable and stylish shoes for your dog.",
+    "model": "/assets/3D/sock.obj",
+    "price": 9.99
   },
   {
-    "name": "Cat Mittens",
+    "name": "Dog Clogs",
+    "animalType": "dog",
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
+    "description": "Perfect clogs for your dogs' everyday adventures.",
+    "model": "/assets/3D/shoe.obj",
+    "price": 14.99
+  },
+  {
+    "name": "Kitten Mittens",
     "animalType": "cat",
-    "size": "small",
-    "description": "Mittens for cats."
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
+    "description": "Keep your kittens' paws warm with these mittens.",
+    "model": "/assets/3D/mitten.obj",
+    "price": 7.99
   },
   {
     "name": "Cat Hats",
-    "animalType": "Cat",
-    "size": "small",
-    "description": "Hats for cats."
+    "animalType": "cat",
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
+    "description": "Stylish hats for cool cats.",
+    "model": "/assets/3D/hat.obj",
+    "price": 8.99
   }
 ]
