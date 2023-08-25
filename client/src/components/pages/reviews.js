@@ -176,16 +176,6 @@ function AdminReviews() {
 
     return (
         <div className="flex flex-col bg-paleBlue">
-            <div className='bg-darkBlue p-6 m-6 flex flex-col'>
-                <h2 className='text-xl text-offWhite text-center font-bold'>Reviews</h2>
-                <div className='bg-offWhite p-4 mr-3 rounded '>
-                    <div className=' p-8 mx-12 my-4'>
-                        {reviews.sort((a, b) => new Date(b.date) - new Date(a.date)).map(review => (
-                            <Review key={review.id} review={review} onSendReply={handleSendReply} />
-                        ))}
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
