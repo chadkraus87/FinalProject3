@@ -1,4 +1,4 @@
-[
+const seedData = [
   {
     "name": "Dog Clogs",
     "animalType": "dog",
@@ -19,46 +19,42 @@
   },
   {
     "name": "Cat Hats",
-    "animalType": "Cat",
+    "animalType": "cat",
     "size": "small",
     "description": "Hats for cats."
-  }
-]
-
-const seedData = [
+  },
   {
     "name": "Dog Socks",
-    "sizes": "['small', 'medium', 'large']",
-    "colors": "['red', 'blue', 'green', 'black']",
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
     "description": "Comfortable and stylish shoes for your dog.",
-    "threedModel": "path_to_3dmodel/dogsocks_red_small.model",
-    "price": "9.99" 
+    "threeDModel": "path_to_3dmodel/dogsocks_red_small.model",
+    "price": 9.99
   },
   {
     "name": "Dog Clogs",
-    "sizes": "['small', 'medium', 'large']",
-    "colors": "['red', 'blue', 'green', 'black']",
-    "description": "Perfect clogs for your dogs everyday adventures.",
-    "threedModel": "path_to_3dmodel/dogsocks_red_small.model",
-    "price": "14.99"
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
+    "description": "Perfect clogs for your dogs' everyday adventures.",
+    "threeDModel": "path_to_3dmodel/dogclogs_red_small.model",
+    "price": 14.99
   },
   {
     "name": "Kitten Mittens",
-    "sizes": "['small', 'medium', 'large']",
-    "colors": "['red', 'blue', 'green', 'black']",
-    "description": "Keep your kittens paws warm with these mittens.",
-    "threedModel": "path_to_3dmodel/dogsocks_red_small.model",
-    "price": "7.99"
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
+    "description": "Keep your kittens' paws warm with these mittens.",
+    "threeDModel": "path_to_3dmodel/kittenmittens_red_small.model",
+    "price": 7.99
   },
   {
     "name": "Cat Hats",
-    "sizes": "['small', 'medium', 'large']",
-    "colors": "['red', 'blue', 'green', 'black']",
-    "description": "Stylish hats for cool cats",
-    "threedModel": "path_to_3dmodel/dogsocks_red_small.model",
-    "price": "8.99"
+    "sizes": ["small", "medium", "large"],
+    "colors": ["red", "blue", "green", "black"],
+    "description": "Stylish hats for cool cats.",
+    "threeDModel": "path_to_3dmodel/cathats_red_small.model",
+    "price": 8.99
   }
 ];
 
-export default seedData;
-
+export { seedData };
