@@ -87,8 +87,10 @@ const mockReviews = [
         </div>
         <p className='text-offWhite'>Review: {review.content}</p>
         <div>
-          {renderRating(review.rating)} {/* Call the renderRating function */}
+          {/* Call the renderRating function */}
+          {renderRating(review.rating)} 
         </div>
+        
         {/* Admin Reply to review */}
         {replies[review.id] ? (
               <p className='text-offWhite'>Reply: {replies[review.id]}</p>
