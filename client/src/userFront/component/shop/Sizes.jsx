@@ -1,24 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
-export default function SizeButtons({ label }) {
-  const [sizes, setSizes] = React.useState([]);
-
-  React.useEffect(() => {
-      fetch("/api/sizes")   // Update to API Endpoint from Chad
-          .then(response => {
-              if (!response.ok) {
-                  throw new Error("Network response was not ok");
-              }
-              return response.json();
-          })
-          .then(data => setSizes(data))
-          .catch(error => console.error("Error fetching sizes:", error));
-  }, []);
+export default function SizeButtons({ sizes = [], label }) {
+  // handle if there are no sizes.
+  if (!sizes || sizes.length === 0) return <p>No sizes available.</p>;
 
   return (
     <div>

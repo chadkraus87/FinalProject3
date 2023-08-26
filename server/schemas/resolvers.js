@@ -20,8 +20,14 @@ const resolvers = {
     },
 
     getProduct: async (parent, { _id }) => {
-      return Product.findOne({ _id });
+      try {
+        return Product.findOne({ _id });
+      } catch (error) {
+        console.error("Error retrieving product:", error);
+        throw new Error("Unable to fetch the product");
+      }
     },
+    
 
     getAllProducts: async () => {
       return Product.find();
