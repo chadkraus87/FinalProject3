@@ -1,4 +1,4 @@
 const Profile = require('./Profile');
-const Product = require('./Products');
+const { Product, Review } = require('./Products');
 
-module.exports = { Profile, Product };
+module.exports = { Profile, Product, Review };

@@ -1,18 +1,20 @@
 [
   {
-    "name": "Dog Clogs",
-    "animalType": "dog",
-    "size": "large",
-    "description": "Clogs for dogs."
-  },
-  {
     "name": "Dog Socks",
     "animalType": "dog",
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Comfortable and stylish shoes for your dog.",
     "model": "/assets/3D/sock.obj",
-    "price": 9.99
+    "price": 9.99,
+    "reviews": [
+      {
+        "username": "Ethan TA",
+        "rating": 4.5,
+        "text": "Great socks for my dog, or myself!",
+        "date": "2023-07-25"
+      }
+    ]
   },
   {
     "name": "Dog Clogs",
