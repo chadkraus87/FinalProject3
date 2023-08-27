@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { ProductContext } from './ProductProvider';
+import React, { useContext, useState, useEffect } from 'react';
+import ProductContext from './ProductContext';
 import SizeButtons from './Sizes';
 import ColorButtons from './Colors';
 import Display from './ProductDisplay';
@@ -9,50 +9,52 @@ import CheckoutBtn from './CheckoutBtn';
 import Name from './Name';
 import BannerIcons from './BannerIcons';
 import { useQuery } from '@apollo/client';
-import { GET_PRODUCT_DETAILS } from '../../../utils/queries';
+import { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS } from '../../../utils/queries';
+import Reviews from './Review';
 
 function ProductPage() {
     const { addToCart } = useCart();
     const { selectedProductId, setSelectedProductId } = useContext(ProductContext);
-    console.log(selectedProductId)
 
     const [selectedSize, setSelectedSize] = React.useState(null);
     const [selectedColor, setSelectedColor] = React.useState(null);
     const [productName, setProductName] = React.useState('');
     const [productDescription, setProductDescription] = React.useState('');
 
-
-
-
-    const { data, loading, error } = useQuery(GET_PRODUCT_DETAILS, {
+    const { data: productData, loading: productLoading, error: productError } = useQuery(GET_PRODUCT_DETAILS, {
+        skip: !selectedProductId,
         variables: { id: selectedProductId }
     });
 
+    const { data: allProductsData, loading: allProductsLoading, error: allProductsError } = useQuery(GET_ALL_PRODUCT_IDS);
+
     React.useEffect(() => {
-        if (data) {
-            setProductName(data.getProduct.name);
-            setProductDescription(data.getProduct.description);
-            setSelectedProductId(data.getProduct._id);
+        if (productData && productData.getProduct) {
+            setProductName(productData.getProduct.name);
+            setProductDescription(productData.getProduct.description);
         }
-    }, [data]);
-    
+    }, [productData]);
 
     const handleAddToCart = () => {
         // ... [same as before]
     }
 
-    if (loading) return <p>Loading...</p>;
-    if (error) {
-        console.error("Error fetching data:", error);
-        return <p>I am a problem... fix me: {error.message}</p>;
+    const handleProductSelect = (e) => {
+        setSelectedProductId(e.target.value);
     }
-    
+
+    if (productLoading || allProductsLoading) return <p>Loading...</p>;
+    if (productError || allProductsError) {
+        console.error("Error fetching data:", productError || allProductsError);
+        return <p>I am a problem... fix me: {(productError || allProductsError).message}</p>;
+    }
+
     return (
         <div>
             <BannerIcons />
             <Name />
             <div className="btns">
-                <ProductButtons />
+            <ProductButtons setSelectedProductId={setSelectedProductId} />
                 <div className="productContainer">
                     <Display />
                     <div style={{ flex: 1, padding: '2%' }}>
@@ -60,15 +62,15 @@ function ProductPage() {
                         <div className='productDecription'>{productDescription}</div>
                         <div id='rightSideStuff'>
                             <div id='sizesContainer'>
-                                {/* Passing sizes to SizeButtons */}
-                                <SizeButtons sizes={data?.getProduct?.sizes} setSelectedSize={setSelectedSize} />
+                                <SizeButtons sizes={productData?.getProduct?.sizes} setSelectedSize={setSelectedSize} />
                             </div>
                             <div id='colorContainer'>
-                                <ColorButtons colors={data?.getProduct?.colors} setSelectedColor={setSelectedColor} />
+                                <ColorButtons colors={productData?.getProduct?.colors} setSelectedColor={setSelectedColor} />
                             </div>
                             <div style={{ paddingTop: '2%' }}>
                                 <CheckoutBtn handleAddToCart={handleAddToCart} />
                             </div>
+                            <Reviews productName={productData.getProduct.name} reviews={productData.getProduct.reviews} />
                         </div>
                     </div>
                 </div>
