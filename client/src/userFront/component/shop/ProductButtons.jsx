@@ -38,7 +38,7 @@ function ProductButtons() {
             <div style={productTitle}>More Products</div>
             <div style={btnContainerStyle}>
                 <Stack direction="row" spacing={5}>
-                    {data.getAllProducts.map(product => (
+                    {data.map(product => (
                         <Button
                             key={product._id}
                             variant="outlined"

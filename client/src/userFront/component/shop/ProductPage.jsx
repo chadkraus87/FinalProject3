@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { ProductContext } from './ProductProvider';
+import React, { useContext, useState, useEffect } from 'react';
+import ProductContext from './ProductContext';
 import SizeButtons from './Sizes';
 import ColorButtons from './Colors';
 import Display from './ProductDisplay';
@@ -10,32 +10,36 @@ import Name from './Name';
 import BannerIcons from './BannerIcons';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCT_DETAILS } from '../../../utils/queries';
+import jwt from 'jsonwebtoken';
+
 
 function ProductPage() {
     const { addToCart } = useCart();
     const { selectedProductId, setSelectedProductId } = useContext(ProductContext);
-    console.log(selectedProductId)
+    console.log(selectedProductId);
 
-    const [selectedSize, setSelectedSize] = React.useState(null);
-    const [selectedColor, setSelectedColor] = React.useState(null);
-    const [productName, setProductName] = React.useState('');
-    const [productDescription, setProductDescription] = React.useState('');
-
-
-
+    const [selectedSize, setSelectedSize] = useState(null);
+    const [selectedColor, setSelectedColor] = useState(null);
+    const [productName, setProductName] = useState('');
+    const [productDescription, setProductDescription] = useState('');
 
     const { data, loading, error } = useQuery(GET_PRODUCT_DETAILS, {
         variables: { id: selectedProductId }
     });
 
-    React.useEffect(() => {
+    const dummyLogin = () => {
+        const dummyToken = jwt.sign({ data: { email: "test@dummy.com", name: "Dummy User", _id: "123456" } }, 'mysecretssshhhhhhh', { expiresIn: '2h' });
+        localStorage.setItem('jwtToken', dummyToken);
+     }
+     
+
+    useEffect(() => {
         if (data) {
             setProductName(data.getProduct.name);
             setProductDescription(data.getProduct.description);
             setSelectedProductId(data.getProduct._id);
         }
-    }, [data]);
-    
+    }, [data, setSelectedProductId]);
 
     const handleAddToCart = () => {
         // ... [same as before]
@@ -50,6 +54,7 @@ function ProductPage() {
     return (
         <div>
             <BannerIcons />
+            <button onClick={dummyLogin}>Dummy Login</button>
             <Name />
             <div className="btns">
                 <ProductButtons />
