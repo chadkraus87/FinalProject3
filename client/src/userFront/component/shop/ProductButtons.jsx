@@ -13,10 +13,12 @@ function ProductButtons({ setSelectedProductId }) {
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
+    console.log(data);
+
     const containerStyle = {
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center', 
+        alignItems: 'center',
         justifyContent: 'center',
         height: '100%',
     };
@@ -28,8 +30,8 @@ function ProductButtons({ setSelectedProductId }) {
         width: '100%',
     };
 
-    const productTitle = { 
-        marginBottom: '1rem', 
+    const productTitle = {
+        marginBottom: '1rem',
         fontFamily: 'Arial, sans-serif',
         fontWeight: '600',
         fontSize: "1.5rem"
@@ -40,7 +42,7 @@ function ProductButtons({ setSelectedProductId }) {
             <div style={productTitle}>More Products</div>
             <div style={btnContainerStyle}>
                 <Stack direction="row" spacing={5}>
-                    {data.map(product => (
+                    {data.getAllProducts.map(product => (
                         <Button
                             key={product._id}
                             variant="outlined"
@@ -50,6 +52,7 @@ function ProductButtons({ setSelectedProductId }) {
                             {product.name}
                         </Button>
                     ))}
+
                 </Stack>
             </div>
         </div>

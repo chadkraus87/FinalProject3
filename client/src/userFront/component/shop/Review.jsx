@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Reviews({ productName, reviews }) {
+function Reviews({ productName, reviews = [] })  {
 
     return (
         <div>

@@ -70,7 +70,10 @@ function ProductPage() {
                             <div style={{ paddingTop: '2%' }}>
                                 <CheckoutBtn handleAddToCart={handleAddToCart} />
                             </div>
-                            <Reviews productName={productData.getProduct.name} reviews={productData.getProduct.reviews} />
+                            <Reviews 
+    productName={productData?.getProduct?.name} 
+    reviews={productData?.getProduct?.reviews ?? []} 
+/>
                         </div>
                     </div>
                 </div>
