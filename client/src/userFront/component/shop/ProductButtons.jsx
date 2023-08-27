@@ -31,10 +31,20 @@ function ProductButtons({ setSelectedProductId }) {
     };
 
     const productTitle = {
-        marginBottom: '1rem',
-        fontFamily: 'Arial, sans-serif',
+        marginBottom: '2rem', 
+        fontFamily: '"Open Sans", sans-serif', 
         fontWeight: '600',
-        fontSize: "1.5rem"
+        fontSize: "1.8rem", 
+        textTransform: 'uppercase', 
+        letterSpacing: '1.5px', 
+        color: '#333', 
+        textShadow: '0px 1px 2px rgba(0, 0, 0, 0.1)',
+    };
+
+    const shadow = {
+        borderRadius: '10px',
+        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+        border: '1px solid transparent',
     };
 
     return (
@@ -43,6 +53,7 @@ function ProductButtons({ setSelectedProductId }) {
             <div style={btnContainerStyle}>
                 <Stack direction="row" spacing={5}>
                     {data.getAllProducts.map(product => (
+                        <div style={shadow} >
                         <Button
                             key={product._id}
                             variant="outlined"
@@ -51,6 +62,7 @@ function ProductButtons({ setSelectedProductId }) {
                         >
                             {product.name}
                         </Button>
+                        </div>
                     ))}
 
                 </Stack>

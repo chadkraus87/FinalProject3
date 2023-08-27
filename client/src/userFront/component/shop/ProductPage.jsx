@@ -42,7 +42,20 @@ function ProductPage() {
     const handleProductSelect = (e) => {
         setSelectedProductId(e.target.value);
     }
-
+    
+    const productStyle = {
+        display: 'flex',
+        width: '80%',
+        padding: '2% 1% 1% 10%', 
+        justifyContent: 'space-between',
+    };
+    const shadow = {
+        borderRadius: '10px',
+        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+        border: '1px solid transparent',
+    };
+    
+    
     if (productLoading || allProductsLoading) return <p>Loading...</p>;
     if (productError || allProductsError) {
         console.error("Error fetching data:", productError || allProductsError);
@@ -55,8 +68,10 @@ function ProductPage() {
             <Name />
             <div className="btns">
             <ProductButtons setSelectedProductId={setSelectedProductId} />
-                <div className="productContainer">
+                <div style={productStyle}>
+                    <div style={shadow} >
                     <Display />
+                    </div>
                     <div style={{ flex: 1, padding: '2%' }}>
                         <h1 className="productTitle">{productName}</h1>
                         <div className='productDecription'>{productDescription}</div>

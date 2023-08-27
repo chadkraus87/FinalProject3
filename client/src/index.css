@@ -43,7 +43,8 @@ body {
     display: flex;
     padding: 1%;
     padding-top: 2%;
-    padding-left: 5%;
+    padding-left: 10%;
+    width: 90%;
     justify-content: space-between;
 }
 
