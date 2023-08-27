@@ -10,7 +10,6 @@ import Name from './Name';
 import BannerIcons from './BannerIcons';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCT_DETAILS } from '../../../utils/queries';
-import jwt from 'jsonwebtoken';
 
 
 function ProductPage() {
@@ -27,10 +26,6 @@ function ProductPage() {
         variables: { id: selectedProductId }
     });
 
-    const dummyLogin = () => {
-        const dummyToken = jwt.sign({ data: { email: "test@dummy.com", name: "Dummy User", _id: "123456" } }, 'mysecretssshhhhhhh', { expiresIn: '2h' });
-        localStorage.setItem('jwtToken', dummyToken);
-     }
      
 
     useEffect(() => {
@@ -54,7 +49,6 @@ function ProductPage() {
     return (
         <div>
             <BannerIcons />
-            <button onClick={dummyLogin}>Dummy Login</button>
             <Name />
             <div className="btns">
                 <ProductButtons />
