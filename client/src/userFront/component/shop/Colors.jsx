@@ -5,21 +5,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
-export default function ColorButtons({ label }) {
-  const [colors, setColors] = React.useState([]);
-
-  React.useEffect(() => {
-      fetch("/api/colors")    // Update to API Endpoint from Chad
-          .then(response => {
-              if (!response.ok) {
-                  throw new Error("Network response was not ok");
-              }
-              return response.json();
-          })
-          .then(data => setColors(data))
-          .catch(error => console.error("Error fetching colors:", error));
-  }, []);
-
+export default function ColorButtons({ label, colors = [] }) {
   return (
     <div>
       <FormControl component="fieldset">
@@ -27,7 +13,7 @@ export default function ColorButtons({ label }) {
         <RadioGroup
           row 
           aria-labelledby="colors"
-          defaultValue={colors[0]}
+          defaultValue={colors.length > 0 ? colors[0] : ""}
           name="product-colors"
         >
           {colors.map(color => (
@@ -43,3 +29,4 @@ export default function ColorButtons({ label }) {
     </div>
   );
 }
+

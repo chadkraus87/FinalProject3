@@ -3,10 +3,12 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import PetsIcon from '@mui/icons-material/Pets';
 import { useQuery } from '@apollo/client';
-import { GET_ALL_PRODUCTS } from '../../../utils/queries';
+import { GET_ALL_PRODUCT_IDS } from '../../../utils/queries';
 
-function ProductButtons() {
-    const { loading, error, data } = useQuery(GET_ALL_PRODUCTS);
+
+
+function ProductButtons({ setSelectedProductId }) {
+    const { loading, error, data } = useQuery(GET_ALL_PRODUCT_IDS);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
@@ -43,6 +45,7 @@ function ProductButtons() {
                             key={product._id}
                             variant="outlined"
                             startIcon={<PetsIcon />}
+                            onClick={() => setSelectedProductId(product._id)}
                         >
                             {product.name}
                         </Button>
