@@ -57,8 +57,9 @@ function Camera() {
 
 export default function Display() {
   return (
+    <div>
     <Canvas 
-      style={{ width: '50vw', height: '60vh' }}
+      style={{ width: '45vw', height: '55vh' }}
       // backgroundColor={'#FFA500'}
        >
       <Suspense fallback={null}>
@@ -69,5 +70,7 @@ export default function Display() {
         <OrbitControls />
       </Suspense>
     </Canvas>
+    This model is 3D and interactive!
+    </div>
   );
 }

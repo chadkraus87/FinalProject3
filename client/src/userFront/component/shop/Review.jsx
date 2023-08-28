@@ -1,57 +1,69 @@
-import React, { useState } from 'react';
-import { PiPawPrintFill, PiPawPrintLight } from 'react-icons/pi';
+import React from 'react';
 
-const renderRating = (rating) => (
-    <div>
-      {Array.from({ length: rating }).map((_, index) => (
-        <PiPawPrintFill key={index} className='inline-flex text-yellow' />
-      ))}
-      {Array.from({ length: 5 - rating }).map((_, index) => (
-        <PiPawPrintLight key={index} className='inline-flex text-yellow'/>
-      ))}
-    </div>
-);
 
-function Review({ review, onSendReply }) {
-    const [replyingTo, setReplyingTo] = useState(false);
-    const [responseContent, setResponseContent] = useState("");
 
-    const handleReply = () => {
-        setReplyingTo(true);
+function formatDate(timestamp) {
+    console.log("Timestamp:", timestamp);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(Number(timestamp)).toLocaleDateString(undefined, options); 
+}
+
+
+function Reviews({ productName, reviews = [] })  {
+
+    
+
+    const reviewContainerStyle = {
+        backgroundColor: '#f9f9f9',
+        borderRadius: '5px',
+        padding: '15px',
+        margin: '15px 0',
+        boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.1)'
     };
 
-    const handleSendReply = () => {
-        onSendReply(review.id, responseContent);
-        setResponseContent('');
-        setReplyingTo(false);
+    const reviewItemStyle = {
+        backgroundColor: '#fff',
+        padding: '10px',
+        borderRadius: '5px',
+        margin: '10px 0',
+        boxShadow: '0px 0px 3px rgba(0, 0, 0, 0.1)'
+    };
+
+    const reviewTitleStyle = {
+        fontSize: '20px',
+        borderBottom: '1px solid #eaeaea',
+        paddingBottom: '10px',
+        marginBottom: '10px'
+    };
+
+    const boldText = {
+        fontWeight: 'bold'
+    };
+
+    const dateStyle = {
+        color: '#888',
+        fontSize: '12px'
     };
 
     return (
-        <div className='bg-dark p-4 mb-4 rounded'>
-            <div className="text-offWhite flex justify-between">
-                <span>{review.user}</span>
-                <span>Product: {review.product}</span>
-                <span>Date: {review.date}</span>
-            </div>
-            <p className='text-offWhite'>Review: {review.content}</p>
-            <div>
-                {renderRating(review.rating)}
-            </div>
-            {/* Admin Reply to review */}
-            {review.reply ? (
-                <p className='text-offWhite'>Reply: {review.reply}</p>
+        <div style={reviewContainerStyle}>
+            <h2 style={reviewTitleStyle}>Reviews for {productName}</h2>
+            {reviews.length === 0 ? (
+                <p>No reviews yet.</p>
             ) : (
-                replyingTo ? (
-                    <div>
-                        <textarea value={responseContent} onChange={(e) => setResponseContent(e.target.value)} />
-                        <button onClick={handleSendReply} className='text-deepCoral'>Send</button>
-                    </div>
-                ) : (
-                    <button onClick={handleReply} className='text-deepCoral'>Reply</button>
-                )
+                <ul style={{ listStyleType: 'none', padding: '0' }}>
+                    {reviews.map((review, index) => (
+                        <li key={index} style={reviewItemStyle}>
+                            <p style={boldText}><strong>User:</strong> {review.username}</p>
+                            <p style={boldText}><strong>Rating:</strong> {review.rating}</p>
+                            <p style={boldText}><strong>Review:</strong> {review.text}</p>
+                            <p style={dateStyle}><strong>Date:</strong> {formatDate(review.date)}</p>
+                        </li>
+                    ))}
+                </ul>
             )}
         </div>
     );
 }
 
-export default Review;
+export default Reviews;
