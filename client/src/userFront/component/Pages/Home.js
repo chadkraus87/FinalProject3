@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom';
-import BannerIcons from '../shop/BannerIcons';
+import BannerIcons from '../Products/Layout/BannerIcons';
 
 function Home() {
 

@@ -21,7 +21,8 @@ export default function ColorButtons({ label, colors = [] }) {
               key={color}
               value={color} 
               control={<Radio />} 
-              label={color} 
+              label={color.charAt(0).toUpperCase() + color.slice(1)} 
+              // label={color} 
             />
           ))}
         </RadioGroup>

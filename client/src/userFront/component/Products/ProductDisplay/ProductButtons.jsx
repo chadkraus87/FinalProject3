@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import PetsIcon from '@mui/icons-material/Pets';
 import { useQuery } from '@apollo/client';
-import { GET_ALL_PRODUCT_IDS } from '../../../utils/queries';
+import { GET_ALL_PRODUCT_IDS } from '../../../../utils/queries';
 
 
 
@@ -53,16 +53,16 @@ function ProductButtons({ setSelectedProductId }) {
             <div style={btnContainerStyle}>
                 <Stack direction="row" spacing={5}>
                     {data.getAllProducts.map(product => (
-                        <div style={shadow} >
+                        <div style={shadow} key={product._id}>
                         <Button
-                            key={product._id}
                             variant="outlined"
                             startIcon={<PetsIcon />}
                             onClick={() => setSelectedProductId(product._id)}
                         >
                             {product.name}
                         </Button>
-                        </div>
+                    </div>
+                    
                     ))}
 
                 </Stack>
