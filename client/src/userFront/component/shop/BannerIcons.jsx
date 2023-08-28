@@ -27,6 +27,9 @@ function BannerIcons() {
             <ShoppingCartIcon style={iconStyle} />
             <CartCount />
             </Link>
+            <Link to="/login">
+                <AccountBoxIcon style={iconStyle} />
+            </Link>
         </div>
     )
 }

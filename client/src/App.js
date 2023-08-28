@@ -5,6 +5,7 @@ import Home from './userFront/component/Pages/Home';
 import About from './userFront/component/Pages/About';
 import Shop from './userFront/component/Pages/shop';
 import AdminDashboard from './components/adminDashboard';
+import LoginScreen from './components/pages/LoginScreen';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                } 
         />
         <Route path="/adminDashboard/*" element={<AdminDashboard />} />
+        <Route path="/login" element={<LoginScreen />} />
       </Routes>
     </Router>
   );
