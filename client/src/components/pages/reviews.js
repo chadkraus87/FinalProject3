@@ -25,7 +25,7 @@ const mockReviews = [
         user: "Billy Thorton",
         product: "Dog Socks",
         date: "08/24/2023",
-        content: "I love this product! It's amazing.",
+        content: "I love watching my dog walk in socks.",
         rating: 5,
       },
       {
@@ -52,22 +52,27 @@ const mockReviews = [
 
   function AdminReviews () {
 
-    const [reviews, setReviews] = useState([
+    const [reviews, setReviews] = useState(
         mockReviews
-      ]);
+      );
       const [replies, setReplies] = useState({});
       const [replyingTo, setReplyingTo] = useState(null);
       const [responseContent, setResponseContent] = useState({});
+      const [editingReplyId, setEditingReplyId] = useState(null);
+ 
     
     const handleReply = (id) => {
         setReplyingTo(id);
       };
+
+      const handleEditReply = (id) => {
+        setEditingReplyId(id);
+        setResponseContent(replies[id]);
+      };
+      
     
       const handleSendReply = (id) => {
-        setReplies({
-          ...replies,
-          [id]: responseContent
-        });
+        setReplies({ ...replies, [id]: responseContent });
         setResponseContent('');
         setReplyingTo(null);
       };
@@ -89,21 +94,50 @@ const mockReviews = [
         <div>
           {renderRating(review.rating)} {/* Call the renderRating function */}
         </div>
-        {/* Admin Reply to review */}
-        {replies[review.id] ? (
-              <p className='text-offWhite'>Reply: {replies[review.id]}</p>
-              ) : (
-                replyingTo === review.id ? (
-                  <div>
-                    <textarea value={responseContent} onChange={(e) => setResponseContent(e.target.value)} />
-                    <button onClick={handleSendReply} className='text-deepCoral'>Send</button>
-                  </div>
+
+ {/* Conditional rendering for replies and editing */}
+ {replies[review.id] ? (
+                  editingReplyId === review.id ? (
+                    <div>
+                      <textarea
+                        value={responseContent}
+                        onChange={(e) => setResponseContent(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') {
+                            e.preventDefault();
+                            handleSendReply(review.id);
+                            setEditingReplyId(null);
+                          }
+                        }}
+                      />
+                      <button onClick={() => { handleSendReply(review.id); setEditingReplyId(null); }} className='text-deepCoral'>Update</button>
+                    </div>
+                  ) : (
+                    <>
+                      <p className='text-offWhite'>Reply: {replies[review.id]}</p>
+                      <button onClick={() => handleEditReply(review.id)} className='text-deepCoral'>Edit</button>
+                    </>
+                  )
                 ) : (
-                  <button onClick={() => handleReply(review.id)}className='text-deepCoral' >Reply</button>
-                )
-              )}
-          </div>
-        ))}
+                  replyingTo === review.id ? (
+                    <div>
+                      <textarea value={responseContent} 
+                        onChange={(e) => setResponseContent(e.target.value)} 
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') {
+                            e.preventDefault();
+                            handleSendReply(review.id);
+                          }
+                        }}
+                      />
+                      <button onClick={() => handleSendReply(review.id)} className='text-deepCoral'>Send</button>
+                    </div>
+                  ) : (
+                    <button onClick={() => handleReply(review.id)} className='text-deepCoral'>Reply</button>
+                  )
+                )}
+              </div>
+            ))}
     </div>
 
         </div>
@@ -113,3 +147,4 @@ const mockReviews = [
   }
 
   export default AdminReviews;
+

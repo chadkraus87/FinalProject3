@@ -1,8 +1,8 @@
 import React, { Suspense, useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei'
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
-import * as THREE from 'three'
+import { OrbitControls } from '@react-three/drei';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import * as THREE from 'three';
 
 function Model() {
   const objRef = useRef();
@@ -57,8 +57,9 @@ function Camera() {
 
 export default function Display() {
   return (
+    <div>
     <Canvas 
-      style={{ width: '50vw', height: '60vh' }}
+      style={{ width: '45vw', height: '55vh' }}
       // backgroundColor={'#FFA500'}
        >
       <Suspense fallback={null}>
@@ -69,5 +70,7 @@ export default function Display() {
         <OrbitControls />
       </Suspense>
     </Canvas>
+    This model is 3D and interactive!
+    </div>
   );
 }

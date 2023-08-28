@@ -5,22 +5,28 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
-export default function ColorButtons({ label }) {
+export default function ColorButtons({ label, colors = [] }) {
   return (
     <div>
       <FormControl component="fieldset">
-        <FormLabel component="legend" id="productColors">Colors</FormLabel>
+        <FormLabel component="legend" id="productColors">{label || 'Colors'}</FormLabel>
         <RadioGroup
           row 
           aria-labelledby="colors"
-          defaultValue="small"
+          defaultValue={colors.length > 0 ? colors[0] : ""}
           name="product-colors"
         >
-          <FormControlLabel value="Red" control={<Radio />} label="Red" />
-          <FormControlLabel value="Blue" control={<Radio />} label="Blue" />
-          <FormControlLabel value="Green" control={<Radio />} label="Green" />
+          {colors.map(color => (
+            <FormControlLabel 
+              key={color}
+              value={color} 
+              control={<Radio />} 
+              label={color} 
+            />
+          ))}
         </RadioGroup>
       </FormControl>
     </div>
   );
 }
+

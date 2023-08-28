@@ -1,113 +1,94 @@
-import * as React from 'react';
-import SizeButtons from './Sizes'
-import ColorButtons from './Colors'
-// import IconLabelButtons from './CheckoutBtn'
-//import Display from './ProductDisplay'
+import React, { useContext, useState, useEffect } from 'react';
+import ProductContext from './ProductContext';
+import SizeButtons from './Sizes';
+import ColorButtons from './Colors';
+import Display from './ProductDisplay';
 import { useCart } from './cartContext';
 import ProductButtons from './ProductButtons';
 import CheckoutBtn from './CheckoutBtn';
 import Name from './Name';
 import BannerIcons from './BannerIcons';
-
-
-
-
-//Getting the Data from the server
-
-// const [sizes, setSizes] = React.useState([]);
-
-// React.useEffect(() => {
-//     fetch("/api/sizes")   // replace with API endpoint
-//         .then(response => response.json())
-//         .then(data => setSizes(data))
-//         .catch(error => console.error("Error fetching sizes:", error));
-// }, []);
-
-// const [colors, setColors] = React.useState([]);
-
-// React.useEffect(() => {
-//     fetch("/api/colors")   // replace with API endpoint
-//         .then(response => response.json())
-//         .then(data => setSizes(data))
-//         .catch(error => console.error("Error fetching colors:", error));
-// }, []);
-
+import { useQuery } from '@apollo/client';
+import { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS } from '../../../utils/queries';
+import Reviews from './Review';
 
 function ProductPage() {
-
-    
-    
     const { addToCart } = useCart();
-    
+    const { selectedProductId, setSelectedProductId } = useContext(ProductContext);
+
     const [selectedSize, setSelectedSize] = React.useState(null);
     const [selectedColor, setSelectedColor] = React.useState(null);
+    const [productName, setProductName] = React.useState('');
+    const [productDescription, setProductDescription] = React.useState('');
 
-    const handleSizeClick = (size) => {
-        setSelectedSize(size);
-    }
+    const { data: productData, loading: productLoading, error: productError } = useQuery(GET_PRODUCT_DETAILS, {
+        skip: !selectedProductId,
+        variables: { id: selectedProductId }
+    });
 
-    const handleColorClick = (color) => {
-        setSelectedColor(color);
-    }
+    const { data: allProductsData, loading: allProductsLoading, error: allProductsError } = useQuery(GET_ALL_PRODUCT_IDS);
+
+    React.useEffect(() => {
+        if (productData && productData.getProduct) {
+            setProductName(productData.getProduct.name);
+            setProductDescription(productData.getProduct.description);
+        }
+    }, [productData]);
 
     const handleAddToCart = () => {
-        if (!selectedSize || !selectedColor) {
-            alert('Please select a size and color.');
-            return;
-        }
-
-        const item = {
-            id: `${selectedSize}-${selectedColor}`,
-            name: 'Dog Clogs',
-            size: selectedSize,
-            color: selectedColor,
-            quantity: 1
-        };
-
-        addToCart(item);
+        // ... [same as before]
     }
 
-
-
-    const btns = {
-        paddingLeft: '4%',
-        paddingTop: '3%'
+    const handleProductSelect = (e) => {
+        setSelectedProductId(e.target.value);
     }
-
-    const productContainer = {
+    
+    const productStyle = {
         display: 'flex',
-        padding: '1%',
-        paddingTop: '2%',
-        paddingLeft: '5%',
-        justifyContent: 'space-between'
+        width: '80%',
+        padding: '2% 1% 1% 10%', 
+        justifyContent: 'space-between',
+    };
+    const shadow = {
+        borderRadius: '10px',
+        boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+        border: '1px solid transparent',
+    };
+    
+    
+    if (productLoading || allProductsLoading) return <p>Loading...</p>;
+    if (productError || allProductsError) {
+        console.error("Error fetching data:", productError || allProductsError);
+        return <p>I am a problem... fix me: {(productError || allProductsError).message}</p>;
     }
 
     return (
         <div>
             <BannerIcons />
-            {/* Name of Business*/}
             <Name />
-            <div style={btns}>
-                <ProductButtons />
-                <div style={productContainer}>
-                    {/* <Display /> */}
+            <div className="btns">
+            <ProductButtons setSelectedProductId={setSelectedProductId} />
+                <div style={productStyle}>
+                    <div style={shadow} >
+                    <Display />
+                    </div>
                     <div style={{ flex: 1, padding: '2%' }}>
-                        {/* Product name gets rendered here, will need to get from server*/}
-                        <h1 style={{ fontSize: '2em' }}>Dog Clogs</h1>
-                        <div>
-                            This is where the product description goes
-                        </div>
+                        <h1 className="productTitle">{productName}</h1>
+                        <div className='productDecription'>{productDescription}</div>
                         <div id='rightSideStuff'>
                             <div id='sizesContainer'>
-                                <SizeButtons />
+                                <SizeButtons sizes={productData?.getProduct?.sizes} setSelectedSize={setSelectedSize} />
                             </div>
                             <div id='colorContainer'>
-                                <ColorButtons />
+                                <ColorButtons colors={productData?.getProduct?.colors} setSelectedColor={setSelectedColor} />
                             </div>
-
                             <div style={{ paddingTop: '2%' }}>
-                            <CheckoutBtn />
+                                <CheckoutBtn handleAddToCart={handleAddToCart} />
                             </div>
+                            <Reviews 
+    productName={productData?.getProduct?.name} 
+    reviews={productData?.getProduct?.reviews ?? []} 
+/>
                         </div>
                     </div>
                 </div>
@@ -116,5 +97,4 @@ function ProductPage() {
     );
 }
 
-
-export default ProductPage
+export default ProductPage;

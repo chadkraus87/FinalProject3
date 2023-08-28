@@ -5,44 +5,33 @@ import Home from './userFront/component/Pages/Home';
 import About from './userFront/component/Pages/About';
 import Shop from './userFront/component/Pages/shop';
 import AdminDashboard from './components/adminDashboard';
-import LoginScreen from './userFront/component/Pages/LoginScreen';
+import client from './config/apolloClient';
+import { ApolloProvider } from '@apollo/client';
+import React, { useState } from 'react';
+import ProductContext from './userFront/component/shop/ProductContext';import LoginScreen from './userFront/component/Pages/LoginScreen';
 import RegisterScreen from './userFront/component/Pages/RegisterScreen';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
+  const [selectedProductId, setSelectedProductId] = useState(null);
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" 
-               element={
-                  <CartProvider>
-                    <Home />
-                  </CartProvider>
-               } 
-        />
-        <Route path="/about" 
-               element={
-                  <CartProvider>
-                    <About />
-                  </CartProvider>
-               } 
-        />
-        <Route path="/shop" 
-               element={
-                  <CartProvider>
-                    <Shop />
-                  </CartProvider>
-               } 
-        />
-        <Route path="/adminDashboard/*" element={<AdminDashboard />} />
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/register" element={<RegisterScreen />} />
-        
-      </Routes>
-      <ToastContainer />
-    </Router>
+    <ApolloProvider client={client}>
+      <Router>
+        <CartProvider>
+        <ProductContext.Provider value={{ selectedProductId, setSelectedProductId }}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/adminDashboard/*" element={<AdminDashboard />} />
+            </Routes>
+            </ProductContext.Provider>
+        </CartProvider>
+      </Router>
+    </ApolloProvider>
   );
 }
 
