@@ -115,7 +115,7 @@
 //   export default AdminReviews;
 
 import React, { useState } from 'react';
-import Review from './Review';  // Assuming Review is in the same directory
+// import Review from './Review';  // Assuming Review is in the same directory
 
 //Mock Review data
 const mockReviews = [

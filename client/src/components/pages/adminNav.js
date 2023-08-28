@@ -15,27 +15,33 @@ import { RiUserStarFill } from 'react-icons/ri';
         <RxDashboard className='text-darkBlue mr-1 text-lg' />
         Dashboard
         </Link>
-        <Link to="/orders" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
+
+        <Link to="/adminDashboard/orders" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
         <BsFillBoxSeamFill className="text-darkBlue mr-1 text-lg"/>
         Orders
         </Link>
-        <Link to="/products" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
+
+        <Link to="/adminDashboard/products" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
         <PiPawPrintFill className="text-darkBlue mr-1 text-lg"/>
         Products
         </Link>
-        <Link to="/customers" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
+
+        <Link to="/adminDashboard/customers" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
         <BsPeopleFill className="text-darkBlue mr-1 text-lg"/>
         Customers
         </Link>
-        <Link to="/reports" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
+
+        <Link to="/adminDashboard/reports" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
         <PiChartLineUpFill className="text-darkBlue mr-1 text-lg"/>
         Reports
         </Link>
-        <Link to ="/messages" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
+
+        <Link to ="/adminDashboard/messages" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
         <MdEmail className="text-darkBlue mr-1 text-lg"/>
         Messages
         </Link>
-        <Link to="/reviews" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
+        
+        <Link to="/adminDashboard/reviews" className="text-darkBlue flex items-center mb-2 hover:text-deepCoral text-xs"> 
         <RiUserStarFill className="text-darkBlue mr-1 text-lg"/>
         Reviews
         </Link>

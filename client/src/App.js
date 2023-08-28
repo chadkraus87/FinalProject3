@@ -32,7 +32,7 @@ function App() {
                   </CartProvider>
                } 
         />
-        <Route path="/adminDashboard/*" element={<AdminDashboard />} />
+        <Route path="/adminDashboard//*" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );
