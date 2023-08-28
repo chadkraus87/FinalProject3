@@ -2,14 +2,14 @@ import React, { useContext, useState, useEffect } from 'react';
 import ProductContext from './ProductContext';
 import SizeButtons from './Sizes';
 import ColorButtons from './Colors';
-import Display from './ProductDisplay';
-import { useCart } from './cartContext';
+import Display from './ThreeDDisplay';
+import { useCart } from '../Cart/cartContext';
 import ProductButtons from './ProductButtons';
 import CheckoutBtn from './CheckoutBtn';
-import Name from './Name';
-import BannerIcons from './BannerIcons';
+import Name from '../Layout/Name';
+import BannerIcons from '../Layout/BannerIcons';
 import { useQuery } from '@apollo/client';
-import { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS } from '../../../utils/queries';
+import { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS } from '../../../../utils/queries';
 import Reviews from './Review';
 
 function ProductPage() {
@@ -45,7 +45,7 @@ function ProductPage() {
     
     const productStyle = {
         display: 'flex',
-        width: '80%',
+        width: '90%',
         padding: '2% 1% 1% 10%', 
         justifyContent: 'space-between',
     };

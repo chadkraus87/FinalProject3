@@ -1,6 +1,6 @@
 import React from 'react';
-import Name from '../shop/Name';
-import BannerIcons from '../shop/BannerIcons';
+import Name from '../Products/Layout/Name';
+import BannerIcons from '../Products/Layout/BannerIcons';
 
 const styles = {
   container: {

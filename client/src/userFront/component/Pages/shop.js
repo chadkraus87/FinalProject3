@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ProductPage from '../shop/ProductPage';
+import ProductPage from '../Products/ProductDisplay/ProductPage';
 
 export default function Shop() {
   return (
