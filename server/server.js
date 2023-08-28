@@ -1,12 +1,18 @@
 const express = require('express');
+const dotenv = require('dotenv');
+require('dotenv').config();
+const cookieParser = require('cookie-parser');
+
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-const { authMiddleware } = require('./utils/auth');
+const { authMiddleware } = require('./utils/generateToken');
+const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 
 const { typeDefs, resolvers } = require('./schemas');
+const userRoutes = require('./routes/userRoutes');
 const db = require('./config/connection');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 4000;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
@@ -14,8 +20,15 @@ const server = new ApolloServer({
   context: authMiddleware,
 });
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(cookieParser());
+
+app.use('/api/users', userRoutes);
+
+app.use(notFound); // middleware for 404 errors
+app.use(errorHandler); // middleware for error handling
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));

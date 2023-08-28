@@ -1,6 +1,8 @@
 import React from 'react';
 import { GiBalloonDog } from 'react-icons/gi';
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function Header() {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -20,6 +22,8 @@ function Header() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  const navigate = useNavigate();
 
     return (
         <div className="flex justify-evenly items-center bg-paleBlue p-6">
@@ -54,8 +58,10 @@ function Header() {
     </button>
     {isDropdownOpen && (
       <div className="absolute bg-tan border rounded mt-20 w-24">
-        <a href="/profile" className="block p-2 hover:bg-lightOrange text-xs">Profile</a>
-        <a href="/store-front" className="block p-2 hover:bg-lightOrange text-xs">Store Front</a>
+        <button onClick={() => navigate('/adminDashboard/profile')} className="block p-2 hover:bg-lightOrange text-xs">Profile</button>
+
+        <button onClick={() => navigate('/')} className="block p-2 hover:bg-lightOrange text-xs">Store Front</button>
+
         <a href="/logout" className="block p-2 hover:bg-lightOrange text-xs">Logout</a>
         
       </div>

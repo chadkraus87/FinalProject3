@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import HomeIcon from '@mui/icons-material/Home';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -26,6 +27,14 @@ function BannerIcons() {
             <Link to="/Cart">
             <ShoppingCartIcon style={iconStyle} />
             <CartCount />
+            </Link>
+            <Link to="/login">
+            <Button type='submit' variant='primary' className='mt-2'>
+                Sign In
+            </Button>
+            <Button type='submit' variant='primary' className='mt-2'>
+                 Logout
+            </Button>
             </Link>
         </div>
     )
