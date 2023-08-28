@@ -2,6 +2,8 @@ import React from 'react';
 import WeeklyRevenueChart from './reports/weeklyRevenueChart';
 import PieChartComponent from './reports/pieChart';
 import ProductBreakdownComponent from './reports/productBreakdown';
+import TaskManager from './taskManager';
+import LatestReviews from './latestReviews';
 
 function MainDashboard() {
   // Mock data
@@ -47,10 +49,12 @@ function MainDashboard() {
       {/* Third Row: Latest Reviews and Task Manager */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="bg-teal p-4 rounded">
-          {/* Latest 10 Reviews */}
+          {/* Task Manager */}
+          <TaskManager />
         </div>
         <div className="bg-teal p-4 rounded">
-          {/* Task Manager */}
+          {/* Latest 10 Reviews */}
+          <LatestReviews />
         </div>
       </div>
     </div>

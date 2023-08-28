@@ -8,6 +8,7 @@ import Messages from './pages/messages';
 import AdminReviews from './pages/reviews';
 import Reports from './pages/reports';
 import MainDashboard from './pages/mainDashBoard';
+import AdminProfile from './pages/adminProfile';
 
 function AdminDashboard() {
     return (
@@ -24,8 +25,10 @@ function AdminDashboard() {
                 <Route path="products" element={<Products />} />
                 <Route path="customers" element={<Customers />} />
                 <Route path="messages" element={<Messages />} />
-                <Route path="adminReviews" element={<AdminReviews />} />
+                <Route path="reviews" element={<AdminReviews />} />
                 <Route path="reports" element={<Reports />} />
+                <Route path="/profile" element={<AdminProfile />} />
+
               </Routes>
             </div>
           </div>

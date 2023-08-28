@@ -20,7 +20,7 @@ module.exports = {
         dark: 'rgb(45, 52, 54)',
         burntOrange: 'rgb(207, 96, 8)',
         smoke: 'rgb(99, 99, 99)',
-        delivered: 'rbg(177, 227, 139)',
+        delivered: 'rgb(146, 176, 122)',
         cancelled: 'rgb(236, 201, 193)',
         offWhite: 'rgb(250, 250, 250)'
       }
