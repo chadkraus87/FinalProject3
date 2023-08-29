@@ -50,6 +50,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    isAdmin: Boolean
     profiles: [Profile]!
     profile(profileId: ID!): Profile
     me: Profile
