@@ -34,7 +34,7 @@ function Lighting() {
 function Background() {
   const { scene } = useThree();
   useEffect(() => {
-    scene.background = new THREE.Color('#FFA500'); 
+    scene.background = new THREE.Color('#FFA500');
   }, [scene]);
   return null;
 }
@@ -44,9 +44,9 @@ function Background() {
 function Camera() {
   const { camera } = useThree();
   useEffect(() => {
-    camera.fov = 75; 
+    camera.fov = 75;
     camera.updateProjectionMatrix();
-}, [camera]);
+  }, [camera]);
 
   useFrame(() => {
     camera.updateProjectionMatrix();
@@ -55,22 +55,32 @@ function Camera() {
   return null;
 }
 
+const infoBanner = {
+  background: 'black',
+  opacity: '75%',
+  color: 'white',
+  textAlign: 'right',
+  paddingRight: "2%"
+}
+
 export default function Display() {
   return (
     <div>
-    <Canvas 
-      style={{ width: '45vw', height: '55vh' }}
-      // backgroundColor={'#FFA500'}
-       >
-      <Suspense fallback={null}>
-      <Background /> 
-        <Camera />
-        <Lighting /> 
-        <Model />
-        <OrbitControls />
-      </Suspense>
-    </Canvas>
-    This model is 3D and interactive!
+      <Canvas
+        style={{ width: '45vw', height: '55vh' }}
+      >
+        <Suspense fallback={null}>
+          <Background />
+          <Camera />
+          <Lighting />
+          <Model />
+          <OrbitControls />
+        </Suspense>
+      </Canvas>
+      <div style={infoBanner}>
+        This model is 3D and interactive!
+      </div>
+
     </div>
   );
 }

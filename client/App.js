@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { CartProvider } from './userFront/component/shop/cartContext'; // Make sure this is the correct path
+import { CartProvider } from './userFront/component/Products/ProductDisplay/cartContext'; // Make sure this is the correct path
 
 import Home from './userFront/component/Pages/Home';
 import About from './userFront/component/Pages/About';
-import Shop from './userFront/component/Pages/shop';
+import Shop from './src/userFront/component/Pages/Shop';
 import AdminDashboard from './components/adminDashboard';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/shop" 
+        <Route path="/Shop" 
                element={
                   <CartProvider>
                     <Shop />

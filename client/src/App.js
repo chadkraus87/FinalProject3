@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { CartProvider } from './userFront/component/shop/cartContext'; // Make sure this is the correct path
+import { CartProvider } from './userFront/component/Products/Cart/cartContext'; // Make sure this is the correct path
 
 import Home from './userFront/component/Pages/Home';
 import About from './userFront/component/Pages/About';
-import Shop from './userFront/component/Pages/shop';
+import Shop from './userFront/component/Pages/Shop';
 import AdminDashboard from './components/adminDashboard';
 import client from './config/apolloClient';
 import { ApolloProvider } from '@apollo/client';
 import React, { useState } from 'react';
-import ProductContext from './userFront/component/shop/ProductContext';import LoginScreen from './userFront/component/Pages/LoginScreen';
+import ProductContext from './userFront/component/Products/ProductDisplay/ProductContext';
+import LoginScreen from './userFront/component/Pages/LoginScreen';
 import RegisterScreen from './userFront/component/Pages/RegisterScreen';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,7 +26,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/shop" element={<Shop />} />
+              <Route path="/Shop" element={<Shop />} />
               <Route path="/adminDashboard/*" element={<AdminDashboard />} />
             </Routes>
             </ProductContext.Provider>

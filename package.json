@@ -1,6 +1,6 @@
 {
-  "name": "finalproject3",
-  "version": "1.0.0",
+  "name": "furryfeetdesigns",
+  "version": "1.33.7",
   "description": "Final Group Collab Project using React, MongoDB, and JWT for authentication.",
   "main": "index.js",
   "scripts": {
