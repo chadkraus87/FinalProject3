@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useMutation } from '@apollo/client';
+import { UPDATE_PRODUCT } from '../../utils/mutations';
 
 function EditProductModal({ product, showEditModal, setShowEditModal }) {
   const navigate = useNavigate();
@@ -9,11 +11,32 @@ function EditProductModal({ product, showEditModal, setShowEditModal }) {
 
   const [isCustomColorSelected, setIsCustomColorSelected] = useState(false);
 
-  const handleUpdateProduct = (e) => {
-    e.preventDefault();
+  const [updateProduct] = useMutation(UPDATE_PRODUCT);
 
+  const handleUpdateProduct = async (e) => {
+    e.preventDefault();
+  
+    try {
+      await updateProduct({
+        variables: {
+          productdata: {
+            _id: product._id,
+            name: title,
+            animalType: e.target.category.value,
+            sizes: [e.target.size.value],
+            colors: [e.target.color.value],
+            description: description,
+            model: e.target.image.value,
+            price: parseFloat(price),
+          },
+        },
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  
     // Redirect to the products page
-    navigate('/admin/products');
+    navigate('/adminDashboard/products');
   };
 
   if (!showEditModal) return null;

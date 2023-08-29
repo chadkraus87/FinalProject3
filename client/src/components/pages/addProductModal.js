@@ -1,16 +1,39 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useMutation } from '@apollo/client';
+import { CREATE_PRODUCT } from '../../utils/mutations';
 
 function AddProductModal({ showModal, setShowModal }) {
   const navigate = useNavigate();
 
 const [isCustomColorSelected, setIsCustomColorSelected] = useState(false);
 
-  const handleAddProduct = (e) => {
-    e.preventDefault();
-   
+const [createProduct] = useMutation(CREATE_PRODUCT);
+
+const handleAddProduct = async (event) => {
+  event.preventDefault();
+
+  try{ 
+    const data = await createProduct({
+      variables: {
+        productdata: {
+          name: event.target.title.value,
+          animalType: event.target.category.value,
+          sizes: [event.target.size.value],
+          colors: [event.target.color.value],
+          description: event.target.description.value,
+          model: event.target.image.value,
+          price: parseFloat(event.target.price.value),
+        },
+      },
+    });
+      
+  } catch (err) {
+    console.log(err);
+  }
+    
     // Redirect to the products page
-    navigate('/admin/products');
+    navigate('/adminDashboard/products');
   };
 
   if (!showModal) return null;

@@ -10,7 +10,7 @@ export const ADMIN_UPDATE_ORDER_STATUS = gql`
   }
 `;
 
-// Subscription for New Messages (optional)
+// Subscription for New Messages 
 export const NEW_MESSAGE_SUBSCRIPTION = gql`
   subscription {
     messageCreated {
@@ -64,9 +64,69 @@ mutation updateReply($id: ID!, $text: String!) {
 }
 `;
 
-
+// Delete Review Reply
 export const DELETE_REPLY = gql `
 mutation deleteReply($id: ID!) {
   deleteReply(id: $id)
+}
+`;
+
+// Add new product
+export const CREATE_PRODUCT = gql`
+mutation CreateProduct($productdata: CreateProductInput!) {
+  createProduct(productdata: $productdata) {
+    _id
+    name
+    animalType
+    sizes
+    colors
+    description
+    model
+    price
+  }
+}
+`;
+
+// Update product
+export const UPDATE_PRODUCT = gql`
+mutation UpdateProduct($productdata: UpdateProductInput!) {
+  updateProduct(productdata: $productdata) {
+    _id
+    name
+    animalType
+    sizes
+    colors
+    description
+    model
+    price
+  }
+}
+`;
+
+// Add Task
+export const ADD_TASK = gql`
+mutation AddTask($text: String!) {
+  addTask(text: $text) {
+    id
+    text
+    completed
+  }
+}
+`;
+
+// Delete Task
+export const DELETE_TASK = gql`
+mutation DeleteTask($id: ID!) {
+  deleteTask(id: $id)
+}
+`;
+
+// Complete task
+export const TOGGLE_TASK = gql`
+mutation ToggleTask($id: ID!) {
+  toggleTask(id: $id) {
+    id
+    completed
+  }
 }
 `;

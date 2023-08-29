@@ -34,9 +34,9 @@ function Products() {
         setShowEditModal(true);
       };
     return (
-        <div className="flex flex-col bg-paleBlue">
+        <div className="flex flex-col bg-body">
             {/* Dog Container */}
-            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col'>
+            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col shadow-lg'>
                 <h2 className='text-xl text-offWhite font-bold'>Dog</h2>
                 <div className='flex flex-row justify-evenly'>
                     {dogProducts.map(product => (
@@ -58,7 +58,7 @@ function Products() {
 
 
             {/* Cat Container */}
-            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col'>
+            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col shadow-lg'>
                 <h2 className='text-xl text-offWhite font-bold'>Dog</h2>
                 <div className='flex flex-row justify-evenly'>
                     {catProducts.map(product => (
@@ -77,7 +77,7 @@ function Products() {
                     ))}
                 </div>
             </div>
-            <div className="flex justify-center items-center"> 
+            <div className="flex justify-center items-center shadow-lg"> 
             <button onClick={() => setShowModal(true)}
             className='bg-deepCoral text-offWhite rounded hover:bg-teal focus:border-yellow px-4 py-2'>Add New Product</button>
                 </div>

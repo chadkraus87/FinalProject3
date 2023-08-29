@@ -65,8 +65,8 @@ function Messages() {
 };
 
     return (
-        <div className="flex flex-col bg-paleBlue">
-            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col'>
+        <div className="flex flex-col bg-body">
+            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col shadow-lg'>
                 <h2 className='text-xl text-offWhite text-center font-bold'>Messages</h2>
                 {/* Inner Message Container */}
                 <div className='bg-offWhite p-4 mr-3 rounded '>

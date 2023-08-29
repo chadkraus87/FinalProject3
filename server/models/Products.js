@@ -57,7 +57,7 @@ const productSchema = new Schema({
 
 const Product = model('Product', productSchema);
 const Review = model('Review', reviewSchema);
-//updated the export to be be an object. if we split this into 2 schemas the object will no longer need to be destructerd in  the index.
+.
 module.exports = {
   Product,
   Review

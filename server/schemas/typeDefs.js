@@ -44,6 +44,10 @@ const typeDefs = gql`
     _id: ID!
     products: [Product]!
     orderDate: String!
+    status: String!
+    invoiceAmount: Float!
+    email: String!
+    ProfileId: ID!
   }
 
   type Message {
@@ -54,8 +58,14 @@ const typeDefs = gql`
     date: String!
   }
 
+  type Task {
+    id: ID!
+    text: String!
+    completed: Boolean!
+  }
+
   input CreateProductInput {
-    productType: String!
+    name: String!
     animalType: String!
     size: String!
     color: String!
@@ -76,6 +86,7 @@ const typeDefs = gql`
     messages: [Message]!
     getAllReviews: [Review]
     getReviewById(id: ID!): Review
+    getTasks: [Task]
   }
 
   type Mutation {
@@ -87,6 +98,9 @@ const typeDefs = gql`
     createReply(reviewId: ID!, text: String!): Reply  
     updateReply(id: ID!, text: String!): Reply        
     deleteReply(id: ID!): ID 
+    addTask(text: String!): Task
+    deleteTask(id: ID!): String
+    toggleTask(id: ID!): Task
   }
 
     type Subscription {

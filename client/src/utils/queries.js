@@ -12,7 +12,7 @@ query GetProduct($id: ID!) {
     price
     sizes
     reviews {
-      username
+      name
       rating
       text
       date
@@ -29,6 +29,8 @@ query GetAllProductIds {
   }
 }
 `;
+
+
 
 // Query to get all orders
 export const ADMIN_GET_ALL_ORDERS = gql`
@@ -91,4 +93,15 @@ query getAllReviews {
   }
 }
 `; 
+
+// Get Tasks
+export const GET_TASKS = gql`
+query GetTasks {
+  getTasks {
+    id
+    text
+    completed
+  }
+}
+`;
  

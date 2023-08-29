@@ -10,11 +10,11 @@ const ProductBreakdown = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-start items-center bg-lightOrange p-6 m-4  rounded'>
+    <div className='flex flex-col justify-center items-center bg-lightOrange p-3 m-2  rounded shadow-lg'>
       <h2 className='text-lg font-semibold mb-4'>Product Breakdown</h2>
       <ul className=''>
         {productsData.map((product, index) => (
-          <li key={index} className='flex justify-between p-4 border-b'>
+          <li key={index} className='flex justify-between p-4 border-b md:px-2 py-2'>
             <span className='text-sm font-medium pr-4'>{product.name}</span>
             <span className='text-sm'>{product.unitsSold} units</span>
           </li>
