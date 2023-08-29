@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Profile, Product } = require('../models');
+const { Profile, Product, Task } = require('../models');
 const { signToken } = require('../utils/generateToken');
 
 const resolvers = {
@@ -45,7 +45,15 @@ const resolvers = {
     getAllProducts: async () => {
       return Product.find();
     },
+
+    getTasks: async (_, __, context) => {
+      const adminId = context.profile.id;
+      return await Task.find({ admin: adminId });
+    },
+
   },
+
+
 
   Mutation: {
     addProfile: async (parent, { name, email, password }) => {
@@ -86,6 +94,26 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
+    addTask: async (_, { text }, context) => {
+      const adminId = context.profile.id; 
+      const task = new Task({ text, admin: adminId });
+      await task.save();
+      return task;
+    },
+
+    deleteTask: async (_, { id }) => {
+      await Task.findByIdAndDelete(id);
+      return "Task deleted successfully";
+    },
+
+    toggleTask: async (_, { id }) => {
+      const task = await Task.findById(id);
+      task.completed = !task.completed;
+      await task.save();
+      return task;
+    },
+
   },
 };
 

@@ -21,11 +21,10 @@ const PieChart = () => {
   };
 
   return (
-    <div className='flex flex-col'>
- <div className="flex justify-evenly">
- 
- <div className="bg-yellow p-5 px-8 m-2 rounded shadow-md">
-   <h1 className='flex justify-center font-bold text-dark'>Product Sales Distribution</h1> 
+    <div className='flex flex-col items-center  w-full min-w-[200px] min-h-[200px] flex justify-center '>
+      <div className="w-full h-full flex justify-center items-center ">
+ <div className="bg-yellow p-5 px-8 m-2 rounded shadow-lg">
+   <h1 className='text-center font-bold text-dark mb-4'>Product Sales Distribution</h1> 
     <VictoryPie
     colorScale={colors}
       data={mockData}
@@ -35,7 +34,7 @@ const PieChart = () => {
       style={{
         labels: {
           fill: "white",
-          fontSize: 16,
+          fontSize: 18,
           fontWeight: "bold"
         }
       }}
@@ -66,10 +65,10 @@ const PieChart = () => {
         }
       }]}
     />
-    
+    </div>
 </div>
 </div>
-</div>
+
   );
 };
 

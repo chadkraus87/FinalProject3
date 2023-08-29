@@ -16,7 +16,7 @@ function Customers ( { customerData = [] }) {
       );
 
     return (
-        <div className="bg-deepCoral p-6 my-10 rounded shadow-md overflow-y-auto md:container md:mx-auto">
+        <div className="bg-deepCoral p-6 my-10 rounded shadow-lg overflow-y-auto md:container md:mx-auto">
             <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg text-dark font-semibold mb-4">Customer Details</h2>
   

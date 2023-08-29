@@ -14,12 +14,19 @@ const typeDefs = gql`
   }
 
   type Review {
-    username: String!
+    name: Profile!
     rating: Float!
     text: String
     date: String!
+    replies: [Reply]
   }
   
+  type Reply {
+    id: ID!
+    reviewId: ID!
+    text: String!
+    date: String!
+  }
 
   type Profile {
     _id: ID
@@ -37,18 +44,28 @@ const typeDefs = gql`
     _id: ID!
     products: [Product]!
     orderDate: String!
+    status: String!
+    invoiceAmount: Float!
+    email: String!
+    ProfileId: ID!
   }
 
   type Message {
     _id: ID!
-    user: Profile!
+    name: Profile!
     subject: String!
     content: String!
     date: String!
   }
 
+  type Task {
+    id: ID!
+    text: String!
+    completed: Boolean!
+  }
+
   input CreateProductInput {
-    productType: String!
+    name: String!
     animalType: String!
     size: String!
     color: String!
@@ -67,6 +84,9 @@ const typeDefs = gql`
     getOrder(_id: ID!): Order
     getAllOrders: [Order]
     messages: [Message]!
+    getAllReviews: [Review]
+    getReviewById(id: ID!): Review
+    getTasks: [Task]
   }
 
   type Mutation {
@@ -75,11 +95,18 @@ const typeDefs = gql`
     addMessage(userId: ID!, subject: String!, content: String!): Message
     removeProfile: Profile
     createProduct(productdata: CreateProductInput!): Product
+    createReply(reviewId: ID!, text: String!): Reply  
+    updateReply(id: ID!, text: String!): Reply        
+    deleteReply(id: ID!): ID 
+    addTask(text: String!): Task
+    deleteTask(id: ID!): String
+    toggleTask(id: ID!): Task
+  }
 
     type Subscription {
       messageCreated: Message
     }
-  }
+  
 `;
 
 module.exports = typeDefs;

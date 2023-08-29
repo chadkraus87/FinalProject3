@@ -27,9 +27,9 @@ function Orders () {
     });
   };
   return (
-        <div className="flex flex-col  bg-paleBlue">
+        <div className="flex flex-col  bg-body">
             <div className="flex justify-evenly">
-                <div className="bg-teal p-6 px-12 m-4 rounded shadow-md">
+                <div className="bg-teal p-6 px-12 m-4 rounded shadow-lg">
 
                     {/* Total Sales container */}
                 <h2 className="text-lg font-semibold text-center">Total Sales</h2>

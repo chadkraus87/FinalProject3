@@ -1,9 +1,10 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 //Added the review schema
-const reviewSchema = new mongoose.Schema({
-  username: {
-    type: String,
+const reviewSchema = new Schema({
+  name: {
+    type: Schema.Types.ObjectId,
+    ref: 'Profile',
     required: true,
   },
   rating: {
@@ -19,7 +20,7 @@ const reviewSchema = new mongoose.Schema({
   },
 });
 
-const productSchema = new mongoose.Schema({
+const productSchema = new Schema({
   //updated to name
   name: {
     type: String,
@@ -54,10 +55,12 @@ const productSchema = new mongoose.Schema({
   reviews: [reviewSchema],
 });
 
-//updated the export to be be an object. if we split this into 2 schemas the object will no longer need to be destructerd in  the index.
+const Product = model('Product', productSchema);
+const Review = model('Review', reviewSchema);
+.
 module.exports = {
-  Product: mongoose.model('Product', productSchema),
-  Review: mongoose.model('Review', reviewSchema)
+  Product,
+  Review
 };
 
 

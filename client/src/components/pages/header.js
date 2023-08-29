@@ -1,10 +1,12 @@
 import React from 'react';
 import { GiBalloonDog } from 'react-icons/gi';
+import { RxDashboard } from 'react-icons/rx';
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AdminNav from './adminNav';
 
 
-function Header() {
+function Header({ navRef }) {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
     const dropdownRef = useRef(null);
@@ -23,15 +25,29 @@ function Header() {
     };
   }, []);
 
+
   const navigate = useNavigate();
 
+  const [isOpen, setIsOpen] = useState(false);
+
     return (
-        <div className="flex justify-evenly items-center bg-paleBlue p-6">
+        <div className="flex justify-between items-center bg-body p-6">
+
+       {/* Toggle button for AdminDashboard */}
+      <button onClick={() => setIsOpen(!isOpen)}>
+        <RxDashboard className='text-darkBlue mr-1 text-lg' />
+      </button>
+
+      {/* AdminNav visible based on isOpen state */}
+      <div ref={navRef} style={{ display: isOpen ? 'block' : 'none' }}>
+        <AdminNav isOpen={isOpen} setIsOpen={setIsOpen}/>
+      </div>
+
         <h1 className="text-2xl font-semibold text-dark">Overview</h1>
         <div className="flex items-center">
           <span className="text-sm mr-2 text-smoke">Show:</span>
           <div className="relative">
-            <select className="text-xs border rounded pl-3 pr-8 py-1 bg-paleBlue hover:border-gray-400 focus:outline-none focus:border-teal-500 text-smoke">
+            <select className="text-xs border rounded pl-3 pr-8 py-1 bg-offWhite hover:border-gray-400 focus:outline-none focus:border-teal-500 text-smoke">
               <option>This Month</option>
               <option>Last Month</option>
               <option>Last 3 Months</option>

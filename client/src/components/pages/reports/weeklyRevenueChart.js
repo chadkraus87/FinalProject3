@@ -28,8 +28,8 @@ const WeeklyRevenueChart = () => {
   }));
 
   return (
-    <div className='flex justify-evenly rounded md:container md:mx-auto'>
-      <div className='bg-tan rounded p-5 px-8 m-2'>
+    <div className='flex justify-center rounded md:container md:mx-auto items-center w-full min-w-[200px] min-h-[200px]'>
+      <div className='bg-tan shadow-lg rounded p-5 px-8 m-2'>
         <h1 className="text-lg font-semibold text-center">Weekly Revenue</h1>
         <VictoryChart
           theme={VictoryTheme.material}

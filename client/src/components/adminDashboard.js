@@ -12,12 +12,11 @@ import AdminProfile from './pages/adminProfile';
 
 function AdminDashboard() {
     return (
-      <div>
-        <div className="flex flex-col h-screen">
+      <div className='bg-body'>
+        <div className="flex flex-col h-screen ">
           <Header />
-          <div className="flex flex-grow"> 
-            <AdminNav className="w-40"/>
-            <div className='flex-grow bg-paleBlue'>
+        
+            <div className='flex-grow'>
            
               <Routes>
                 <Route path="/" element={<MainDashboard />} />
@@ -33,7 +32,7 @@ function AdminDashboard() {
             </div>
           </div>
         </div>
-      </div>
+      
     );
 }
 
