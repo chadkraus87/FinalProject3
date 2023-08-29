@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useRegisterMutation } from '../../../slices/userApiSlice'
 import { setCredentials } from '../../../slices/authSlice';
 import { toast } from 'react-toastify';
+import BannerIcons from '../Products/Layout/BannerIcons';
 
 const RegisterScreen = () => {
     const [name, setName] = useState('');
@@ -45,6 +46,9 @@ const RegisterScreen = () => {
     };
 
     return (
+        <div>
+            <BannerIcons />
+        
         <div className="bg-rgb(238, 218, 171 min-h-screen flex items-center justify-center">
             <div className="bg-white p-6 rounded-lg shadow-md max-w-md w-full">
                 <h1 className="text-2xl font-semibold mb-6">Register</h1>
@@ -121,6 +125,7 @@ const RegisterScreen = () => {
                     </p>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
