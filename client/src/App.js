@@ -22,6 +22,8 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <CartProvider>
+        <ToastContainer />
+
         <ProductContext.Provider value={{ selectedProductId, setSelectedProductId }}>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -31,8 +33,9 @@ function App() {
               <Route path="/login" element={<LoginScreen />} />
               <Route path="/register" element={<RegisterScreen />} />
             </Routes>
-            <ToastContainer />
+            
             </ProductContext.Provider>
+            
         </CartProvider>
       </Router>
     </ApolloProvider>
