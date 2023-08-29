@@ -6,7 +6,7 @@
     "colors": ["red", "blue", "green", "black"],
     "description": "Comfortable and stylish shoes for your dog.",
     "model": "/assets/3D/sock.obj",
-    "price": 9.99,
+    "price": 17.99,
     "reviews": [
       {
         "username": "Ethan TA",
@@ -23,7 +23,7 @@
     "colors": ["red", "blue", "green", "black"],
     "description": "Perfect clogs for your dogs' everyday adventures.",
     "model": "/assets/3D/shoe.obj",
-    "price": 14.99
+    "price": 24.99
   },
   {
     "name": "Kitten Mittens",
@@ -32,7 +32,7 @@
     "colors": ["red", "blue", "green", "black"],
     "description": "Keep your kittens' paws warm with these mittens.",
     "model": "/assets/3D/mitten.obj",
-    "price": 7.99
+    "price": 9.99
   },
   {
     "name": "Cat Hats",
@@ -41,6 +41,6 @@
     "colors": ["red", "blue", "green", "black"],
     "description": "Stylish hats for cool cats.",
     "model": "/assets/3D/hat.obj",
-    "price": 8.99
+    "price": 12.99
   }
 ]

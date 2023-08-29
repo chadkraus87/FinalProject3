@@ -39,6 +39,14 @@ const typeDefs = gql`
     orderDate: String!
   }
 
+  type Message {
+    _id: ID!
+    user: String!
+    subject: String!
+    content: String!
+    date: String!
+  }
+
   input CreateProductInput {
     productType: String!
     animalType: String!
@@ -55,19 +63,21 @@ const typeDefs = gql`
     me: Profile
     getProduct(_id: ID!): Product
     getAllProducts: [Product]
-
     getOrder(_id: ID!): Order
     getAllOrders: [Order]
+    messages: [Message]!
   }
 
   type Mutation {
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-
+    addMessage(user: String!, subject: String!, content: String!): Message
     removeProfile: Profile
     createProduct(productdata: CreateProductInput!): Product
 
-    # You can add mutations related to orders here if needed
+    type Subscription {
+      messageCreated: Message
+    }
   }
 `;
 

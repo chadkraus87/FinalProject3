@@ -29,7 +29,7 @@ module.exports = {
         req.user = data;
       } catch (err) {
         console.log('Token verification error:', err);
-        throw new Error('Invalid token');
+        // throw new Error('Invalid token');
       }
     }
 

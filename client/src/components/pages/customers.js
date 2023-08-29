@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import { useQuery } from '@apollo/client';
+import { GET_ALL_CUSTOMERS } from '../../utils/queries';
 
 function Customers ( { customerData = [] }) {
+  const { loading, error, data } = useQuery(GET_ALL_CUSTOMERS);
     const [searchTerm, setSearchTerm] = useState('');
     
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
+
     const filteredCustomers = customerData.filter(customer =>
         customer.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         customer.email.toLowerCase().includes(searchTerm.toLowerCase()) ||

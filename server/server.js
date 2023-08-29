@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 const { authMiddleware } = require('./utils/generateToken');
-const { notFound, errorHandler } = require('./middleware/errorMiddleware');
+// const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 
 const { typeDefs, resolvers } = require('./schemas');
 const userRoutes = require('./routes/userRoutes');
