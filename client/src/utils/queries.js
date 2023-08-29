@@ -30,4 +30,36 @@ query GetAllProductIds {
 }
 `;
 
-export { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS };
+// Query to get all orders
+ const ADMIN_GET_ALL_ORDERS = gql`
+  query AdminGetAllOrders {
+    adminGetAllOrders {
+      _id
+      products {
+        name
+        price
+      }
+      orderDate
+      status
+      invoiceAmount
+      email
+    }
+  }
+`;
+
+ const GET_ALL_CUSTOMERS = gql`
+  query GetAllCustomers {
+    profiles {
+      _id
+      name
+      email
+      totalOrders
+    }
+  }
+`;
+
+export { GET_PRODUCT_DETAILS, 
+  GET_ALL_PRODUCT_IDS,
+  ADMIN_GET_ALL_ORDERS,
+  GET_ALL_CUSTOMERS
+};

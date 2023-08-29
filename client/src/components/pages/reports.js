@@ -40,7 +40,7 @@ function Reports() {
  const conversionRate = '2.5%';
  const cartAbandonmentRate = '15%';
  const newVsReturning = '60/40';
- const revenuePerVisitor = '$4.20';
+ const revenuePerVisitor = '$24.20';
  const bounceRate = '35%';
 
 // KPI Data for export
