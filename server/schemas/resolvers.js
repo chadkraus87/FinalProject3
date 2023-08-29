@@ -11,6 +11,13 @@ const resolvers = {
       return Profile.find();
     },
     
+    isAdmin: async (parent, args, context) => {
+      if (!context.user) {
+        throw new AuthenticationError('You need to be logged in!');
+      }
+      const user = await Profile.findOne({ _id: context.user._id });
+      return user.isAdmin;
+    },
 
     profile: async (parent, { profileId }, context) => {
       if (!context.user) {
@@ -18,7 +25,6 @@ const resolvers = {
       }
       return Profile.findOne({ _id: profileId });
     },
-    
 
     me: async (parent, args, context) => {
       if (context.user) {
@@ -35,11 +41,10 @@ const resolvers = {
         throw new Error("Unable to fetch the product");
       }
     },
-    
 
     getAllProducts: async () => {
       return Product.find();
-    }
+    },
   },
 
   Mutation: {
@@ -67,7 +72,10 @@ const resolvers = {
       return { token, profile };
     },
 
-    createProduct: async (parent, { productdata }) => {
+    createProduct: async (parent, { productdata }, context) => {
+      if (!context.user || !context.user.isAdmin) {
+        throw new AuthenticationError('You need to be an admin to create a product!');
+      }
       const product = await Product.create(productdata);
       return product;
     },
