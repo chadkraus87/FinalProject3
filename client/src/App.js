@@ -28,7 +28,10 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/Shop" element={<Shop />} />
               <Route path="/adminDashboard/*" element={<AdminDashboard />} />
+              <Route path="/login" element={<LoginScreen />} />
+              <Route path="/register" element={<RegisterScreen />} />
             </Routes>
+            <ToastContainer />
             </ProductContext.Provider>
         </CartProvider>
       </Router>
