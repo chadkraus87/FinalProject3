@@ -41,7 +41,7 @@ const typeDefs = gql`
 
   type Message {
     _id: ID!
-    user: String!
+    user: Profile!
     subject: String!
     content: String!
     date: String!
@@ -71,7 +71,7 @@ const typeDefs = gql`
   type Mutation {
     addProfile(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addMessage(user: String!, subject: String!, content: String!): Message
+    addMessage(userId: ID!, subject: String!, content: String!): Message
     removeProfile: Profile
     createProduct(productdata: CreateProductInput!): Product
 

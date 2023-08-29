@@ -3,7 +3,7 @@ import { CartProvider } from './userFront/component/Products/ProductDisplay/cart
 
 import Home from './userFront/component/Pages/Home';
 import About from './userFront/component/Pages/About';
-import Shop from './src/userFront/component/Pages/Shop';
+import Shop from './src/userFront/component/Pages/Shop'
 import AdminDashboard from './components/adminDashboard';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
                   </CartProvider>
                } 
         />
-        <Route path="/adminDashboard/*" element={<AdminDashboard />} />
+        <Route path="/adminDashboard//*" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );
