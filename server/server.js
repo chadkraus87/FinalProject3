@@ -12,7 +12,7 @@ const { typeDefs, resolvers } = require('./schemas');
 const userRoutes = require('./routes/userRoutes');
 const db = require('./config/connection');
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const server = new ApolloServer({
   typeDefs,
@@ -27,8 +27,8 @@ app.use(cookieParser());
 
 app.use('/api/users', userRoutes);
 
-app.use(notFound); // middleware for 404 errors
-app.use(errorHandler); // middleware for error handling
+// app.use(notFound); // middleware for 404 errors
+// app.use(errorHandler); // middleware for error handling
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
