@@ -36,7 +36,7 @@ function Home() {
           About Us
         </Button>
         </Link>
-        <Link to="/shop">
+        <Link to="/Shop">
         <Button variant="outlined">
           Shop
         </Button>
