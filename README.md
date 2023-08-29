@@ -71,4 +71,4 @@ The repository follows best practices for file structure, naming conventions, an
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Questions
-If you have any questions or feedback, please contact the GitHub Repository owner at [chadkraus87@gmail.com] or project collaborator's at [peterksharma@gmail.com], [chemphill1208@gmail.com], [sydlogg@gmail.com], and [randerson7926@yahoo.com]. Thank you for supporting this application!
+If you have any questions or feedback, please contact the GitHub Repository owner at chadkraus87@gmail.com or project collaborator's at peterksharma@gmail.com, chemphill1208@gmail.com, sydlogg@gmail.com, and randerson7926@yahoo.com. Thank you for supporting this application!
