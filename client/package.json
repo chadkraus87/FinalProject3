@@ -2,7 +2,7 @@
   "name": "furryfeetdesigns",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4000",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@apollo/client": "^3.8.1",
     "@mui/material": "^5.14.5",
