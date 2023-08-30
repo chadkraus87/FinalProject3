@@ -54,7 +54,7 @@ function Reviews({ productName, reviews = [] })  {
                 <ul style={{ listStyleType: 'none', padding: '0' }}>
                     {reviews.map((review, index) => (
                         <li key={index} style={reviewItemStyle}>
-                            <p style={boldText}><strong>User:</strong> {review.username}</p>
+                            <p style={boldText}><strong>User:</strong> {review.user}</p>
                             <p style={boldText}><strong>Rating:</strong> {review.rating}/5</p>
                             <p style={boldText}><strong>Review:</strong> {review.text}</p>
                             <p style={dateStyle}><strong>Date:</strong> {formatDate(review.date)}</p>
