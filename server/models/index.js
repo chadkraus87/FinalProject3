@@ -1,5 +1,8 @@
-const Profile = require('./Profile');
-const { Product, Review } = require('./Products');
+const User = require('./User')
+const Product = require('./Products');
 const Task = require('./Tasks');
+const Review = require('./Reviews')
+const Message = require('./Messages')
+const Order = require('./Orders')
 
-module.exports = { Profile, Product, Review, Task };
+module.exports = { User, Product, Review, Task, Message, Order };

@@ -14,46 +14,58 @@ const typeDefs = gql`
   }
 
   type Review {
-    name: Profile!
+    name: User!
     rating: Float!
     text: String
     date: String!
     replies: [Reply]
   }
   
-  type Reply {
-    id: ID!
+  type ReviewReply {
+    adminId: ID!
     reviewId: ID!
     text: String!
     date: String!
   }
 
-  type Profile {
+  type User {
     _id: ID
     name: String
     email: String
     password: String
+    isAdmin: Boolean
   }
 
   type Auth {
     token: ID!
-    profile: Profile
+    user: User
   }
-
+  
   type Order {
     _id: ID!
-    products: [Product]!
-    orderDate: String!
-    status: String!
+    userId: ID!
     invoiceAmount: Float!
-    email: String!
-    ProfileId: ID!
+    status: String!
+    date: String!
+    products: [OrderedProduct]!
+  }
+  
+  type OrderedProduct {
+    product: Product!
+    quantity: Int!
   }
 
   type Message {
     _id: ID!
-    name: Profile!
+    user: User!
     subject: String!
+    content: String!
+    date: String!
+  }
+
+  type MessageReply {
+    adminId: ID!
+    messageId: ID!
     content: String!
     date: String!
   }
@@ -70,41 +82,73 @@ const typeDefs = gql`
     size: String!
     color: String!
     description: String!
-    threedModel: String
+    model: String
     price: Float!
   }
 
+  input EditProductInput {
+    id: ID!
+    name: String
+    animalType: String
+    size: String
+    color: String
+    description: String
+    threedModel: String
+    price: Float
+  }
+
+  input AddUserInput {
+    name: String!
+    email: String!
+    password: String!
+  }
+
+  input OrderedProductInput {
+    productId: ID!
+    quantity: Int!
+  }
+  
+  input AddOrderInput {
+    invoiceAmount: Float!
+    status: String!
+    products: [OrderedProductInput!]!
+  }
+
   type Query {
+    getAllUsers: [User!]!
     isAdmin: Boolean
-    profiles: [Profile]!
-    profile(profileId: ID!): Profile
-    me: Profile
-    getProduct(_id: ID!): Product
-    getAllProducts: [Product]
-    getOrder(_id: ID!): Order
-    getAllOrders: [Order]
-    messages: [Message]!
-    getAllReviews: [Review]
-    getReviewById(id: ID!): Review
-    getTasks: [Task]
+    userById(userId: ID!): User
+    me: User
+    productById(_id: ID!): Product
+    getAllProducts: [Product!]!
+    orderById(_id: ID!): Order
+    getAllOrders: [Order!]!
+    getAllMessages: [Message!]!
+    getAllReviews: [Review!]!
+    reviewById(id: ID!): Review
+    tasks: [Task!]!
   }
 
   type Mutation {
-    addProfile(name: String!, email: String!, password: String!): Auth
+    addUser(input: AddUserInput!): Auth
     login(email: String!, password: String!): Auth
+    removeUser: User
+    createProduct(input: CreateProductInput!): Product
+    editProduct(input: EditProductInput!): Product
+    addOrder(input: AddOrderInput!): Order
     addMessage(userId: ID!, subject: String!, content: String!): Message
-    removeProfile: Profile
-    createProduct(productdata: CreateProductInput!): Product
-    createReply(reviewId: ID!, text: String!): Reply  
-    updateReply(id: ID!, text: String!): Reply        
-    deleteReply(id: ID!): ID 
+    replyToMessage(messageId: ID!, content: String!): MessageReply
+    createReviewReply(reviewId: ID!, text: String!): ReviewReply  
+    updateReviewReply(id: ID!, text: String!): ReviewReply        
+    deleteReviewReply(id: ID!): ID
     addTask(text: String!): Task
-    deleteTask(id: ID!): String
-    toggleTask(id: ID!): Task
+    deleteTask(id: ID!): ID
+    toggleTaskCompletion(id: ID!): Task
   }
+  
 
     type Subscription {
-      messageCreated: Message
+      messageCreated(topic: String!, userId: ID): Message
     }
   
 `;
