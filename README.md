@@ -10,12 +10,6 @@ Furry Feet Friends is an E-commerce management application that features an Admi
 [GitHub Repository](https://github.com/chadkraus87/FinalProject3)
 <!-- [Deployed Heroku Application]() -->
 
-![FurryFeetFriends](https://github.com/chadkraus87/FinalProject3/assets/127354484/68f5c645-5e9f-45ea-b9ea-118cc4d61c82)
-![AdminDashboard1](https://github.com/chadkraus87/FinalProject3/assets/127354484/c23da9ce-c0ea-4c8a-afea-7ccf89b55745)
-![AdminDashboard2](https://github.com/chadkraus87/FinalProject3/assets/127354484/6e7ed3c2-9751-4abf-a336-1ebedf982849)
-![AdminMetrics](https://github.com/chadkraus87/FinalProject3/assets/127354484/0cef36c7-f28b-4e60-8138-3ba048b91eec")
-![AdminReviews](https://github.com/chadkraus87/FinalProject3/assets/127354484/d386ecdf-52c1-4069-ba98-7c83a0cfb71b")
-
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
