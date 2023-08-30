@@ -1,21 +1,25 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-const userSchema = mongoose.Schema({
+const userSchema = new Schema({
     name: {
         type: String,
         required: true,
+        unique: true,
+        trim: true,
     },
 
     email: {
         type: String,
         required: true,
-        unique: true, //no two users can have the same email
+        unique: true, 
+        match: [/.+@.+\..+/, 'Must match an email address!'],
     },
 
     password: {
         type: String,
         required: true,
+        minlength: 5,
     },
 
     isAdmin: {
@@ -24,8 +28,6 @@ const userSchema = mongoose.Schema({
         default: false,
     },
 
-}, {
-    timestamps: true,
 });
 
 userSchema.methods.matchPassword = async function(enteredPassword) {
@@ -42,6 +44,6 @@ userSchema.pre('save', async function(next) {
     this.password = await bcrypt.hash(this.password, salt);
 });
 
-const User = mongoose.model('User', userSchema)
+const User = model('User', userSchema)
 
 module.exports = User;

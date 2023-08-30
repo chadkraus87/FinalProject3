@@ -1,27 +1,8 @@
 const { Schema, model } = require('mongoose');
-
-//Added the review schema
-const reviewSchema = new Schema({
-  name: {
-    type: Schema.Types.ObjectId,
-    ref: 'Profile',
-    required: true,
-  },
-  rating: {
-    type: Number,
-    required: true,
-  },
-  text: {
-    type: String,
-  },
-  date: {
-    type: Date,
-    default: Date.now,
-  },
-});
+const Review = require('./Review');
 
 const productSchema = new Schema({
-  //updated to name
+  
   name: {
     type: String,
     required: true,
@@ -37,14 +18,14 @@ const productSchema = new Schema({
   },
   colors: {
     type: [String],
-    enum: ['yellow', 'black', 'purple', 'pink', 'blue'],
+    enum: ['yellow', 'black', 'purple', 'pink', 'blue', 'red', 'green'],
     required: true,
   },
   description: {
     type: String,
     required: true,
   },
-  //changed name to model
+  
   model: {
     type: String,
   },
@@ -52,7 +33,7 @@ const productSchema = new Schema({
     type: Number,
     required: true,
   },
-  reviews: [reviewSchema],
+  reviews: [Review.schema],
 });
 
 const Product = model('Product', productSchema);

@@ -29,14 +29,14 @@ const AdminProfile = () => {
   );
 
   return (
-    <div className="bg-smoke p-6 m-6 rounded flex flex-col">
+    <div className="bg-smoke p-6 m-6 rounded flex flex-col shadow-lg">
        
       <h1 className="text-xl text-offWhite text-center font-bold">User Profile</h1>
       <div className="m-2 px-2 text-sm">
         <input
-        className="rounded"
+        className="rounded text-center"
           type="text"
-          placeholder="Search by Username"
+          placeholder="Search User"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
