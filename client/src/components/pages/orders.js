@@ -2,12 +2,34 @@ import React from 'react';
 import { FaDollarSign } from 'react-icons/fa';
 import { BsFillBoxSeamFill } from 'react-icons/bs';
 import { PiPawPrintFill } from 'react-icons/pi';
+import { useQuery, useMutation } from '@apollo/client';
+import { ADMIN_GET_ALL_ORDERS } from '../../utils/queries';
+import { ADMIN_UPDATE_ORDER_STATUS } from '../../utils/mutations';
 
-function Orders ({ totalSales, totalOrders, totalProductsSold, latestOrders = []}) {
-    return (
-        <div className="flex flex-col  bg-paleBlue">
+function Orders () {
+  const { loading, error, data } = useQuery(ADMIN_GET_ALL_ORDERS);
+  const [adminUpdateOrderStatus] = useMutation(ADMIN_UPDATE_ORDER_STATUS);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+
+  const latestOrders = data.adminGetAllOrders;
+
+  // Calculating metrics
+  const totalSales = latestOrders.reduce((acc, curr) => acc + curr.invoiceAmount, 0);
+  const totalOrders = latestOrders.length;
+  const totalProductsSold = latestOrders.reduce((acc, curr) => acc + curr.quantity, 0); 
+
+  const handleStatusUpdate = async (orderId, newStatus) => {
+    await adminUpdateOrderStatus({
+      variables: { orderId, status: newStatus },
+      refetchQueries: [{ query: ADMIN_GET_ALL_ORDERS }] 
+    });
+  };
+  return (
+        <div className="flex flex-col  bg-body">
             <div className="flex justify-evenly">
-                <div className="bg-teal p-6 px-12 m-4 rounded shadow-md">
+                <div className="bg-teal p-6 px-12 m-4 rounded shadow-lg">
 
                     {/* Total Sales container */}
                 <h2 className="text-lg font-semibold text-center">Total Sales</h2>
@@ -59,6 +81,11 @@ function Orders ({ totalSales, totalOrders, totalProductsSold, latestOrders = []
             <td>${order.invoiceAmount}</td>
             <td>{order.status}</td>
             <td>{order.date}</td>
+            <td>
+      <button onClick={() => handleStatusUpdate(order._id, 'Shipped')}>
+        Mark as Shipped
+      </button>
+    </td>
           </tr>
         ))}
       </tbody>

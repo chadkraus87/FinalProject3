@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import { useQuery } from '@apollo/client';
+import { GET_ALL_CUSTOMERS } from '../../utils/queries';
 
 function Customers ( { customerData = [] }) {
+  const { loading, error, data } = useQuery(GET_ALL_CUSTOMERS);
     const [searchTerm, setSearchTerm] = useState('');
     
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
+
     const filteredCustomers = customerData.filter(customer =>
         customer.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         customer.email.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -10,7 +16,7 @@ function Customers ( { customerData = [] }) {
       );
 
     return (
-        <div className="bg-deepCoral p-6 my-10 rounded shadow-md overflow-y-auto md:container md:mx-auto">
+        <div className="bg-deepCoral p-6 my-10 rounded shadow-lg overflow-y-auto md:container md:mx-auto">
             <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg text-dark font-semibold mb-4">Customer Details</h2>
   

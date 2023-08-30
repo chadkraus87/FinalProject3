@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useLoginMutation } from '../../../slices/userApiSlice';
 import { setCredentials } from '../../../slices/authSlice'
 import { toast } from 'react-toastify';
+import BannerIcons from '../Products/Layout/BannerIcons';
 
 
 const LoginScreen = () => {
@@ -41,7 +42,9 @@ const LoginScreen = () => {
     };
 
     return (
-
+       <div>
+              <BannerIcons />
+       
         <div className="flex items-center justify-center h-screen bg-rgb(238, 218, 171)">
             <div className="w-full max-w-md p-6 bg-white rounded shadow-md">
                 <h1 className="text-2xl font-bold mb-4">Sign In</h1>
@@ -92,6 +95,7 @@ const LoginScreen = () => {
                     </p>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

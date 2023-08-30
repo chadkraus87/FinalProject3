@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 
 
-const GET_PRODUCT_DETAILS = gql`
+export const GET_PRODUCT_DETAILS = gql`
 query GetProduct($id: ID!) {
   getProduct(_id: $id) {
     _id
@@ -14,6 +14,7 @@ query GetProduct($id: ID!) {
     price
     sizes
     reviews {
+      name
       user
       rating
       text
@@ -23,7 +24,7 @@ query GetProduct($id: ID!) {
 }
 `;
 
-const GET_ALL_PRODUCT_IDS = gql`
+export const GET_ALL_PRODUCT_IDS = gql`
 query GetAllProductIds {
   getAllProducts {
     _id
@@ -33,32 +34,77 @@ query GetAllProductIds {
 `;
 
 
-const GET_ORDERS_BY_USER = gql`
-  query GetOrdersByUser($userId: ID!) {
-    getOrdersByUser(userId: $userId) {
+
+// Query to get all orders
+export const ADMIN_GET_ALL_ORDERS = gql`
+  query AdminGetAllOrders {
+    adminGetAllOrders {
       _id
       products {
         name
         price
       }
       orderDate
+      status
+      invoiceAmount
+      email
     }
   }
 `;
 
-
-
-
-
-const PROFILE_QUERY = gql`
-  query Profile($uid: Int!) {
-    profile(uid: $uid) {
+export const GET_ALL_CUSTOMERS = gql`
+  query GetAllCustomers {
+    profiles {
       _id
       name
       email
-      password
+      totalOrders
     }
   }
 `;
 
-export { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS, GET_ORDERS_BY_USER, PROFILE_QUERY};
+// Fetch All Messages
+export const GET_ALL_MESSAGES = gql`
+  query GetAllMessages {
+    messages {
+      _id
+      user {
+        name
+      }
+      subject
+      content
+      date
+    }
+  }
+`;
+
+
+// Fetch All Reviews
+export const GET_ALL_REVIEWS = gql`
+query getAllReviews {
+  id
+  user
+  product
+  date
+  content
+  rating
+  replies {
+    id
+    reviewId
+    content
+    date
+  }
+}
+`; 
+
+// Get Tasks
+export const GET_TASKS = gql`
+query GetTasks {
+  getTasks {
+    id
+    text
+    completed
+  }
+}
+`;
+ 

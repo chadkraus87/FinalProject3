@@ -39,8 +39,8 @@ function Reports() {
  const avgOrderValue = 200;
  const conversionRate = '2.5%';
  const cartAbandonmentRate = '15%';
- const newVsReturning = '60/40';
- const revenuePerVisitor = '$4.20';
+ const newVsReturning = '63/37';
+ const revenuePerVisitor = '$24.20';
  const bounceRate = '35%';
 
 // KPI Data for export
@@ -56,7 +56,7 @@ const kpiData = [
 
 
   return (
-    <div className="flex flex-col bg-paleBlue">
+    <div className="flex flex-col bg-body">
         <div className='bg-tan p-6 m-6 rounded flex flex-col'>
         <h2 className='text-xl text-dark text-center font-bold'>Metrics</h2>
         <button onClick={() => exportToCSV(kpiData)} className='bg-darkBlue text-offWhite p-2 mb-2 mr-4 rounded hover:bg-teal transition duration-200 self-end text-xs'>
@@ -72,11 +72,11 @@ const kpiData = [
           <KPI description="Revenue Per Visitor" value={revenuePerVisitor} />
           <KPI description="Bounce Rate" value={bounceRate} />
       
-          <div className='flex pt-6'>
-            <div className='w-1/2 p-2'>
+          <div className='flex pt-6 flex-col md:flex-row'>
+            <div className='w-full md:w-1/2 p-2'>
               <RevenueChart />
             </div>
-            <div className='w-1/2 p-2'>
+            <div className='w-full md:w-1/2 p-2'>
               <StackMap />
             </div>
           </div>

@@ -1,44 +1,28 @@
 import React, { useEffect, useState } from 'react';
-// import { useSubscription } from '@apollo/client';
-// import { NEW_MESSAGE_SUBSCRIPTION } from '../../utils/queries';
+import { useQuery, useMutation, useSubscription } from '@apollo/client';
+import { GET_ALL_MESSAGES } from '../../utils/queries';
+import { ADD_MESSAGE, NEW_MESSAGE_SUBSCRIPTION } from '../../utils/mutations';
 import { BiMailSend } from 'react-icons/bi';
 
-// Mock data that simulates what you would receive from the server
-const mockMessages = [
-    {
-      user: "John Doe",
-      subject: "Testing subject 1",
-      content: "This is a sample message 1.",
-      date: "08/24/2023"
-    },
-    {
-      user: "Jane Smith",
-      subject: "Testing subject 2",
-      content: "This is a sample message 2.",
-      date: "08/25/2023"
-    },
-    {
-        user: "Eric Heltch",
-        subject: "Testing subject 3",
-        content: "This is a sample message 3.",
-        date: "08/24/2023"
-      }
-    
-  ];
+
 
 function Messages() {
+ // Fetching Messages from Server
+ const { data, loading, error } = useQuery(GET_ALL_MESSAGES);
+ const [addMessage] = useMutation(ADD_MESSAGE);
+
+ // Real Time Updates
+ const { data: newMessageData } = useSubscription(NEW_MESSAGE_SUBSCRIPTION);
+
 
     // Using useState to set the mock data
-    const [messages] = useState(mockMessages);
-
-    // const [messages, setMessages] = useState([/* Initial messages */]);
-    // const { data } = useSubscription(NEW_MESSAGE_SUBSCRIPTION); 
-  
-    // useEffect(() => {
-    //   if (data) {
-    //     setMessages((prevMessages) => [...prevMessages, data.messageCreated]); 
-    //   }
-    // }, [data]);
+    
+    const [messages, setMessages] = useState([]);
+    useEffect(() => {
+      if (data) {
+        setMessages(data.messages);
+      }
+    }, [data]);
 
    
 
@@ -58,21 +42,31 @@ function Messages() {
   const [isReplying, setIsReplying] = useState(false);
   const [replyContent, setReplyContent] = useState(''); 
 
-  const handleReply = () => {
-    setIsReplying(true);
-  };
+  const handleSendReply = async () => {
+    // Sending reply using GraphQL Mutation
+    try {
+      const { data } = await addMessage({
+        variables: {
+          userId: "",  
+          subject: `Re: ${selectedMessage.subject}`,
+          content: replyContent
+        }
+      });
+      
+      setMessages([...messages, data.addMessage]);
+    } catch (err) {
+      console.error("Failed to send message:", err);
+    }
 
-  const handleSendReply = () => {
-    console.log('Sending reply:', replyContent); // Replace this once backend completes their code and testing completed!!!!!!
-    setIsReplying(false); // Set to false so the inital state does not show the reply input until clicked
-    setReplyContent(''); // Clear the reply content
-    setShowModal(false);  // Close the modal
-    
-  };
+    // Clear the reply content
+    setIsReplying(false);
+    setReplyContent(''); 
+    setShowModal(false);
+};
 
     return (
-        <div className="flex flex-col bg-paleBlue">
-            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col'>
+        <div className="flex flex-col bg-body">
+            <div className='bg-darkBlue p-6 m-6 rounded flex flex-col shadow-lg'>
                 <h2 className='text-xl text-offWhite text-center font-bold'>Messages</h2>
                 {/* Inner Message Container */}
                 <div className='bg-offWhite p-4 mr-3 rounded '>
@@ -108,7 +102,7 @@ function Messages() {
         <p>{selectedMessage.content}</p>
         <div className="flex justify-between mt-4"> {/* Added this flex container */}
           {!isReplying && (
-            <button onClick={handleReply} className="text-darkBlue text-xs">Reply</button>
+            <button onClick={handleSendReply} className="text-darkBlue text-xs">Reply</button>
           )}
           <button onClick={closeModal} className="text-darkBlue text-xs">Close</button>
         </div>

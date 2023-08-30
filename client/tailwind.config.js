@@ -10,6 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        body: 'rgb(247, 235, 216)',
         darkBlue: 'rgb(38, 70, 83)', 
         teal: 'rgb(42, 157, 143)', 
         paleBlue: 'rgb(232, 245, 240)',
