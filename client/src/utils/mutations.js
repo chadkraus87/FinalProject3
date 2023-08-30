@@ -116,14 +116,14 @@ mutation AddTask($text: String!) {
 
 // Delete Task
 export const DELETE_TASK = gql`
-mutation DeleteTask($id: ID!) {
+mutation deleteTask($id: ID!) {
   deleteTask(id: $id)
 }
 `;
 
 // Complete task
 export const TOGGLE_TASK = gql`
-mutation ToggleTask($id: ID!) {
+mutation toggleTaskCompletion($id: ID!) {
   toggleTask(id: $id) {
     id
     completed

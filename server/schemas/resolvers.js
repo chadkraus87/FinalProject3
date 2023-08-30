@@ -1,39 +1,43 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Profile, Product, Task } = require('../models');
+const { withFilter, PubSub } = require('apollo-server');
+const {  User, Product, Review, Task, Message, Order } = require('../models');
 const { signToken } = require('../utils/generateToken');
+
+const pubsub = new PubSub();
+const MESSAGE_CREATED = 'MESSAGE_CREATED';
 
 const resolvers = {
   Query: {
-    profiles: async (parent, args, context) => {
+    getAllUsers: async (parent, args, context) => {
       if (!context.user) {
         throw new AuthenticationError('You need to be logged in!');
       }
-      return Profile.find();
+      return User.find();
     },
     
     isAdmin: async (parent, args, context) => {
       if (!context.user) {
         throw new AuthenticationError('You need to be logged in!');
       }
-      const user = await Profile.findOne({ _id: context.user._id });
+      const user = await User.findOne({ _id: context.user._id });
       return user.isAdmin;
     },
 
-    profile: async (parent, { profileId }, context) => {
+    userById: async (parent, { userId }, context) => {
       if (!context.user) {
         throw new AuthenticationError('You need to be logged in!');
       }
-      return Profile.findOne({ _id: profileId });
+      return User.findOne({ _id: userId });
     },
 
     me: async (parent, args, context) => {
       if (context.user) {
-        return Profile.findOne({ _id: context.user._id });
+        return User.findOne({ _id: context.user._id });
       }
       throw new AuthenticationError('You need to be logged in!');
     },
 
-    getProduct: async (parent, { _id }) => {
+    productById: async (parent, { _id }) => {
       try {
         return Product.findOne({ _id });
       } catch (error) {
@@ -46,8 +50,61 @@ const resolvers = {
       return Product.find();
     },
 
-    getTasks: async (_, __, context) => {
-      const adminId = context.profile.id;
+    orderById: async (parent, { _id }) => {
+      try {
+        return Order.findOne({_id});
+      } catch (error) {
+        console.error("Error retrieving order:", error);
+        throw new Error("Unable to fetch the order");
+      }
+    },
+
+    getAllOrders: async (_, args, context) => {
+      if (!context.user) {
+        throw new AuthenticationError("You must be logged in to view orders.");
+      }
+    
+      try {
+        if (context.user.isAdmin) {
+          return Order.find({});
+        }
+        return Order.find({ userId: context.user._id }); 
+      } catch (error) {
+        console.error("Error retrieving orders:", error);
+        throw new Error("Unable to fetch orders");
+      }
+    },
+
+    getAllMessages: async (_, args, context) => {
+      if (!context.user) {
+        throw new AuthenticationError("You must be logged in to view messages.");
+      }
+      try {
+        if (context.user.isAdmin) {
+          return Message.find({});
+        }
+        return Message.find({ userId: context.user._id });
+      } catch (error) {
+        console.error("Error retrieving messages:", error);
+        throw new Error("Unable to fetch messages");
+      }
+    },
+ 
+    getAllReviews: async () => {
+      return Review.find();
+    },
+  
+    reviewById: async (parent, { _id }) => {
+      try {
+        return Review.findOne({_id});
+      } catch (error) {
+        console.error("Error retrieving review:", error);
+        throw new Error("Unable to fetch the review");
+      }
+    },
+
+    tasks: async (_, __, context) => {
+      const adminId = context.user.id;
       return await Task.find({ admin: adminId });
     },
 
@@ -56,28 +113,35 @@ const resolvers = {
 
 
   Mutation: {
-    addProfile: async (parent, { name, email, password }) => {
-      const profile = await Profile.create({ name, email, password });
-      const token = signToken(profile);
+    addUser: async (parent, { name, email, password }) => {
+      const user = await User.create({ name, email, password });
+      const token = signToken(user);
 
-      return { token, profile };
+      return { token, user };
     },
 
     login: async (parent, { email, password }) => {
-      const profile = await Profile.findOne({ email });
+      const user = await User.findOne({ email });
 
-      if (!profile) {
-        throw new AuthenticationError('No profile with this email found!');
+      if (!user) {
+        throw new AuthenticationError('No user with this email found!');
       }
 
-      const correctPw = await profile.isCorrectPassword(password);
+      const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
         throw new AuthenticationError('Incorrect password!');
       }
 
-      const token = signToken(profile);
-      return { token, profile };
+      const token = signToken(user);
+      return { token, user };
+    },
+
+    removeUser: async (parent, args, context) => {
+      if (context.user) {
+        return User.findOneAndDelete({ _id: context.user._id });
+      }
+      throw new AuthenticationError('You need to be logged in!');
     },
 
     createProduct: async (parent, { productdata }, context) => {
@@ -88,15 +152,96 @@ const resolvers = {
       return product;
     },
 
-    removeProfile: async (parent, args, context) => {
-      if (context.user) {
-        return Profile.findOneAndDelete({ _id: context.user._id });
+    editProduct : async (parent, { productdata } , context) => {
+      if (!context.user || !context.user.isAdmin) {
+        throw new AuthenticationError('You need to be an admin to edit a product!');
       }
-      throw new AuthenticationError('You need to be logged in!');
+      const product = await Product.findOneAndUpdate({ _id: productdata._id }, productdata, { new: true });
+      return product;
+    },
+
+    addOrder: async (parent, { input }, context) => {
+      if (!context.user) {
+        throw new AuthenticationError('You must be logged in to place an order.');
+      }
+    
+      const newOrder = new Order({
+        userId: context.user._id,
+        invoiceAmount: input.invoiceAmount,
+        status: input.status,
+        products: input.products.map(p => ({ product: p.productId, quantity: p.quantity }))
+      });
+    
+      return await newOrder.save();
+    },
+    
+    addMessage: async (_, { userId, subject, content, date }, context) => {
+      const message = new Message({ userId, subject, content, date });
+      await message.save();
+      pubsub.publish(MESSAGE_CREATED, { messageCreated: message });
+      return message;
+    },
+
+    replyToMessage: async (parent, { messageId, content, date }, context) => {
+      // Find the message to which the reply will be added
+      const message = await Message.findById(messageId);
+      if (!message) {
+        throw new Error('Message not found');
+      }
+    
+      const reply = {
+        adminId: context.user._id,
+        content: content,
+        date: date || Date.now()  
+      };
+    
+      message.messageReply.push(reply);
+      await message.save()
+      return message;
+    },
+
+    createReviewReply: async (parent, { reviewId, text }, context) => {
+      const review = await Review.findById(reviewId);
+      if (!review) {
+        throw new Error('Review not found');
+      }
+      const reply = {
+        adminId: context.user._id, 
+        text: text,
+        date: Date.now()  
+      };
+    
+      review.replies.push(reply);
+      await review.save();
+      return review;
+    },
+
+    updateReviewReply: async (parent, { id, text }, context) => {
+      const updatedReview = await Review.findOneAndUpdate(
+        { "replies._id": id }, 
+        { "$set": { "replies.$.text": text } },
+        { new: true }
+      );
+      if (!updatedReview) {
+        throw new Error('Review reply not found');
+      }
+      return updatedReview;
+    },
+
+    deleteReviewReply: async (parent, { id }, context) => {
+      const updatedReview = await Review.findOneAndUpdate(
+        {}, 
+        { "$pull": { "replies": { "_id": id } } },
+        { new: true }
+      );
+      if (!updatedReview) {
+        throw new Error('Review reply not found');
+      }
+      return id;
     },
 
     addTask: async (_, { text }, context) => {
-      const adminId = context.profile.id; 
+      const adminId = context.user.id; 
       const task = new Task({ text, admin: adminId });
       await task.save();
       return task;
@@ -107,7 +252,7 @@ const resolvers = {
       return "Task deleted successfully";
     },
 
-    toggleTask: async (_, { id }) => {
+    toggleTaskCompletion: async (_, { id }) => {
       const task = await Task.findById(id);
       task.completed = !task.completed;
       await task.save();
@@ -115,6 +260,18 @@ const resolvers = {
     },
 
   },
+    
+    Subscription: {
+      messageCreated: {
+        subscribe: withFilter(
+          () => pubsub.asyncIterator([MESSAGE_CREATED]),
+          (payload, variables, context) => {
+            return context.user.isAdmin; 
+          }
+        ),
+      },
+    },
+  
 };
 
 module.exports = resolvers;
