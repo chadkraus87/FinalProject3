@@ -11,6 +11,12 @@ Furry Feet Friends is an E-commerce management application that features an Admi
 <!-- [Deployed Heroku Application]() -->
 
 <!-- Inserting screenshots after reviewed. -->
+![Furry Feet Friends Landing Page](/public/assets/images/FurryFeetFriends.png)
+![Admin Dashboard Landing Page Example #1](/public/assets/images/AdminDashboard1.png)
+![Admin Dashboard Landing Page Example #2](/public/assets/images/AdminDashboard2.png)
+![Admin Dashboard Metrics](/public/assets/images/AdminMetrics.png)
+![Admin Reviews](/public/assets/images/AdminReviews.png)
+
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
