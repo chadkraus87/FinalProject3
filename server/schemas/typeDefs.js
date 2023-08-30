@@ -116,6 +116,7 @@ const typeDefs = gql`
 
   type Query {
     getAllUsers: [User!]!
+    adminGetAllOrders: [Order!]!
     isAdmin: Boolean
     userById(userId: ID!): User
     me: User
@@ -154,3 +155,4 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
+

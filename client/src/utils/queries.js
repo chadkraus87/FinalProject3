@@ -1,5 +1,7 @@
 import { gql } from '@apollo/client';
 
+
+
 export const GET_PRODUCT_DETAILS = gql`
 query GetProduct($id: ID!) {
   getProduct(_id: $id) {
@@ -13,6 +15,7 @@ query GetProduct($id: ID!) {
     sizes
     reviews {
       name
+      user
       rating
       text
       date
@@ -104,4 +107,33 @@ query GetTasks {
   }
 }
 `;
- 
+
+
+export const GET_ORDERS_BY_USER = gql`
+  query GetOrdersByUser($userId: ID!) {
+    getOrdersByUser(userId: $userId) {
+      _id
+      products {
+        name
+        price
+      }
+      orderDate
+    }
+  }
+`;
+
+
+
+
+
+export const PROFILE_QUERY = gql`
+  query Profile($uid: Int!) {
+    profile(uid: $uid) {
+      _id
+      name
+      email
+      password
+    }
+  }
+`;
+

@@ -20,7 +20,7 @@ function Home() {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh', // This assumes you want it to be centered in the viewport height
+    height: '100vh', 
   }
 
 
