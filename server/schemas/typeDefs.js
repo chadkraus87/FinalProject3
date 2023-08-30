@@ -35,6 +35,7 @@ const typeDefs = gql`
 
   type Order {
     _id: ID!
+    userId: ID!
     products: [Product]!
     orderDate: String!
   }
@@ -58,6 +59,7 @@ const typeDefs = gql`
     isAdmin: Boolean!
     getOrder(_id: ID!): Order
     getAllOrders: [Order]
+    getOrdersByUser(userId: ID!): [Order]
   }
 
   type Mutation {

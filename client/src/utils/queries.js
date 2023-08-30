@@ -1,5 +1,7 @@
 import { gql } from '@apollo/client';
 
+
+
 const GET_PRODUCT_DETAILS = gql`
 query GetProduct($id: ID!) {
   getProduct(_id: $id) {
@@ -31,16 +33,22 @@ query GetAllProductIds {
 `;
 
 
-const ORDERS_QUERY = gql`
-  query GetUserOrders($uid: Int!) {
-    orders(uid: $uid) {
-      id
-      name
-      description
-      price
+const GET_ORDERS_BY_USER = gql`
+  query GetOrdersByUser($userId: ID!) {
+    getOrdersByUser(userId: $userId) {
+      _id
+      products {
+        name
+        price
+      }
+      orderDate
     }
   }
 `;
+
+
+
+
 
 const PROFILE_QUERY = gql`
   query Profile($uid: Int!) {
@@ -53,4 +61,4 @@ const PROFILE_QUERY = gql`
   }
 `;
 
-export { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS, ORDERS_QUERY, PROFILE_QUERY};
+export { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS, GET_ORDERS_BY_USER, PROFILE_QUERY};

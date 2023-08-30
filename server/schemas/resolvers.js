@@ -45,6 +45,10 @@ const resolvers = {
     getAllProducts: async () => {
       return Product.find();
     },
+    
+    getOrdersByUser: async (parent, { userId }, context) => {
+      return await OrderModel.find({ userId: userId });
+    }
   },
 
   Mutation: {

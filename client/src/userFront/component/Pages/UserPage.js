@@ -7,7 +7,7 @@ import Orders from '../UserPage/Orders';
 function UserPage() {
     return (
         <div>
-            <AccountInfo />
+            {/* <AccountInfo /> */}
             <Orders />
         </div>
     );
