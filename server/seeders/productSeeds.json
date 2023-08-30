@@ -9,7 +9,7 @@
     "price": 9.99,
     "reviews": [
       {
-        "user": "Ethan TA",
+        "_id": "someUserIdForEthanTA", 
         "rating": 4.5,
         "text": "Great socks for my dog, or myself!",
         "date": "2023-07-25"
@@ -23,7 +23,8 @@
     "colors": ["red", "blue", "green", "black"],
     "description": "Perfect clogs for your dogs' everyday adventures.",
     "model": "/assets/3D/clog/clog.gltf",
-    "price": 14.99
+    "price": 14.99,
+    "reviews": []
   },
   {
     "name": "Kitten Mittens",
@@ -32,7 +33,8 @@
     "colors": ["red", "blue", "green", "black"],
     "description": "Keep your kittens' paws warm with these mittens.",
     "model": "/assets/3D/mitten/mitten.gltf",
-    "price": 7.99
+    "price": 7.99,
+    "reviews": []
   },
   {
     "name": "Cat Hats",
@@ -41,6 +43,7 @@
     "colors": ["red", "blue", "green", "black"],
     "description": "Stylish hats for cool cats.",
     "model": "/assets/3D/hat/hat.gltf",
-    "price": 8.99
+    "price": 8.99,
+    "reviews": []
   }
 ]
