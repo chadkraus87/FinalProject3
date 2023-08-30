@@ -5,11 +5,11 @@
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Comfortable and stylish shoes for your dog.",
-    "model": "/assets/3D/sock.obj",
+    "model": "/assets/3D/sock/sock.gltf",
     "price": 9.99,
     "reviews": [
       {
-        "username": "Ethan TA",
+        "user": "Ethan TA",
         "rating": 4.5,
         "text": "Great socks for my dog, or myself!",
         "date": "2023-07-25"
@@ -22,7 +22,7 @@
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Perfect clogs for your dogs' everyday adventures.",
-    "model": "/assets/3D/shoe.obj",
+    "model": "/assets/3D/clog/clog.gltf",
     "price": 14.99
   },
   {
@@ -31,7 +31,7 @@
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Keep your kittens' paws warm with these mittens.",
-    "model": "/assets/3D/mitten.obj",
+    "model": "/assets/3D/mitten/mitten.gltf",
     "price": 7.99
   },
   {
@@ -40,7 +40,7 @@
     "sizes": ["small", "medium", "large"],
     "colors": ["red", "blue", "green", "black"],
     "description": "Stylish hats for cool cats.",
-    "model": "/assets/3D/hat.obj",
+    "model": "/assets/3D/hat/hat.gltf",
     "price": 8.99
   }
 ]

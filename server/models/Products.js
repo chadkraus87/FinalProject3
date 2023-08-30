@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 //Added the review schema
 const reviewSchema = new mongoose.Schema({
-  username: {
+  user: {
     type: String,
     required: true,
   },

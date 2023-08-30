@@ -11,13 +11,13 @@ const resolvers = {
       return Profile.find();
     },
     
-    isAdmin: async (parent, args, context) => {
-      if (!context.user) {
-        throw new AuthenticationError('You need to be logged in!');
-      }
-      const user = await Profile.findOne({ _id: context.user._id });
-      return user.isAdmin;
-    },
+    // isAdmin: async (parent, args, context) => {
+    //   if (!context.user) {
+    //     throw new AuthenticationError('You need to be logged in!');
+    //   }
+    //   const user = await Profile.findOne({ _id: context.user._id });
+    //   return user.isAdmin;
+    // },
 
     profile: async (parent, { profileId }, context) => {
       if (!context.user) {

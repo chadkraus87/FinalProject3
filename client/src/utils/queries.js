@@ -12,7 +12,7 @@ query GetProduct($id: ID!) {
     price
     sizes
     reviews {
-      username
+      user
       rating
       text
       date
@@ -30,4 +30,27 @@ query GetAllProductIds {
 }
 `;
 
-export { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS };
+
+const ORDERS_QUERY = gql`
+  query GetUserOrders($uid: Int!) {
+    orders(uid: $uid) {
+      id
+      name
+      description
+      price
+    }
+  }
+`;
+
+const PROFILE_QUERY = gql`
+  query Profile($uid: Int!) {
+    profile(uid: $uid) {
+      _id
+      name
+      email
+      password
+    }
+  }
+`;
+
+export { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS, ORDERS_QUERY, PROFILE_QUERY};

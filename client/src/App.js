@@ -13,6 +13,7 @@ import LoginScreen from './userFront/component/Pages/LoginScreen';
 import RegisterScreen from './userFront/component/Pages/RegisterScreen';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import UserPage from './userFront/component/Pages/UserPage';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/Shop" element={<Shop />} />
               <Route path="/adminDashboard/*" element={<AdminDashboard />} />
+              <Route path="/UserPage" element={<UserPage />} />
             </Routes>
             </ProductContext.Provider>
         </CartProvider>

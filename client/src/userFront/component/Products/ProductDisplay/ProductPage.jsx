@@ -12,6 +12,7 @@ import { useQuery } from '@apollo/client';
 import { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS } from '../../../../utils/queries';
 import Reviews from './Review';
 
+
 function ProductPage() {
     const { addToCart } = useCart();
     const { selectedProductId, setSelectedProductId } = useContext(ProductContext);
@@ -20,6 +21,7 @@ function ProductPage() {
     const [selectedColor, setSelectedColor] = React.useState(null);
     const [productName, setProductName] = React.useState('');
     const [productDescription, setProductDescription] = React.useState('');
+
 
     const { data: productData, loading: productLoading, error: productError } = useQuery(GET_PRODUCT_DETAILS, {
         skip: !selectedProductId,
@@ -42,11 +44,11 @@ function ProductPage() {
     const handleProductSelect = (e) => {
         setSelectedProductId(e.target.value);
     }
-    
+
     const productStyle = {
         display: 'flex',
         width: '90%',
-        padding: '2% 1% 1% 10%', 
+        padding: '2% 1% 1% 10%',
         justifyContent: 'space-between',
     };
     const shadow = {
@@ -54,8 +56,8 @@ function ProductPage() {
         boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
         border: '1px solid transparent',
     };
-    
-    
+
+
     if (productLoading || allProductsLoading) return <p>Loading...</p>;
     if (productError || allProductsError) {
         console.error("Error fetching data:", productError || allProductsError);
@@ -67,11 +69,16 @@ function ProductPage() {
             <BannerIcons />
             <Name />
             <div className="btns">
-            <ProductButtons setSelectedProductId={setSelectedProductId} />
+                <ProductButtons setSelectedProductId={setSelectedProductId} />
+                {/* <div style={productStyle}>
+                    <div style={shadow}>
+                        <Display modelPath={productData?.getProduct?.model} />
+                    </div> */}
                 <div style={productStyle}>
-                    <div style={shadow} >
-                    <Display />
+                    <div style={shadow}>
+                        {productData?.getProduct?.model && <Display modelPath={productData.getProduct.model} />}
                     </div>
+
                     <div style={{ flex: 1, padding: '2%' }}>
                         <h1 className="productTitle">{productName}</h1>
                         <div className='productDecription'>{productDescription}</div>
@@ -85,10 +92,10 @@ function ProductPage() {
                             <div style={{ paddingTop: '2%' }}>
                                 <CheckoutBtn handleAddToCart={handleAddToCart} />
                             </div>
-                            <Reviews 
-    productName={productData?.getProduct?.name} 
-    reviews={productData?.getProduct?.reviews ?? []} 
-/>
+                            <Reviews
+                                productName={productData?.getProduct?.name}
+                                reviews={productData?.getProduct?.reviews ?? []}
+                            />
                         </div>
                     </div>
                 </div>
