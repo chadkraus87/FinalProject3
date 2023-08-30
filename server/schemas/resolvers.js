@@ -1,5 +1,4 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { withFilter, PubSub } = require('apollo-server');
+const { AuthenticationError, withFilter, PubSub } = require('apollo-server-express');
 const {  User, Product, Review, Task, Message, Order } = require('../models');
 const { signToken } = require('../utils/generateToken');
 
