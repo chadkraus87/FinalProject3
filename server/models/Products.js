@@ -57,7 +57,7 @@ const productSchema = new Schema({
 
 const Product = model('Product', productSchema);
 const Review = model('Review', reviewSchema);
-.
+
 module.exports = {
   Product,
   Review

@@ -107,4 +107,33 @@ query GetTasks {
   }
 }
 `;
- 
+
+
+export const GET_ORDERS_BY_USER = gql`
+  query GetOrdersByUser($userId: ID!) {
+    getOrdersByUser(userId: $userId) {
+      _id
+      products {
+        name
+        price
+      }
+      orderDate
+    }
+  }
+`;
+
+
+
+
+
+export const PROFILE_QUERY = gql`
+  query Profile($uid: Int!) {
+    profile(uid: $uid) {
+      _id
+      name
+      email
+      password
+    }
+  }
+`;
+

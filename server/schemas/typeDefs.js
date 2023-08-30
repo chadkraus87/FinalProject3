@@ -82,7 +82,6 @@ const typeDefs = gql`
     me: Profile
     getProduct(_id: ID!): Product
     getAllProducts: [Product]
-    isAdmin: Boolean!
     getOrder(_id: ID!): Order
     getAllOrders: [Order]
     getOrdersByUser(userId: ID!): [Order]
