@@ -1,5 +1,5 @@
 const express = require('express');
-const dotenv = require('dotenv');
+
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
 
@@ -46,6 +46,7 @@ const startApolloServer = async () => {
   
   db.once('open', () => {
     app.listen(PORT, () => {
+      
       console.log(`API server running on port ${PORT}!`);
       console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
     })

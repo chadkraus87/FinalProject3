@@ -19,7 +19,6 @@ const reviewSchema = new Schema({
   },
   reviewReply: [
     { 
-      _id: true,
       adminId: 
       { 
       type: Schema.Types.ObjectId,
