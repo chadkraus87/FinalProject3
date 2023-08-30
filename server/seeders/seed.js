@@ -1,15 +1,14 @@
 const db = require('../config/connection');
-const { Profile } = require('../models');
-//added products to the seed
+const { User } = require('../models');
 const { Product } = require('../models');
-const profileSeeds = require('./profileSeeds.json');
+const userSeeds = require('./userSeeds.json');
 const productSeeds = require('./productSeeds.json');
 
 db.once('open', async () => {
   try {
-    await Profile.deleteMany({});
+    await User.deleteMany({});
     await Product.deleteMany({});
-    await Profile.insertMany(profileSeeds);
+    await User.insertMany(userSeeds);
     await Product.insertMany(productSeeds);
 
     console.log('all done!');
