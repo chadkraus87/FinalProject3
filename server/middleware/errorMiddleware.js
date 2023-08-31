@@ -1,8 +1,8 @@
-const notFound = (req, res, next) => {
-    const error = new Error(`Not Found - ${req.originalUrl}`);
-    res.status(404); // set status to 404
-    next(error); // pass error to next middleware
-}
+// const notFound = (req, res, next) => {
+//     const error = new Error(`Not Found - ${req.originalUrl}`);
+//     res.status(404); // set status to 404
+//     next(error); // pass error to next middleware
+// }
 
 const errorHandler = (err, req, res, next) => {
     // set status to 500 if status is 200
@@ -22,4 +22,6 @@ const errorHandler = (err, req, res, next) => {
     });
 }
 
-module.exports = { notFound, errorHandler };
+module.exports = {  errorHandler };
+
+// notFound,
