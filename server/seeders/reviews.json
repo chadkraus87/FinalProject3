@@ -1,3502 +1,3502 @@
 [
   {
-    "productId": 0,
-    "_id": "review1",
-    "rating": 1.1,
-    "text": "It broke after a week.",
-    "date": "2022-11-15"
-  },
-  {
-    "productId": 0,
-    "_id": "review2",
-    "rating": 4.3,
-    "text": "Would definitely recommend!",
-    "date": "2022-04-05"
-  },
-  {
-    "productId": 2,
-    "_id": "review3",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-03-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review4",
-    "rating": 3.7,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-30"
-  },
-  {
-    "productId": 2,
-    "_id": "review5",
-    "rating": 4.2,
-    "text": "Great product!",
-    "date": "2022-06-15"
-  },
-  {
-    "productId": 1,
-    "_id": "review6",
-    "rating": 3.8,
-    "text": "It broke after a week.",
-    "date": "2022-09-25"
-  },
-  {
-    "productId": 0,
-    "_id": "review7",
-    "rating": 4.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-11-30"
-  },
-  {
-    "productId": 2,
-    "_id": "review8",
-    "rating": 1.3,
-    "text": "Would definitely recommend!",
-    "date": "2022-11-26"
-  },
-  {
-    "productId": 1,
-    "_id": "review9",
-    "rating": 2.4,
-    "text": "It broke after a week.",
-    "date": "2023-12-01"
-  },
-  {
-    "productId": 1,
-    "_id": "review10",
-    "rating": 3.6,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review11",
-    "rating": 4.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-02-06"
-  },
-  {
-    "productId": 1,
-    "_id": "review12",
-    "rating": 1.1,
-    "text": "Great product!",
-    "date": "2023-12-25"
-  },
-  {
-    "productId": 0,
-    "_id": "review13",
-    "rating": 1.6,
-    "text": "It broke after a week.",
-    "date": "2022-01-05"
-  },
-  {
-    "productId": 2,
-    "_id": "review14",
+    "name": "dd1847bf-5cc9-464d-822f-e92f203487c9",
     "rating": 2.8,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-09-01"
-  },
-  {
-    "productId": 2,
-    "_id": "review15",
-    "rating": 3.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-02-26"
-  },
-  {
-    "productId": 0,
-    "_id": "review16",
-    "rating": 4.2,
     "text": "Great product!",
-    "date": "2023-07-03"
+    "date": "2023-09-06",
+    "reviewReply": []
   },
   {
-    "productId": 1,
-    "_id": "review17",
-    "rating": 4.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-10-11"
-  },
-  {
-    "productId": 0,
-    "_id": "review18",
-    "rating": 2.3,
-    "text": "I didn't like this at all.",
-    "date": "2023-03-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review19",
-    "rating": 3.5,
-    "text": "It broke after a week.",
-    "date": "2022-04-20"
-  },
-  {
-    "productId": 0,
-    "_id": "review20",
-    "rating": 1.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-05-04"
-  },
-  {
-    "productId": 2,
-    "_id": "review21",
-    "rating": 5,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-24"
-  },
-  {
-    "productId": 1,
-    "_id": "review22",
-    "rating": 2,
-    "text": "It broke after a week.",
-    "date": "2022-02-16"
-  },
-  {
-    "productId": 3,
-    "_id": "review23",
-    "rating": 4,
-    "text": "It broke after a week.",
-    "date": "2022-05-26"
-  },
-  {
-    "productId": 0,
-    "_id": "review24",
-    "rating": 2.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-01-29"
-  },
-  {
-    "productId": 0,
-    "_id": "review25",
-    "rating": 4.6,
-    "text": "Great product!",
-    "date": "2022-12-27"
-  },
-  {
-    "productId": 2,
-    "_id": "review26",
-    "rating": 2.3,
-    "text": "Would definitely recommend!",
-    "date": "2022-11-19"
-  },
-  {
-    "productId": 3,
-    "_id": "review27",
-    "rating": 2.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-01-29"
-  },
-  {
-    "productId": 1,
-    "_id": "review28",
-    "rating": 2.7,
-    "text": "Great product!",
-    "date": "2022-05-14"
-  },
-  {
-    "productId": 1,
-    "_id": "review29",
-    "rating": 4.8,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-09-22"
-  },
-  {
-    "productId": 1,
-    "_id": "review30",
-    "rating": 3.6,
-    "text": "Great product!",
-    "date": "2022-06-11"
-  },
-  {
-    "productId": 2,
-    "_id": "review31",
-    "rating": 2.9,
-    "text": "Would definitely recommend!",
-    "date": "2023-07-04"
-  },
-  {
-    "productId": 1,
-    "_id": "review32",
-    "rating": 4.7,
-    "text": "Great product!",
-    "date": "2023-06-30"
-  },
-  {
-    "productId": 0,
-    "_id": "review33",
-    "rating": 2.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-04-29"
-  },
-  {
-    "productId": 3,
-    "_id": "review34",
-    "rating": 1.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-08-27"
-  },
-  {
-    "productId": 0,
-    "_id": "review35",
-    "rating": 1.6,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-30"
-  },
-  {
-    "productId": 0,
-    "_id": "review36",
-    "rating": 4.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-24"
-  },
-  {
-    "productId": 2,
-    "_id": "review37",
-    "rating": 2.8,
-    "text": "I didn't like this at all.",
-    "date": "2023-05-04"
-  },
-  {
-    "productId": 3,
-    "_id": "review38",
-    "rating": 3.6,
-    "text": "Would definitely recommend!",
-    "date": "2023-11-18"
-  },
-  {
-    "productId": 2,
-    "_id": "review39",
-    "rating": 3.3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-07-31"
-  },
-  {
-    "productId": 3,
-    "_id": "review40",
-    "rating": 2.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-07-28"
-  },
-  {
-    "productId": 0,
-    "_id": "review41",
-    "rating": 1.7,
-    "text": "It broke after a week.",
-    "date": "2022-09-08"
-  },
-  {
-    "productId": 0,
-    "_id": "review42",
-    "rating": 3.3,
-    "text": "Great product!",
-    "date": "2022-03-22"
-  },
-  {
-    "productId": 1,
-    "_id": "review43",
-    "rating": 3.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review44",
-    "rating": 2.9,
-    "text": "It broke after a week.",
-    "date": "2022-12-17"
-  },
-  {
-    "productId": 3,
-    "_id": "review45",
-    "rating": 4.2,
-    "text": "It broke after a week.",
-    "date": "2023-10-20"
-  },
-  {
-    "productId": 2,
-    "_id": "review46",
-    "rating": 3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-01-10"
-  },
-  {
-    "productId": 0,
-    "_id": "review47",
-    "rating": 1.6,
-    "text": "It broke after a week.",
-    "date": "2023-11-17"
-  },
-  {
-    "productId": 0,
-    "_id": "review48",
-    "rating": 1.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-08-14"
-  },
-  {
-    "productId": 0,
-    "_id": "review49",
-    "rating": 4.3,
-    "text": "I didn't like this at all.",
-    "date": "2022-12-03"
-  },
-  {
-    "productId": 2,
-    "_id": "review50",
-    "rating": 1.7,
-    "text": "Would definitely recommend!",
-    "date": "2023-10-22"
-  },
-  {
-    "productId": 2,
-    "_id": "review51",
-    "rating": 4.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-12-30"
-  },
-  {
-    "productId": 1,
-    "_id": "review52",
-    "rating": 1.1,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-01"
-  },
-  {
-    "productId": 1,
-    "_id": "review53",
+    "name": "c4f8b6cc-fa9c-4e12-a096-c83b159bb8d4",
     "rating": 4.9,
-    "text": "Great product!",
-    "date": "2023-07-28"
-  },
-  {
-    "productId": 0,
-    "_id": "review54",
-    "rating": 4.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-10-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review55",
-    "rating": 3.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-02-16"
-  },
-  {
-    "productId": 1,
-    "_id": "review56",
-    "rating": 4.5,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-30"
-  },
-  {
-    "productId": 2,
-    "_id": "review57",
-    "rating": 3.8,
-    "text": "Great product!",
-    "date": "2023-03-09"
-  },
-  {
-    "productId": 1,
-    "_id": "review58",
-    "rating": 1.6,
-    "text": "Great product!",
-    "date": "2023-02-08"
-  },
-  {
-    "productId": 2,
-    "_id": "review59",
-    "rating": 2.2,
-    "text": "Great product!",
-    "date": "2023-01-28"
-  },
-  {
-    "productId": 0,
-    "_id": "review60",
-    "rating": 2.9,
     "text": "It broke after a week.",
-    "date": "2023-10-09"
+    "date": "2023-11-12",
+    "reviewReply": []
   },
   {
-    "productId": 2,
-    "_id": "review61",
-    "rating": 1.5,
-    "text": "It broke after a week.",
-    "date": "2022-08-04"
-  },
-  {
-    "productId": 2,
-    "_id": "review62",
-    "rating": 5,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-01"
-  },
-  {
-    "productId": 1,
-    "_id": "review63",
-    "rating": 1.3,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-03"
-  },
-  {
-    "productId": 2,
-    "_id": "review64",
-    "rating": 3.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-01-03"
-  },
-  {
-    "productId": 2,
-    "_id": "review65",
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
     "rating": 3.9,
-    "text": "Great product!",
-    "date": "2023-10-20"
+    "text": "Would definitely recommend!",
+    "date": "2022-05-21",
+    "reviewReply": []
   },
   {
-    "productId": 2,
-    "_id": "review66",
-    "rating": 1.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-12-23"
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 4.3,
+    "text": "It broke after a week.",
+    "date": "2022-03-10",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review67",
+    "name": "3831f3e3-a1e0-4f13-8cd1-264d26f2aad6",
     "rating": 3.3,
     "text": "It broke after a week.",
-    "date": "2023-05-25"
+    "date": "2023-08-15",
+    "reviewReply": []
   },
   {
-    "productId": 1,
-    "_id": "review68",
-    "rating": 4.4,
-    "text": "Great product!",
-    "date": "2022-10-09"
-  },
-  {
-    "productId": 1,
-    "_id": "review69",
-    "rating": 1.3,
-    "text": "Great product!",
-    "date": "2022-12-28"
-  },
-  {
-    "productId": 2,
-    "_id": "review70",
-    "rating": 4.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-03-13"
-  },
-  {
-    "productId": 0,
-    "_id": "review71",
-    "rating": 4.2,
-    "text": "Great product!",
-    "date": "2022-04-17"
-  },
-  {
-    "productId": 3,
-    "_id": "review72",
-    "rating": 4.7,
-    "text": "Would definitely recommend!",
-    "date": "2022-11-20"
-  },
-  {
-    "productId": 3,
-    "_id": "review73",
-    "rating": 3.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-07-14"
-  },
-  {
-    "productId": 1,
-    "_id": "review74",
-    "rating": 4.3,
-    "text": "Would definitely recommend!",
-    "date": "2022-01-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review75",
-    "rating": 3,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-31"
-  },
-  {
-    "productId": 2,
-    "_id": "review76",
-    "rating": 3.8,
-    "text": "Great product!",
-    "date": "2023-08-22"
-  },
-  {
-    "productId": 2,
-    "_id": "review77",
-    "rating": 1.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-11-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review78",
-    "rating": 2.4,
-    "text": "I didn't like this at all.",
-    "date": "2023-11-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review79",
-    "rating": 1,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-11"
-  },
-  {
-    "productId": 0,
-    "_id": "review80",
-    "rating": 2.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-05-25"
-  },
-  {
-    "productId": 3,
-    "_id": "review81",
-    "rating": 1.6,
-    "text": "Would definitely recommend!",
-    "date": "2023-01-14"
-  },
-  {
-    "productId": 0,
-    "_id": "review82",
-    "rating": 2.9,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-06"
-  },
-  {
-    "productId": 3,
-    "_id": "review83",
-    "rating": 3.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-04-19"
-  },
-  {
-    "productId": 1,
-    "_id": "review84",
-    "rating": 3.9,
-    "text": "I didn't like this at all.",
-    "date": "2023-07-10"
-  },
-  {
-    "productId": 2,
-    "_id": "review85",
-    "rating": 1.5,
-    "text": "I didn't like this at all.",
-    "date": "2023-02-06"
-  },
-  {
-    "productId": 2,
-    "_id": "review86",
-    "rating": 4.7,
-    "text": "I didn't like this at all.",
-    "date": "2022-11-15"
-  },
-  {
-    "productId": 0,
-    "_id": "review87",
-    "rating": 4.4,
-    "text": "Great product!",
-    "date": "2022-05-07"
-  },
-  {
-    "productId": 1,
-    "_id": "review88",
-    "rating": 2.3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-04-05"
-  },
-  {
-    "productId": 3,
-    "_id": "review89",
-    "rating": 4.4,
-    "text": "I didn't like this at all.",
-    "date": "2023-03-18"
-  },
-  {
-    "productId": 1,
-    "_id": "review90",
-    "rating": 3.2,
-    "text": "It broke after a week.",
-    "date": "2022-05-28"
-  },
-  {
-    "productId": 2,
-    "_id": "review91",
-    "rating": 2.1,
-    "text": "I didn't like this at all.",
-    "date": "2022-04-02"
-  },
-  {
-    "productId": 2,
-    "_id": "review92",
-    "rating": 4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-03-08"
-  },
-  {
-    "productId": 1,
-    "_id": "review93",
-    "rating": 2.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-06-23"
-  },
-  {
-    "productId": 2,
-    "_id": "review94",
-    "rating": 1.7,
-    "text": "Would definitely recommend!",
-    "date": "2023-11-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review95",
-    "rating": 2,
-    "text": "Would definitely recommend!",
-    "date": "2023-01-10"
-  },
-  {
-    "productId": 0,
-    "_id": "review96",
-    "rating": 1.2,
-    "text": "Great product!",
-    "date": "2022-07-12"
-  },
-  {
-    "productId": 2,
-    "_id": "review97",
-    "rating": 4.9,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-15"
-  },
-  {
-    "productId": 2,
-    "_id": "review98",
-    "rating": 4.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-09-10"
-  },
-  {
-    "productId": 2,
-    "_id": "review99",
-    "rating": 2.5,
-    "text": "Great product!",
-    "date": "2022-08-05"
-  },
-  {
-    "productId": 3,
-    "_id": "review100",
-    "rating": 3,
-    "text": "Great product!",
-    "date": "2022-11-20"
-  },
-  {
-    "productId": 1,
-    "_id": "review101",
-    "rating": 3.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-08-01"
-  },
-  {
-    "productId": 0,
-    "_id": "review102",
-    "rating": 2.8,
-    "text": "Great product!",
-    "date": "2023-07-14"
-  },
-  {
-    "productId": 1,
-    "_id": "review103",
-    "rating": 3.7,
-    "text": "It broke after a week.",
-    "date": "2022-11-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review104",
-    "rating": 2.4,
-    "text": "I didn't like this at all.",
-    "date": "2022-06-17"
-  },
-  {
-    "productId": 1,
-    "_id": "review105",
-    "rating": 2,
-    "text": "I didn't like this at all.",
-    "date": "2022-04-18"
-  },
-  {
-    "productId": 1,
-    "_id": "review106",
-    "rating": 1.7,
-    "text": "Would definitely recommend!",
-    "date": "2022-04-06"
-  },
-  {
-    "productId": 1,
-    "_id": "review107",
-    "rating": 3.2,
-    "text": "I didn't like this at all.",
-    "date": "2022-09-08"
-  },
-  {
-    "productId": 0,
-    "_id": "review108",
-    "rating": 2.3,
-    "text": "Great product!",
-    "date": "2022-05-13"
-  },
-  {
-    "productId": 1,
-    "_id": "review109",
-    "rating": 2.2,
-    "text": "Great product!",
-    "date": "2022-10-14"
-  },
-  {
-    "productId": 0,
-    "_id": "review110",
-    "rating": 4.5,
-    "text": "I didn't like this at all.",
-    "date": "2023-06-22"
-  },
-  {
-    "productId": 0,
-    "_id": "review111",
-    "rating": 4.6,
-    "text": "It broke after a week.",
-    "date": "2023-07-23"
-  },
-  {
-    "productId": 3,
-    "_id": "review112",
-    "rating": 2.9,
-    "text": "It broke after a week.",
-    "date": "2022-02-11"
-  },
-  {
-    "productId": 3,
-    "_id": "review113",
-    "rating": 4.2,
-    "text": "Great product!",
-    "date": "2023-10-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review114",
-    "rating": 2.9,
-    "text": "It broke after a week.",
-    "date": "2023-03-31"
-  },
-  {
-    "productId": 2,
-    "_id": "review115",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-02-13"
-  },
-  {
-    "productId": 2,
-    "_id": "review116",
-    "rating": 2.5,
-    "text": "It broke after a week.",
-    "date": "2023-02-08"
-  },
-  {
-    "productId": 0,
-    "_id": "review117",
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
     "rating": 1.9,
-    "text": "Great product!",
-    "date": "2023-08-27"
-  },
-  {
-    "productId": 3,
-    "_id": "review118",
-    "rating": 4.7,
     "text": "Would definitely recommend!",
-    "date": "2022-09-26"
+    "date": "2023-07-06",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review119",
-    "rating": 1.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-12-01"
-  },
-  {
-    "productId": 0,
-    "_id": "review120",
-    "rating": 1.4,
-    "text": "Great product!",
-    "date": "2022-05-13"
-  },
-  {
-    "productId": 3,
-    "_id": "review121",
-    "rating": 4.7,
-    "text": "Great product!",
-    "date": "2023-08-20"
-  },
-  {
-    "productId": 3,
-    "_id": "review122",
-    "rating": 3.7,
-    "text": "I didn't like this at all.",
-    "date": "2022-06-18"
-  },
-  {
-    "productId": 1,
-    "_id": "review123",
-    "rating": 2.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-09-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review124",
-    "rating": 3.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-04-08"
-  },
-  {
-    "productId": 0,
-    "_id": "review125",
-    "rating": 1.8,
-    "text": "It broke after a week.",
-    "date": "2022-05-23"
-  },
-  {
-    "productId": 1,
-    "_id": "review126",
-    "rating": 3.4,
-    "text": "It broke after a week.",
-    "date": "2022-04-10"
-  },
-  {
-    "productId": 1,
-    "_id": "review127",
-    "rating": 1.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-08-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review128",
-    "rating": 1.4,
-    "text": "I didn't like this at all.",
-    "date": "2023-09-24"
-  },
-  {
-    "productId": 1,
-    "_id": "review129",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-13"
-  },
-  {
-    "productId": 0,
-    "_id": "review130",
-    "rating": 2.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-09-17"
-  },
-  {
-    "productId": 2,
-    "_id": "review131",
-    "rating": 3.9,
-    "text": "I didn't like this at all.",
-    "date": "2023-03-27"
-  },
-  {
-    "productId": 1,
-    "_id": "review132",
-    "rating": 1.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-10-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review133",
-    "rating": 2.4,
-    "text": "I didn't like this at all.",
-    "date": "2023-07-06"
-  },
-  {
-    "productId": 1,
-    "_id": "review134",
-    "rating": 2.3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-07-10"
-  },
-  {
-    "productId": 0,
-    "_id": "review135",
-    "rating": 2.2,
-    "text": "I didn't like this at all.",
-    "date": "2023-08-16"
-  },
-  {
-    "productId": 1,
-    "_id": "review136",
-    "rating": 4.3,
-    "text": "Great product!",
-    "date": "2022-09-30"
-  },
-  {
-    "productId": 2,
-    "_id": "review137",
-    "rating": 4.7,
-    "text": "I didn't like this at all.",
-    "date": "2022-11-28"
-  },
-  {
-    "productId": 1,
-    "_id": "review138",
-    "rating": 2.6,
-    "text": "Would definitely recommend!",
-    "date": "2023-07-11"
-  },
-  {
-    "productId": 0,
-    "_id": "review139",
-    "rating": 1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-08-02"
-  },
-  {
-    "productId": 0,
-    "_id": "review140",
-    "rating": 4.4,
-    "text": "It broke after a week.",
-    "date": "2022-04-11"
-  },
-  {
-    "productId": 0,
-    "_id": "review141",
-    "rating": 4.4,
-    "text": "Great product!",
-    "date": "2023-04-17"
-  },
-  {
-    "productId": 2,
-    "_id": "review142",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-03-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review143",
-    "rating": 2.9,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-07-08"
-  },
-  {
-    "productId": 3,
-    "_id": "review144",
-    "rating": 3.8,
-    "text": "Would definitely recommend!",
-    "date": "2023-01-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review145",
-    "rating": 2,
-    "text": "Great product!",
-    "date": "2022-07-08"
-  },
-  {
-    "productId": 3,
-    "_id": "review146",
-    "rating": 4.1,
-    "text": "I didn't like this at all.",
-    "date": "2023-12-22"
-  },
-  {
-    "productId": 0,
-    "_id": "review147",
-    "rating": 3.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-06-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review148",
-    "rating": 3.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-06-03"
-  },
-  {
-    "productId": 1,
-    "_id": "review149",
-    "rating": 4.1,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-05"
-  },
-  {
-    "productId": 1,
-    "_id": "review150",
-    "rating": 3.4,
-    "text": "Would definitely recommend!",
-    "date": "2023-12-20"
-  },
-  {
-    "productId": 2,
-    "_id": "review151",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2023-02-08"
-  },
-  {
-    "productId": 1,
-    "_id": "review152",
-    "rating": 2.4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-02-15"
-  },
-  {
-    "productId": 2,
-    "_id": "review153",
-    "rating": 2.3,
-    "text": "Great product!",
-    "date": "2023-02-27"
-  },
-  {
-    "productId": 3,
-    "_id": "review154",
-    "rating": 2.2,
-    "text": "It broke after a week.",
-    "date": "2022-11-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review155",
-    "rating": 4.9,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-04-28"
-  },
-  {
-    "productId": 2,
-    "_id": "review156",
-    "rating": 4.8,
-    "text": "It broke after a week.",
-    "date": "2022-11-28"
-  },
-  {
-    "productId": 1,
-    "_id": "review157",
-    "rating": 4.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-11-18"
-  },
-  {
-    "productId": 3,
-    "_id": "review158",
-    "rating": 4.8,
-    "text": "It broke after a week.",
-    "date": "2023-02-24"
-  },
-  {
-    "productId": 2,
-    "_id": "review159",
-    "rating": 1.1,
-    "text": "I didn't like this at all.",
-    "date": "2022-06-06"
-  },
-  {
-    "productId": 3,
-    "_id": "review160",
-    "rating": 1.1,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-27"
-  },
-  {
-    "productId": 0,
-    "_id": "review161",
-    "rating": 1.4,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-05"
-  },
-  {
-    "productId": 1,
-    "_id": "review162",
-    "rating": 4.5,
-    "text": "Would definitely recommend!",
-    "date": "2022-08-26"
-  },
-  {
-    "productId": 1,
-    "_id": "review163",
-    "rating": 1.4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-06-08"
-  },
-  {
-    "productId": 0,
-    "_id": "review164",
-    "rating": 3.9,
-    "text": "Great product!",
-    "date": "2022-11-12"
-  },
-  {
-    "productId": 0,
-    "_id": "review165",
-    "rating": 1.2,
-    "text": "It broke after a week.",
-    "date": "2022-07-12"
-  },
-  {
-    "productId": 2,
-    "_id": "review166",
-    "rating": 4.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-10-26"
-  },
-  {
-    "productId": 3,
-    "_id": "review167",
-    "rating": 4,
-    "text": "It broke after a week.",
-    "date": "2022-04-13"
-  },
-  {
-    "productId": 3,
-    "_id": "review168",
-    "rating": 4.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-02-27"
-  },
-  {
-    "productId": 1,
-    "_id": "review169",
-    "rating": 2.9,
-    "text": "It broke after a week.",
-    "date": "2022-09-28"
-  },
-  {
-    "productId": 1,
-    "_id": "review170",
-    "rating": 3.3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-05-04"
-  },
-  {
-    "productId": 2,
-    "_id": "review171",
-    "rating": 4.6,
-    "text": "It broke after a week.",
-    "date": "2023-06-14"
-  },
-  {
-    "productId": 3,
-    "_id": "review172",
-    "rating": 4.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-08-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review173",
-    "rating": 4.1,
-    "text": "Would definitely recommend!",
-    "date": "2023-07-09"
-  },
-  {
-    "productId": 2,
-    "_id": "review174",
-    "rating": 1.2,
-    "text": "It broke after a week.",
-    "date": "2023-12-04"
-  },
-  {
-    "productId": 3,
-    "_id": "review175",
-    "rating": 3,
-    "text": "I didn't like this at all.",
-    "date": "2023-09-17"
-  },
-  {
-    "productId": 1,
-    "_id": "review176",
-    "rating": 3.3,
-    "text": "Great product!",
-    "date": "2023-08-21"
-  },
-  {
-    "productId": 3,
-    "_id": "review177",
-    "rating": 2.6,
-    "text": "Great product!",
-    "date": "2022-12-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review178",
-    "rating": 1.8,
-    "text": "I didn't like this at all.",
-    "date": "2022-10-12"
-  },
-  {
-    "productId": 1,
-    "_id": "review179",
-    "rating": 1.4,
-    "text": "It broke after a week.",
-    "date": "2023-07-17"
-  },
-  {
-    "productId": 0,
-    "_id": "review180",
-    "rating": 2.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-01-25"
-  },
-  {
-    "productId": 1,
-    "_id": "review181",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-06-24"
-  },
-  {
-    "productId": 3,
-    "_id": "review182",
-    "rating": 2.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-08-23"
-  },
-  {
-    "productId": 3,
-    "_id": "review183",
-    "rating": 2.2,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-09"
-  },
-  {
-    "productId": 3,
-    "_id": "review184",
-    "rating": 3.8,
-    "text": "I didn't like this at all.",
-    "date": "2022-10-19"
-  },
-  {
-    "productId": 2,
-    "_id": "review185",
-    "rating": 1.5,
-    "text": "I didn't like this at all.",
-    "date": "2023-04-09"
-  },
-  {
-    "productId": 2,
-    "_id": "review186",
-    "rating": 2.7,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-05"
-  },
-  {
-    "productId": 2,
-    "_id": "review187",
-    "rating": 2.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-07-28"
-  },
-  {
-    "productId": 2,
-    "_id": "review188",
-    "rating": 4.5,
-    "text": "It broke after a week.",
-    "date": "2022-11-29"
-  },
-  {
-    "productId": 2,
-    "_id": "review189",
-    "rating": 1.3,
-    "text": "I didn't like this at all.",
-    "date": "2022-09-10"
-  },
-  {
-    "productId": 2,
-    "_id": "review190",
-    "rating": 4.1,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-24"
-  },
-  {
-    "productId": 2,
-    "_id": "review191",
-    "rating": 4.3,
-    "text": "Great product!",
-    "date": "2022-06-15"
-  },
-  {
-    "productId": 1,
-    "_id": "review192",
-    "rating": 4.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-12-11"
-  },
-  {
-    "productId": 3,
-    "_id": "review193",
-    "rating": 4.4,
-    "text": "It broke after a week.",
-    "date": "2022-09-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review194",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-14"
-  },
-  {
-    "productId": 3,
-    "_id": "review195",
-    "rating": 1,
-    "text": "I didn't like this at all.",
-    "date": "2022-05-05"
-  },
-  {
-    "productId": 3,
-    "_id": "review196",
-    "rating": 1.7,
-    "text": "It broke after a week.",
-    "date": "2022-11-01"
-  },
-  {
-    "productId": 1,
-    "_id": "review197",
-    "rating": 4.2,
-    "text": "Great product!",
-    "date": "2022-03-28"
-  },
-  {
-    "productId": 1,
-    "_id": "review198",
-    "rating": 1.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-04-26"
-  },
-  {
-    "productId": 2,
-    "_id": "review199",
-    "rating": 3.4,
-    "text": "It broke after a week.",
-    "date": "2023-07-19"
-  },
-  {
-    "productId": 3,
-    "_id": "review200",
-    "rating": 1.1,
-    "text": "Would definitely recommend!",
-    "date": "2022-03-16"
-  },
-  {
-    "productId": 2,
-    "_id": "review201",
-    "rating": 3.7,
-    "text": "Great product!",
-    "date": "2022-07-18"
-  },
-  {
-    "productId": 3,
-    "_id": "review202",
-    "rating": 3.4,
-    "text": "It broke after a week.",
-    "date": "2022-02-02"
-  },
-  {
-    "productId": 3,
-    "_id": "review203",
-    "rating": 4.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-01-08"
-  },
-  {
-    "productId": 0,
-    "_id": "review204",
-    "rating": 3.3,
-    "text": "Great product!",
-    "date": "2022-07-17"
-  },
-  {
-    "productId": 1,
-    "_id": "review205",
-    "rating": 1.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-10-04"
-  },
-  {
-    "productId": 0,
-    "_id": "review206",
-    "rating": 2.2,
-    "text": "Great product!",
-    "date": "2022-05-06"
-  },
-  {
-    "productId": 3,
-    "_id": "review207",
-    "rating": 3.5,
-    "text": "Great product!",
-    "date": "2023-03-31"
-  },
-  {
-    "productId": 3,
-    "_id": "review208",
-    "rating": 2.7,
-    "text": "It broke after a week.",
-    "date": "2023-10-20"
-  },
-  {
-    "productId": 1,
-    "_id": "review209",
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
     "rating": 5,
-    "text": "I didn't like this at all.",
-    "date": "2023-08-09"
-  },
-  {
-    "productId": 1,
-    "_id": "review210",
-    "rating": 3.5,
-    "text": "It broke after a week.",
-    "date": "2022-12-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review211",
-    "rating": 2.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-10-21"
-  },
-  {
-    "productId": 0,
-    "_id": "review212",
-    "rating": 3.3,
-    "text": "Great product!",
-    "date": "2022-01-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review213",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2023-05-09"
-  },
-  {
-    "productId": 3,
-    "_id": "review214",
-    "rating": 2,
-    "text": "I didn't like this at all.",
-    "date": "2022-07-24"
-  },
-  {
-    "productId": 2,
-    "_id": "review215",
-    "rating": 3.1,
-    "text": "It broke after a week.",
-    "date": "2022-12-20"
-  },
-  {
-    "productId": 3,
-    "_id": "review216",
-    "rating": 2.1,
-    "text": "It broke after a week.",
-    "date": "2023-06-26"
-  },
-  {
-    "productId": 2,
-    "_id": "review217",
-    "rating": 3.2,
-    "text": "I didn't like this at all.",
-    "date": "2023-12-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review218",
-    "rating": 3.4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-11-06"
-  },
-  {
-    "productId": 0,
-    "_id": "review219",
-    "rating": 4.5,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-28"
-  },
-  {
-    "productId": 2,
-    "_id": "review220",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-02-19"
-  },
-  {
-    "productId": 0,
-    "_id": "review221",
-    "rating": 4.7,
-    "text": "It broke after a week.",
-    "date": "2022-11-26"
-  },
-  {
-    "productId": 2,
-    "_id": "review222",
-    "rating": 1.3,
-    "text": "It broke after a week.",
-    "date": "2023-08-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review223",
-    "rating": 3.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-08-16"
-  },
-  {
-    "productId": 2,
-    "_id": "review224",
-    "rating": 4.5,
     "text": "Would definitely recommend!",
-    "date": "2022-05-06"
+    "date": "2023-04-19",
+    "reviewReply": []
   },
   {
-    "productId": 0,
-    "_id": "review225",
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 1.4,
+    "text": "It broke after a week.",
+    "date": "2022-11-29",
+    "reviewReply": []
+  },
+  {
+    "name": "e6e3d1e1-85b2-4a68-9e01-46901fbcd1b2",
+    "rating": 1.5,
+    "text": "Would definitely recommend!",
+    "date": "2022-05-18",
+    "reviewReply": []
+  },
+  {
+    "name": "82fb7671-14a0-410b-b2ba-f167804cc282",
+    "rating": 4,
+    "text": "I didn't like this at all.",
+    "date": "2023-09-30",
+    "reviewReply": []
+  },
+  {
+    "name": "19b3748b-0923-4f0f-99c4-c25dabf25c8b",
+    "rating": 2.7,
+    "text": "Would definitely recommend!",
+    "date": "2022-07-28",
+    "reviewReply": []
+  },
+  {
+    "name": "bcf6fd98-846b-4435-88e0-f3dd6db3b96b",
+    "rating": 4.5,
+    "text": "Great product!",
+    "date": "2022-06-25",
+    "reviewReply": []
+  },
+  {
+    "name": "edbcfaf6-ac65-42fa-9378-31b277a0844b",
+    "rating": 3.6,
+    "text": "It broke after a week.",
+    "date": "2023-09-13",
+    "reviewReply": []
+  },
+  {
+    "name": "bbf29a54-3e79-4000-ab7c-0695b02b0f8a",
+    "rating": 3.7,
+    "text": "It broke after a week.",
+    "date": "2022-02-14",
+    "reviewReply": []
+  },
+  {
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
     "rating": 3.1,
     "text": "It's okay, but I've seen better.",
-    "date": "2022-06-26"
+    "date": "2022-05-24",
+    "reviewReply": []
   },
   {
-    "productId": 1,
-    "_id": "review226",
-    "rating": 2.7,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-02-04"
+    "name": "97fa8ff9-963e-4a24-8ab0-3afcb8681c02",
+    "rating": 4.5,
+    "text": "It broke after a week.",
+    "date": "2022-09-04",
+    "reviewReply": []
   },
   {
-    "productId": 0,
-    "_id": "review227",
-    "rating": 1.9,
-    "text": "Great product!",
-    "date": "2022-10-08"
+    "name": "174f603b-40a4-4961-81e5-5508148b3b0d",
+    "rating": 3.4,
+    "text": "It broke after a week.",
+    "date": "2022-12-16",
+    "reviewReply": []
   },
   {
-    "productId": 2,
-    "_id": "review228",
-    "rating": 3.8,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-30"
-  },
-  {
-    "productId": 1,
-    "_id": "review229",
+    "name": "d2459c05-3be0-4b10-9fbb-8dbd69c73ee3",
     "rating": 4.4,
-    "text": "It broke after a week.",
-    "date": "2023-11-10"
-  },
-  {
-    "productId": 3,
-    "_id": "review230",
-    "rating": 2.4,
     "text": "I didn't like this at all.",
-    "date": "2022-09-09"
+    "date": "2022-04-22",
+    "reviewReply": []
   },
   {
-    "productId": 1,
-    "_id": "review231",
-    "rating": 2.8,
-    "text": "Great product!",
-    "date": "2023-02-27"
-  },
-  {
-    "productId": 3,
-    "_id": "review232",
-    "rating": 1.4,
-    "text": "It broke after a week.",
-    "date": "2022-12-03"
-  },
-  {
-    "productId": 1,
-    "_id": "review233",
-    "rating": 3.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-06-04"
-  },
-  {
-    "productId": 3,
-    "_id": "review234",
-    "rating": 4.2,
-    "text": "Great product!",
-    "date": "2023-09-04"
-  },
-  {
-    "productId": 2,
-    "_id": "review235",
-    "rating": 1.2,
-    "text": "I didn't like this at all.",
-    "date": "2022-11-20"
-  },
-  {
-    "productId": 2,
-    "_id": "review236",
+    "name": "ff72503e-8920-4462-9025-b5f902311ec8",
     "rating": 3.7,
     "text": "Great product!",
-    "date": "2023-11-14"
+    "date": "2022-08-11",
+    "reviewReply": []
   },
   {
-    "productId": 1,
-    "_id": "review237",
-    "rating": 1.2,
-    "text": "It broke after a week.",
-    "date": "2022-06-10"
-  },
-  {
-    "productId": 0,
-    "_id": "review238",
-    "rating": 4.7,
-    "text": "Would definitely recommend!",
-    "date": "2022-02-07"
-  },
-  {
-    "productId": 1,
-    "_id": "review239",
-    "rating": 2.9,
-    "text": "It broke after a week.",
-    "date": "2022-11-02"
-  },
-  {
-    "productId": 3,
-    "_id": "review240",
-    "rating": 3.7,
-    "text": "Great product!",
-    "date": "2023-01-11"
-  },
-  {
-    "productId": 2,
-    "_id": "review241",
-    "rating": 2.8,
-    "text": "Great product!",
-    "date": "2022-10-29"
-  },
-  {
-    "productId": 0,
-    "_id": "review242",
-    "rating": 2.5,
-    "text": "Would definitely recommend!",
-    "date": "2022-03-23"
-  },
-  {
-    "productId": 1,
-    "_id": "review243",
-    "rating": 2.9,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-28"
-  },
-  {
-    "productId": 3,
-    "_id": "review244",
-    "rating": 2.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-02-22"
-  },
-  {
-    "productId": 1,
-    "_id": "review245",
-    "rating": 2.8,
-    "text": "Great product!",
-    "date": "2023-07-28"
-  },
-  {
-    "productId": 2,
-    "_id": "review246",
-    "rating": 4.7,
-    "text": "It broke after a week.",
-    "date": "2023-01-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review247",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-09-18"
-  },
-  {
-    "productId": 1,
-    "_id": "review248",
-    "rating": 3.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-21"
-  },
-  {
-    "productId": 3,
-    "_id": "review249",
-    "rating": 2.6,
-    "text": "Would definitely recommend!",
-    "date": "2022-07-24"
-  },
-  {
-    "productId": 3,
-    "_id": "review250",
-    "rating": 3.3,
-    "text": "It broke after a week.",
-    "date": "2022-05-30"
-  },
-  {
-    "productId": 3,
-    "_id": "review251",
-    "rating": 2.9,
-    "text": "Would definitely recommend!",
-    "date": "2022-12-04"
-  },
-  {
-    "productId": 3,
-    "_id": "review252",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-06-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review253",
+    "name": "a1b2406c-7b04-45a3-bc5f-1be7861a02e1",
     "rating": 4.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-06-29"
+    "text": "It broke after a week.",
+    "date": "2022-05-02",
+    "reviewReply": []
   },
   {
-    "productId": 0,
-    "_id": "review254",
-    "rating": 1.3,
-    "text": "Great product!",
-    "date": "2023-10-31"
+    "name": "32169316-206f-4c43-9278-10830c9dd20b",
+    "rating": 1.7,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-07-06",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review255",
-    "rating": 2,
-    "text": "Great product!",
-    "date": "2022-03-20"
+    "name": "b71c91ba-9628-44d9-b5a3-e6276e0161a8",
+    "rating": 2.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-03-17",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review256",
+    "name": "73bb5051-4a52-4353-a983-671cb852f95f",
     "rating": 4.1,
     "text": "Great product!",
-    "date": "2023-01-17"
+    "date": "2023-02-02",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review257",
-    "rating": 4.4,
-    "text": "Great product!",
-    "date": "2023-10-05"
-  },
-  {
-    "productId": 3,
-    "_id": "review258",
-    "rating": 3.9,
-    "text": "Great product!",
-    "date": "2023-02-26"
-  },
-  {
-    "productId": 2,
-    "_id": "review259",
-    "rating": 1.4,
-    "text": "Would definitely recommend!",
-    "date": "2022-09-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review260",
-    "rating": 4.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-03-18"
-  },
-  {
-    "productId": 3,
-    "_id": "review261",
-    "rating": 1.3,
-    "text": "I didn't like this at all.",
-    "date": "2022-02-21"
-  },
-  {
-    "productId": 1,
-    "_id": "review262",
-    "rating": 5,
-    "text": "Great product!",
-    "date": "2022-09-18"
-  },
-  {
-    "productId": 1,
-    "_id": "review263",
-    "rating": 2.7,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-11-02"
-  },
-  {
-    "productId": 2,
-    "_id": "review264",
-    "rating": 2.9,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-06-14"
-  },
-  {
-    "productId": 3,
-    "_id": "review265",
-    "rating": 3.4,
-    "text": "Would definitely recommend!",
-    "date": "2023-06-07"
-  },
-  {
-    "productId": 0,
-    "_id": "review266",
-    "rating": 3.8,
-    "text": "I didn't like this at all.",
-    "date": "2023-01-17"
-  },
-  {
-    "productId": 2,
-    "_id": "review267",
-    "rating": 2.4,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-23"
-  },
-  {
-    "productId": 2,
-    "_id": "review268",
-    "rating": 4.3,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-21"
-  },
-  {
-    "productId": 1,
-    "_id": "review269",
-    "rating": 1.3,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-15"
-  },
-  {
-    "productId": 0,
-    "_id": "review270",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-10-21"
-  },
-  {
-    "productId": 2,
-    "_id": "review271",
+    "name": "7b3a77e4-8f8b-41d0-99bd-aad320056df7",
     "rating": 1.8,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-30"
-  },
-  {
-    "productId": 0,
-    "_id": "review272",
-    "rating": 4.8,
-    "text": "I didn't like this at all.",
-    "date": "2023-08-10"
-  },
-  {
-    "productId": 1,
-    "_id": "review273",
-    "rating": 3,
-    "text": "I didn't like this at all.",
-    "date": "2022-06-11"
-  },
-  {
-    "productId": 1,
-    "_id": "review274",
-    "rating": 3,
-    "text": "I didn't like this at all.",
-    "date": "2023-09-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review275",
-    "rating": 4,
-    "text": "It broke after a week.",
-    "date": "2023-01-25"
-  },
-  {
-    "productId": 0,
-    "_id": "review276",
-    "rating": 2.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-07-10"
-  },
-  {
-    "productId": 1,
-    "_id": "review277",
-    "rating": 3.8,
     "text": "Would definitely recommend!",
-    "date": "2023-02-26"
+    "date": "2023-05-16",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review278",
-    "rating": 2.7,
-    "text": "I didn't like this at all.",
-    "date": "2022-02-25"
-  },
-  {
-    "productId": 0,
-    "_id": "review279",
-    "rating": 3.4,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-21"
-  },
-  {
-    "productId": 2,
-    "_id": "review280",
-    "rating": 1.9,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-28"
-  },
-  {
-    "productId": 1,
-    "_id": "review281",
-    "rating": 2.9,
-    "text": "Would definitely recommend!",
-    "date": "2022-11-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review282",
-    "rating": 1.9,
-    "text": "Great product!",
-    "date": "2022-08-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review283",
-    "rating": 1.9,
-    "text": "Would definitely recommend!",
-    "date": "2022-09-01"
-  },
-  {
-    "productId": 2,
-    "_id": "review284",
-    "rating": 4.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-04-26"
-  },
-  {
-    "productId": 2,
-    "_id": "review285",
-    "rating": 1.4,
-    "text": "Would definitely recommend!",
-    "date": "2023-07-06"
-  },
-  {
-    "productId": 0,
-    "_id": "review286",
-    "rating": 1.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-09-23"
-  },
-  {
-    "productId": 3,
-    "_id": "review287",
-    "rating": 1.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-01-27"
-  },
-  {
-    "productId": 0,
-    "_id": "review288",
-    "rating": 3.6,
-    "text": "It broke after a week.",
-    "date": "2023-09-13"
-  },
-  {
-    "productId": 1,
-    "_id": "review289",
-    "rating": 3.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-12-13"
-  },
-  {
-    "productId": 0,
-    "_id": "review290",
-    "rating": 4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-01-17"
-  },
-  {
-    "productId": 3,
-    "_id": "review291",
-    "rating": 4.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-02-27"
-  },
-  {
-    "productId": 3,
-    "_id": "review292",
-    "rating": 4,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-07"
-  },
-  {
-    "productId": 1,
-    "_id": "review293",
-    "rating": 1.3,
-    "text": "I didn't like this at all.",
-    "date": "2022-10-17"
-  },
-  {
-    "productId": 2,
-    "_id": "review294",
-    "rating": 4.5,
-    "text": "It broke after a week.",
-    "date": "2023-11-16"
-  },
-  {
-    "productId": 1,
-    "_id": "review295",
-    "rating": 4.6,
-    "text": "It broke after a week.",
-    "date": "2022-05-08"
-  },
-  {
-    "productId": 0,
-    "_id": "review296",
-    "rating": 2.3,
-    "text": "Great product!",
-    "date": "2023-12-20"
-  },
-  {
-    "productId": 2,
-    "_id": "review297",
-    "rating": 1.4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-03-02"
-  },
-  {
-    "productId": 2,
-    "_id": "review298",
-    "rating": 4.9,
-    "text": "I didn't like this at all.",
-    "date": "2023-10-27"
-  },
-  {
-    "productId": 3,
-    "_id": "review299",
-    "rating": 1.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-09-22"
-  },
-  {
-    "productId": 1,
-    "_id": "review300",
-    "rating": 2.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-10-08"
-  },
-  {
-    "productId": 3,
-    "_id": "review301",
-    "rating": 3.3,
-    "text": "Would definitely recommend!",
-    "date": "2023-10-23"
-  },
-  {
-    "productId": 0,
-    "_id": "review302",
-    "rating": 2.8,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-05-17"
-  },
-  {
-    "productId": 2,
-    "_id": "review303",
-    "rating": 1.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-04-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review304",
-    "rating": 3.3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-09-05"
-  },
-  {
-    "productId": 3,
-    "_id": "review305",
-    "rating": 2.4,
-    "text": "Great product!",
-    "date": "2022-12-29"
-  },
-  {
-    "productId": 2,
-    "_id": "review306",
-    "rating": 4.6,
-    "text": "It broke after a week.",
-    "date": "2023-12-13"
-  },
-  {
-    "productId": 1,
-    "_id": "review307",
-    "rating": 3.3,
-    "text": "It broke after a week.",
-    "date": "2022-01-24"
-  },
-  {
-    "productId": 1,
-    "_id": "review308",
-    "rating": 4.4,
-    "text": "I didn't like this at all.",
-    "date": "2023-06-25"
-  },
-  {
-    "productId": 3,
-    "_id": "review309",
-    "rating": 1.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-11-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review310",
-    "rating": 2.4,
-    "text": "I didn't like this at all.",
-    "date": "2023-07-25"
-  },
-  {
-    "productId": 2,
-    "_id": "review311",
-    "rating": 4.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-03-03"
-  },
-  {
-    "productId": 3,
-    "_id": "review312",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-01-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review313",
-    "rating": 4.3,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-22"
-  },
-  {
-    "productId": 0,
-    "_id": "review314",
-    "rating": 2,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-26"
-  },
-  {
-    "productId": 1,
-    "_id": "review315",
-    "rating": 1.1,
-    "text": "Great product!",
-    "date": "2022-03-03"
-  },
-  {
-    "productId": 0,
-    "_id": "review316",
-    "rating": 3.7,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-07-29"
-  },
-  {
-    "productId": 3,
-    "_id": "review317",
-    "rating": 4,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-22"
-  },
-  {
-    "productId": 1,
-    "_id": "review318",
-    "rating": 3.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-10-31"
-  },
-  {
-    "productId": 0,
-    "_id": "review319",
-    "rating": 2.6,
-    "text": "Would definitely recommend!",
-    "date": "2022-03-31"
-  },
-  {
-    "productId": 0,
-    "_id": "review320",
-    "rating": 4.5,
-    "text": "It broke after a week.",
-    "date": "2023-08-28"
-  },
-  {
-    "productId": 0,
-    "_id": "review321",
-    "rating": 2.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-08-08"
-  },
-  {
-    "productId": 3,
-    "_id": "review322",
-    "rating": 3.9,
-    "text": "Would definitely recommend!",
-    "date": "2023-08-29"
-  },
-  {
-    "productId": 1,
-    "_id": "review323",
-    "rating": 3.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-05-16"
-  },
-  {
-    "productId": 3,
-    "_id": "review324",
-    "rating": 4.6,
-    "text": "Would definitely recommend!",
-    "date": "2023-06-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review325",
-    "rating": 3.4,
-    "text": "Great product!",
-    "date": "2022-03-12"
-  },
-  {
-    "productId": 1,
-    "_id": "review326",
-    "rating": 3.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-11-26"
-  },
-  {
-    "productId": 1,
-    "_id": "review327",
-    "rating": 2.6,
-    "text": "It broke after a week.",
-    "date": "2022-02-19"
-  },
-  {
-    "productId": 2,
-    "_id": "review328",
-    "rating": 3.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-02-17"
-  },
-  {
-    "productId": 0,
-    "_id": "review329",
-    "rating": 4.8,
-    "text": "I didn't like this at all.",
-    "date": "2023-09-18"
-  },
-  {
-    "productId": 2,
-    "_id": "review330",
-    "rating": 4,
-    "text": "It broke after a week.",
-    "date": "2023-10-03"
-  },
-  {
-    "productId": 0,
-    "_id": "review331",
-    "rating": 4.4,
-    "text": "It broke after a week.",
-    "date": "2023-07-24"
-  },
-  {
-    "productId": 2,
-    "_id": "review332",
-    "rating": 2,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review333",
-    "rating": 4.6,
-    "text": "It broke after a week.",
-    "date": "2022-03-10"
-  },
-  {
-    "productId": 0,
-    "_id": "review334",
-    "rating": 4.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-08-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review335",
-    "rating": 1.5,
-    "text": "Great product!",
-    "date": "2022-08-09"
-  },
-  {
-    "productId": 2,
-    "_id": "review336",
-    "rating": 1.3,
-    "text": "It broke after a week.",
-    "date": "2022-11-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review337",
-    "rating": 4.8,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-01-21"
-  },
-  {
-    "productId": 2,
-    "_id": "review338",
-    "rating": 3.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-05-06"
-  },
-  {
-    "productId": 3,
-    "_id": "review339",
-    "rating": 4.1,
-    "text": "It broke after a week.",
-    "date": "2023-12-14"
-  },
-  {
-    "productId": 3,
-    "_id": "review340",
-    "rating": 2,
-    "text": "It broke after a week.",
-    "date": "2022-06-16"
-  },
-  {
-    "productId": 0,
-    "_id": "review341",
-    "rating": 3.5,
-    "text": "I didn't like this at all.",
-    "date": "2022-02-22"
-  },
-  {
-    "productId": 0,
-    "_id": "review342",
-    "rating": 1.2,
-    "text": "I didn't like this at all.",
-    "date": "2022-01-05"
-  },
-  {
-    "productId": 2,
-    "_id": "review343",
-    "rating": 3.9,
-    "text": "Great product!",
-    "date": "2023-01-29"
-  },
-  {
-    "productId": 3,
-    "_id": "review344",
-    "rating": 4.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-09-03"
-  },
-  {
-    "productId": 2,
-    "_id": "review345",
-    "rating": 3.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-04-13"
-  },
-  {
-    "productId": 0,
-    "_id": "review346",
-    "rating": 4.9,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-08"
-  },
-  {
-    "productId": 1,
-    "_id": "review347",
-    "rating": 4.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-07-22"
-  },
-  {
-    "productId": 2,
-    "_id": "review348",
-    "rating": 4.6,
-    "text": "I didn't like this at all.",
-    "date": "2023-01-27"
-  },
-  {
-    "productId": 0,
-    "_id": "review349",
-    "rating": 3.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-08-26"
-  },
-  {
-    "productId": 1,
-    "_id": "review350",
-    "rating": 1.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-31"
-  },
-  {
-    "productId": 2,
-    "_id": "review351",
-    "rating": 3.2,
-    "text": "It broke after a week.",
-    "date": "2023-12-25"
-  },
-  {
-    "productId": 3,
-    "_id": "review352",
-    "rating": 1.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-08-31"
-  },
-  {
-    "productId": 2,
-    "_id": "review353",
-    "rating": 2.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-10-31"
-  },
-  {
-    "productId": 2,
-    "_id": "review354",
-    "rating": 3.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-01-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review355",
-    "rating": 4.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-10"
-  },
-  {
-    "productId": 2,
-    "_id": "review356",
-    "rating": 3.8,
-    "text": "Great product!",
-    "date": "2023-09-06"
-  },
-  {
-    "productId": 1,
-    "_id": "review357",
-    "rating": 3.9,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-08-26"
-  },
-  {
-    "productId": 2,
-    "_id": "review358",
-    "rating": 2.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-04-07"
-  },
-  {
-    "productId": 0,
-    "_id": "review359",
-    "rating": 4.3,
-    "text": "Would definitely recommend!",
-    "date": "2023-03-25"
-  },
-  {
-    "productId": 1,
-    "_id": "review360",
-    "rating": 1.1,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-10"
-  },
-  {
-    "productId": 2,
-    "_id": "review361",
-    "rating": 1.6,
-    "text": "Great product!",
-    "date": "2022-06-01"
-  },
-  {
-    "productId": 1,
-    "_id": "review362",
-    "rating": 4.4,
-    "text": "Great product!",
-    "date": "2022-01-20"
-  },
-  {
-    "productId": 1,
-    "_id": "review363",
-    "rating": 1.6,
-    "text": "I didn't like this at all.",
-    "date": "2023-07-15"
-  },
-  {
-    "productId": 1,
-    "_id": "review364",
-    "rating": 4.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-01-03"
-  },
-  {
-    "productId": 3,
-    "_id": "review365",
-    "rating": 4.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-09-22"
-  },
-  {
-    "productId": 2,
-    "_id": "review366",
-    "rating": 2.5,
-    "text": "Great product!",
-    "date": "2022-03-15"
-  },
-  {
-    "productId": 0,
-    "_id": "review367",
-    "rating": 3,
-    "text": "I didn't like this at all.",
-    "date": "2022-08-11"
-  },
-  {
-    "productId": 2,
-    "_id": "review368",
-    "rating": 3.5,
-    "text": "Would definitely recommend!",
-    "date": "2023-01-18"
-  },
-  {
-    "productId": 3,
-    "_id": "review369",
-    "rating": 4.9,
-    "text": "Great product!",
-    "date": "2023-08-05"
-  },
-  {
-    "productId": 1,
-    "_id": "review370",
-    "rating": 4.7,
-    "text": "Would definitely recommend!",
-    "date": "2023-11-23"
-  },
-  {
-    "productId": 1,
-    "_id": "review371",
-    "rating": 3.5,
-    "text": "I didn't like this at all.",
-    "date": "2022-09-20"
-  },
-  {
-    "productId": 2,
-    "_id": "review372",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-09-20"
-  },
-  {
-    "productId": 3,
-    "_id": "review373",
-    "rating": 4.7,
-    "text": "It broke after a week.",
-    "date": "2023-06-21"
-  },
-  {
-    "productId": 3,
-    "_id": "review374",
-    "rating": 3.8,
-    "text": "Great product!",
-    "date": "2022-05-26"
-  },
-  {
-    "productId": 1,
-    "_id": "review375",
-    "rating": 1.4,
-    "text": "It broke after a week.",
-    "date": "2022-03-07"
-  },
-  {
-    "productId": 0,
-    "_id": "review376",
-    "rating": 3.8,
-    "text": "It broke after a week.",
-    "date": "2022-05-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review377",
-    "rating": 1.7,
-    "text": "Would definitely recommend!",
-    "date": "2022-12-01"
-  },
-  {
-    "productId": 0,
-    "_id": "review378",
-    "rating": 2.3,
-    "text": "Would definitely recommend!",
-    "date": "2023-11-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review379",
-    "rating": 1.7,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-08"
-  },
-  {
-    "productId": 3,
-    "_id": "review380",
-    "rating": 4.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-02-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review381",
-    "rating": 3.7,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-04-14"
-  },
-  {
-    "productId": 1,
-    "_id": "review382",
-    "rating": 2.7,
-    "text": "It broke after a week.",
-    "date": "2023-10-28"
-  },
-  {
-    "productId": 1,
-    "_id": "review383",
-    "rating": 3.5,
-    "text": "It broke after a week.",
-    "date": "2022-12-14"
-  },
-  {
-    "productId": 3,
-    "_id": "review384",
-    "rating": 2.3,
-    "text": "Great product!",
-    "date": "2023-09-07"
-  },
-  {
-    "productId": 2,
-    "_id": "review385",
-    "rating": 3.7,
-    "text": "Great product!",
-    "date": "2022-06-09"
-  },
-  {
-    "productId": 1,
-    "_id": "review386",
-    "rating": 1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-09-28"
-  },
-  {
-    "productId": 3,
-    "_id": "review387",
-    "rating": 2.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-07-10"
-  },
-  {
-    "productId": 3,
-    "_id": "review388",
-    "rating": 2.7,
-    "text": "It broke after a week.",
-    "date": "2022-12-22"
-  },
-  {
-    "productId": 2,
-    "_id": "review389",
-    "rating": 1.1,
-    "text": "Great product!",
-    "date": "2023-06-15"
-  },
-  {
-    "productId": 2,
-    "_id": "review390",
-    "rating": 1.4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-07-22"
-  },
-  {
-    "productId": 3,
-    "_id": "review391",
-    "rating": 3,
-    "text": "I didn't like this at all.",
-    "date": "2022-09-18"
-  },
-  {
-    "productId": 3,
-    "_id": "review392",
-    "rating": 2.8,
-    "text": "It broke after a week.",
-    "date": "2022-01-30"
-  },
-  {
-    "productId": 0,
-    "_id": "review393",
-    "rating": 1.2,
-    "text": "I didn't like this at all.",
-    "date": "2022-02-08"
-  },
-  {
-    "productId": 1,
-    "_id": "review394",
-    "rating": 4.3,
-    "text": "Would definitely recommend!",
-    "date": "2022-01-31"
-  },
-  {
-    "productId": 2,
-    "_id": "review395",
-    "rating": 4.4,
-    "text": "Great product!",
-    "date": "2023-08-02"
-  },
-  {
-    "productId": 1,
-    "_id": "review396",
-    "rating": 2.1,
-    "text": "I didn't like this at all.",
-    "date": "2022-09-30"
-  },
-  {
-    "productId": 1,
-    "_id": "review397",
-    "rating": 2.1,
-    "text": "Great product!",
-    "date": "2023-05-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review398",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-30"
-  },
-  {
-    "productId": 1,
-    "_id": "review399",
-    "rating": 3.3,
-    "text": "Would definitely recommend!",
-    "date": "2022-11-27"
-  },
-  {
-    "productId": 1,
-    "_id": "review400",
-    "rating": 4.7,
-    "text": "I didn't like this at all.",
-    "date": "2022-01-27"
-  },
-  {
-    "productId": 1,
-    "_id": "review401",
-    "rating": 4.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-03-17"
-  },
-  {
-    "productId": 3,
-    "_id": "review402",
-    "rating": 2.5,
-    "text": "I didn't like this at all.",
-    "date": "2023-08-18"
-  },
-  {
-    "productId": 0,
-    "_id": "review403",
-    "rating": 2.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-08-01"
-  },
-  {
-    "productId": 3,
-    "_id": "review404",
-    "rating": 4.9,
-    "text": "Great product!",
-    "date": "2022-08-05"
-  },
-  {
-    "productId": 0,
-    "_id": "review405",
-    "rating": 3.4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-12-30"
-  },
-  {
-    "productId": 2,
-    "_id": "review406",
-    "rating": 4.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-03-20"
-  },
-  {
-    "productId": 2,
-    "_id": "review407",
-    "rating": 2.3,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-23"
-  },
-  {
-    "productId": 0,
-    "_id": "review408",
-    "rating": 3.7,
-    "text": "Great product!",
-    "date": "2022-02-04"
-  },
-  {
-    "productId": 3,
-    "_id": "review409",
-    "rating": 1.8,
-    "text": "I didn't like this at all.",
-    "date": "2023-02-28"
-  },
-  {
-    "productId": 1,
-    "_id": "review410",
-    "rating": 4.8,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-01-10"
-  },
-  {
-    "productId": 2,
-    "_id": "review411",
-    "rating": 3.9,
-    "text": "Would definitely recommend!",
-    "date": "2022-03-23"
-  },
-  {
-    "productId": 0,
-    "_id": "review412",
-    "rating": 2.1,
-    "text": "Great product!",
-    "date": "2023-10-10"
-  },
-  {
-    "productId": 3,
-    "_id": "review413",
-    "rating": 4.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-02-10"
-  },
-  {
-    "productId": 0,
-    "_id": "review414",
-    "rating": 1.4,
-    "text": "Great product!",
-    "date": "2022-10-16"
-  },
-  {
-    "productId": 0,
-    "_id": "review415",
-    "rating": 4.7,
-    "text": "Great product!",
-    "date": "2022-12-23"
-  },
-  {
-    "productId": 3,
-    "_id": "review416",
-    "rating": 2.9,
-    "text": "Great product!",
-    "date": "2022-04-07"
-  },
-  {
-    "productId": 3,
-    "_id": "review417",
-    "rating": 4.1,
-    "text": "Great product!",
-    "date": "2022-09-13"
-  },
-  {
-    "productId": 3,
-    "_id": "review418",
-    "rating": 4.6,
-    "text": "Great product!",
-    "date": "2023-08-03"
-  },
-  {
-    "productId": 3,
-    "_id": "review419",
-    "rating": 1.8,
-    "text": "I didn't like this at all.",
-    "date": "2023-09-19"
-  },
-  {
-    "productId": 2,
-    "_id": "review420",
-    "rating": 3.2,
-    "text": "Would definitely recommend!",
-    "date": "2022-09-11"
-  },
-  {
-    "productId": 0,
-    "_id": "review421",
-    "rating": 2.3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-07-22"
-  },
-  {
-    "productId": 0,
-    "_id": "review422",
-    "rating": 4.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-05-26"
-  },
-  {
-    "productId": 2,
-    "_id": "review423",
+    "name": "bbf29a54-3e79-4000-ab7c-0695b02b0f8a",
     "rating": 4.5,
     "text": "Great product!",
-    "date": "2022-03-20"
+    "date": "2023-07-25",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review424",
-    "rating": 1.7,
-    "text": "Would definitely recommend!",
-    "date": "2023-07-12"
-  },
-  {
-    "productId": 0,
-    "_id": "review425",
-    "rating": 3.6,
-    "text": "It broke after a week.",
-    "date": "2022-05-04"
-  },
-  {
-    "productId": 0,
-    "_id": "review426",
-    "rating": 2.5,
-    "text": "It broke after a week.",
-    "date": "2023-03-03"
-  },
-  {
-    "productId": 3,
-    "_id": "review427",
-    "rating": 2.1,
-    "text": "I didn't like this at all.",
-    "date": "2023-06-12"
-  },
-  {
-    "productId": 2,
-    "_id": "review428",
-    "rating": 3.4,
-    "text": "Would definitely recommend!",
-    "date": "2023-06-14"
-  },
-  {
-    "productId": 2,
-    "_id": "review429",
-    "rating": 3.5,
-    "text": "It broke after a week.",
-    "date": "2022-04-26"
-  },
-  {
-    "productId": 3,
-    "_id": "review430",
+    "name": "32169316-206f-4c43-9278-10830c9dd20b",
     "rating": 3.1,
     "text": "Great product!",
-    "date": "2023-04-16"
+    "date": "2022-10-22",
+    "reviewReply": []
   },
   {
-    "productId": 1,
-    "_id": "review431",
-    "rating": 1.6,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-08-01"
-  },
-  {
-    "productId": 2,
-    "_id": "review432",
-    "rating": 4.9,
-    "text": "Great product!",
-    "date": "2022-04-15"
-  },
-  {
-    "productId": 3,
-    "_id": "review433",
-    "rating": 3.3,
-    "text": "Great product!",
-    "date": "2023-08-01"
-  },
-  {
-    "productId": 1,
-    "_id": "review434",
-    "rating": 3.9,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-10-13"
-  },
-  {
-    "productId": 2,
-    "_id": "review435",
-    "rating": 1.8,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-03-02"
-  },
-  {
-    "productId": 1,
-    "_id": "review436",
-    "rating": 2.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-06-25"
-  },
-  {
-    "productId": 1,
-    "_id": "review437",
-    "rating": 2.8,
-    "text": "It broke after a week.",
-    "date": "2023-08-28"
-  },
-  {
-    "productId": 3,
-    "_id": "review438",
-    "rating": 4.8,
-    "text": "It broke after a week.",
-    "date": "2022-03-24"
-  },
-  {
-    "productId": 3,
-    "_id": "review439",
-    "rating": 4.7,
-    "text": "It broke after a week.",
-    "date": "2023-09-01"
-  },
-  {
-    "productId": 2,
-    "_id": "review440",
-    "rating": 1.2,
-    "text": "I didn't like this at all.",
-    "date": "2022-09-30"
-  },
-  {
-    "productId": 0,
-    "_id": "review441",
-    "rating": 3.5,
-    "text": "It broke after a week.",
-    "date": "2023-11-04"
-  },
-  {
-    "productId": 3,
-    "_id": "review442",
-    "rating": 1.8,
-    "text": "Great product!",
-    "date": "2023-09-26"
-  },
-  {
-    "productId": 1,
-    "_id": "review443",
+    "name": "5de56a86-be82-4d57-9626-1ad6c3522a42",
     "rating": 2.5,
-    "text": "It broke after a week.",
-    "date": "2022-03-07"
+    "text": "Great product!",
+    "date": "2023-05-12",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review444",
+    "name": "c0d61d46-a81f-415e-a09d-fd3fcd52ff4d",
+    "rating": 4.8,
+    "text": "Great product!",
+    "date": "2022-06-18",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
     "rating": 4.5,
-    "text": "Great product!",
-    "date": "2022-07-13"
-  },
-  {
-    "productId": 1,
-    "_id": "review445",
-    "rating": 2.7,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-03-14"
-  },
-  {
-    "productId": 1,
-    "_id": "review446",
-    "rating": 5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-10-13"
-  },
-  {
-    "productId": 0,
-    "_id": "review447",
-    "rating": 4.1,
-    "text": "Great product!",
-    "date": "2023-04-11"
-  },
-  {
-    "productId": 2,
-    "_id": "review448",
-    "rating": 4.6,
-    "text": "It broke after a week.",
-    "date": "2022-01-13"
-  },
-  {
-    "productId": 2,
-    "_id": "review449",
-    "rating": 2.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-12-16"
-  },
-  {
-    "productId": 2,
-    "_id": "review450",
-    "rating": 4.4,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-10-24"
-  },
-  {
-    "productId": 2,
-    "_id": "review451",
-    "rating": 1.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-10-27"
-  },
-  {
-    "productId": 1,
-    "_id": "review452",
-    "rating": 2.4,
-    "text": "I didn't like this at all.",
-    "date": "2022-12-22"
-  },
-  {
-    "productId": 0,
-    "_id": "review453",
-    "rating": 2.5,
-    "text": "I didn't like this at all.",
-    "date": "2022-10-06"
-  },
-  {
-    "productId": 2,
-    "_id": "review454",
-    "rating": 3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-10-06"
-  },
-  {
-    "productId": 0,
-    "_id": "review455",
-    "rating": 1.5,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-07-08"
-  },
-  {
-    "productId": 1,
-    "_id": "review456",
-    "rating": 2,
-    "text": "Great product!",
-    "date": "2022-03-27"
-  },
-  {
-    "productId": 3,
-    "_id": "review457",
-    "rating": 1.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-02-04"
-  },
-  {
-    "productId": 1,
-    "_id": "review458",
-    "rating": 4.7,
     "text": "Would definitely recommend!",
-    "date": "2022-11-11"
+    "date": "2022-08-01",
+    "reviewReply": []
   },
   {
-    "productId": 0,
-    "_id": "review459",
-    "rating": 2.6,
-    "text": "Great product!",
-    "date": "2022-08-08"
-  },
-  {
-    "productId": 1,
-    "_id": "review460",
-    "rating": 4.3,
-    "text": "I didn't like this at all.",
-    "date": "2022-07-26"
-  },
-  {
-    "productId": 0,
-    "_id": "review461",
-    "rating": 3.9,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-03-14"
-  },
-  {
-    "productId": 2,
-    "_id": "review462",
-    "rating": 3.7,
-    "text": "It broke after a week.",
-    "date": "2022-08-23"
-  },
-  {
-    "productId": 0,
-    "_id": "review463",
-    "rating": 2.8,
-    "text": "Great product!",
-    "date": "2023-07-21"
-  },
-  {
-    "productId": 1,
-    "_id": "review464",
-    "rating": 4.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-04-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review465",
-    "rating": 1.2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-03-19"
-  },
-  {
-    "productId": 1,
-    "_id": "review466",
-    "rating": 3.8,
-    "text": "Great product!",
-    "date": "2023-02-27"
-  },
-  {
-    "productId": 2,
-    "_id": "review467",
-    "rating": 3,
-    "text": "Would definitely recommend!",
-    "date": "2022-05-11"
-  },
-  {
-    "productId": 0,
-    "_id": "review468",
-    "rating": 4.8,
-    "text": "I didn't like this at all.",
-    "date": "2022-07-30"
-  },
-  {
-    "productId": 2,
-    "_id": "review469",
-    "rating": 3.7,
-    "text": "I didn't like this at all.",
-    "date": "2023-11-22"
-  },
-  {
-    "productId": 1,
-    "_id": "review470",
-    "rating": 2.6,
-    "text": "It broke after a week.",
-    "date": "2023-07-24"
-  },
-  {
-    "productId": 2,
-    "_id": "review471",
-    "rating": 3,
-    "text": "Would definitely recommend!",
-    "date": "2023-05-06"
-  },
-  {
-    "productId": 1,
-    "_id": "review472",
-    "rating": 2.3,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-09-22"
-  },
-  {
-    "productId": 2,
-    "_id": "review473",
-    "rating": 1.4,
-    "text": "I didn't like this at all.",
-    "date": "2022-01-08"
-  },
-  {
-    "productId": 3,
-    "_id": "review474",
-    "rating": 2,
-    "text": "Would definitely recommend!",
-    "date": "2022-07-11"
-  },
-  {
-    "productId": 1,
-    "_id": "review475",
-    "rating": 3.4,
-    "text": "Great product!",
-    "date": "2022-10-12"
-  },
-  {
-    "productId": 0,
-    "_id": "review476",
-    "rating": 3.8,
-    "text": "I didn't like this at all.",
-    "date": "2023-03-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review477",
-    "rating": 2,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-11-24"
-  },
-  {
-    "productId": 3,
-    "_id": "review478",
-    "rating": 3.6,
-    "text": "I didn't like this at all.",
-    "date": "2022-08-24"
-  },
-  {
-    "productId": 0,
-    "_id": "review479",
-    "rating": 2.8,
-    "text": "I didn't like this at all.",
-    "date": "2022-06-12"
-  },
-  {
-    "productId": 1,
-    "_id": "review480",
-    "rating": 1.8,
-    "text": "Great product!",
-    "date": "2022-05-17"
-  },
-  {
-    "productId": 3,
-    "_id": "review481",
-    "rating": 3.8,
-    "text": "It broke after a week.",
-    "date": "2022-11-14"
-  },
-  {
-    "productId": 2,
-    "_id": "review482",
-    "rating": 2.4,
-    "text": "It broke after a week.",
-    "date": "2022-04-16"
-  },
-  {
-    "productId": 2,
-    "_id": "review483",
+    "name": "ba3cc4d5-e44d-4ab0-8ac6-584b90def189",
     "rating": 1.7,
     "text": "I didn't like this at all.",
-    "date": "2023-09-14"
+    "date": "2023-04-14",
+    "reviewReply": []
   },
   {
-    "productId": 0,
-    "_id": "review484",
-    "rating": 1,
-    "text": "Great product!",
-    "date": "2022-11-14"
-  },
-  {
-    "productId": 3,
-    "_id": "review485",
-    "rating": 4.4,
-    "text": "It broke after a week.",
-    "date": "2023-06-20"
-  },
-  {
-    "productId": 2,
-    "_id": "review486",
-    "rating": 1.9,
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 3.3,
     "text": "I didn't like this at all.",
-    "date": "2022-12-24"
+    "date": "2022-11-26",
+    "reviewReply": []
   },
   {
-    "productId": 2,
-    "_id": "review487",
-    "rating": 1.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2023-10-09"
-  },
-  {
-    "productId": 0,
-    "_id": "review488",
-    "rating": 4.6,
-    "text": "Great product!",
-    "date": "2023-08-06"
-  },
-  {
-    "productId": 1,
-    "_id": "review489",
-    "rating": 2.8,
-    "text": "It broke after a week.",
-    "date": "2023-02-24"
-  },
-  {
-    "productId": 3,
-    "_id": "review490",
-    "rating": 3.9,
-    "text": "I didn't like this at all.",
-    "date": "2022-03-08"
-  },
-  {
-    "productId": 1,
-    "_id": "review491",
-    "rating": 2.8,
-    "text": "Would definitely recommend!",
-    "date": "2022-06-09"
-  },
-  {
-    "productId": 3,
-    "_id": "review492",
-    "rating": 2.6,
-    "text": "Would definitely recommend!",
-    "date": "2023-10-29"
-  },
-  {
-    "productId": 3,
-    "_id": "review493",
-    "rating": 2.1,
-    "text": "Great product!",
-    "date": "2023-10-06"
-  },
-  {
-    "productId": 2,
-    "_id": "review494",
+    "name": "3052cb56-c32f-4e97-a74d-d21ab315d22c",
     "rating": 1.2,
     "text": "Great product!",
-    "date": "2022-02-04"
+    "date": "2023-11-08",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review495",
-    "rating": 3,
-    "text": "Would definitely recommend!",
-    "date": "2023-12-25"
-  },
-  {
-    "productId": 2,
-    "_id": "review496",
-    "rating": 2.3,
+    "name": "c699f803-8f68-4f0e-8549-bdf2b37537ed",
+    "rating": 4.1,
     "text": "It's okay, but I've seen better.",
-    "date": "2023-09-17"
+    "date": "2023-10-15",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review497",
-    "rating": 2.7,
-    "text": "Great product!",
-    "date": "2023-05-20"
-  },
-  {
-    "productId": 1,
-    "_id": "review498",
-    "rating": 2.1,
-    "text": "It's okay, but I've seen better.",
-    "date": "2022-12-24"
-  },
-  {
-    "productId": 3,
-    "_id": "review499",
-    "rating": 2.2,
+    "name": "b47fed1a-f9a3-4b2c-83ba-b66328dae771",
+    "rating": 4.9,
     "text": "It broke after a week.",
-    "date": "2023-12-04"
+    "date": "2022-02-05",
+    "reviewReply": []
   },
   {
-    "productId": 3,
-    "_id": "review500",
+    "name": "3052cb56-c32f-4e97-a74d-d21ab315d22c",
+    "rating": 1.3,
+    "text": "I didn't like this at all.",
+    "date": "2023-06-01",
+    "reviewReply": []
+  },
+  {
+    "name": "a1b2406c-7b04-45a3-bc5f-1be7861a02e1",
+    "rating": 1.8,
+    "text": "Would definitely recommend!",
+    "date": "2022-06-29",
+    "reviewReply": []
+  },
+  {
+    "name": "7daacd6c-a909-4615-b257-d47316df550a",
+    "rating": 2.4,
+    "text": "Would definitely recommend!",
+    "date": "2022-12-24",
+    "reviewReply": []
+  },
+  {
+    "name": "63c3be68-8d75-4f39-b4e3-b212ccabfb7a",
+    "rating": 1.5,
+    "text": "It broke after a week.",
+    "date": "2023-07-01",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 1.6,
+    "text": "Great product!",
+    "date": "2023-01-15",
+    "reviewReply": []
+  },
+  {
+    "name": "73bb5051-4a52-4353-a983-671cb852f95f",
+    "rating": 1.8,
+    "text": "Great product!",
+    "date": "2023-07-12",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 3.5,
+    "text": "Would definitely recommend!",
+    "date": "2022-07-14",
+    "reviewReply": []
+  },
+  {
+    "name": "82fb7671-14a0-410b-b2ba-f167804cc282",
+    "rating": 3.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-17",
+    "reviewReply": []
+  },
+  {
+    "name": "76cf3d7c-c4b0-4939-b67f-315ad8a72794",
+    "rating": 4.3,
+    "text": "I didn't like this at all.",
+    "date": "2022-10-06",
+    "reviewReply": []
+  },
+  {
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
+    "rating": 1.6,
+    "text": "Would definitely recommend!",
+    "date": "2022-06-03",
+    "reviewReply": []
+  },
+  {
+    "name": "0180f556-0bf4-4b20-820b-24fd2ca73d1f",
+    "rating": 2.2,
+    "text": "Great product!",
+    "date": "2023-05-25",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 3.3,
+    "text": "It broke after a week.",
+    "date": "2023-06-12",
+    "reviewReply": []
+  },
+  {
+    "name": "bf421c16-e864-49aa-a1b5-8c8e0b8f3779",
+    "rating": 1.4,
+    "text": "I didn't like this at all.",
+    "date": "2022-09-13",
+    "reviewReply": []
+  },
+  {
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
+    "rating": 2.4,
+    "text": "Great product!",
+    "date": "2023-11-06",
+    "reviewReply": []
+  },
+  {
+    "name": "6349d767-226f-433d-80e5-32e2d0d11f24",
+    "rating": 2.1,
+    "text": "Great product!",
+    "date": "2023-03-17",
+    "reviewReply": []
+  },
+  {
+    "name": "70525676-f0e1-4be6-8d58-40b97316c0fa",
+    "rating": 2.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-12-06",
+    "reviewReply": []
+  },
+  {
+    "name": "ba3cc4d5-e44d-4ab0-8ac6-584b90def189",
+    "rating": 2.6,
+    "text": "I didn't like this at all.",
+    "date": "2023-05-13",
+    "reviewReply": []
+  },
+  {
+    "name": "ff72503e-8920-4462-9025-b5f902311ec8",
+    "rating": 3.9,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-13",
+    "reviewReply": []
+  },
+  {
+    "name": "be17098e-63d4-4244-bae1-20661d91493e",
+    "rating": 4.9,
+    "text": "I didn't like this at all.",
+    "date": "2023-04-01",
+    "reviewReply": []
+  },
+  {
+    "name": "8d1a38b4-813a-4cc3-b774-0506f874de03",
+    "rating": 4.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-02-04",
+    "reviewReply": []
+  },
+  {
+    "name": "a1b2406c-7b04-45a3-bc5f-1be7861a02e1",
+    "rating": 4.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-06-21",
+    "reviewReply": []
+  },
+  {
+    "name": "78efb502-e9a2-4890-a7e6-73b3cd4b39a6",
+    "rating": 1.1,
+    "text": "I didn't like this at all.",
+    "date": "2022-02-26",
+    "reviewReply": []
+  },
+  {
+    "name": "ac8ad2bf-eb27-4551-8aa7-3c08d64804a6",
+    "rating": 2.2,
+    "text": "Great product!",
+    "date": "2022-04-04",
+    "reviewReply": []
+  },
+  {
+    "name": "97fa8ff9-963e-4a24-8ab0-3afcb8681c02",
+    "rating": 3.9,
+    "text": "Great product!",
+    "date": "2022-11-12",
+    "reviewReply": []
+  },
+  {
+    "name": "2bdb9953-3178-449b-a75b-489b6956d5b8",
+    "rating": 4.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-11-24",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 1.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-04-13",
+    "reviewReply": []
+  },
+  {
+    "name": "ccd66051-5ecb-4698-a87b-7825cf7db9bb",
+    "rating": 4.9,
+    "text": "Would definitely recommend!",
+    "date": "2023-11-06",
+    "reviewReply": []
+  },
+  {
+    "name": "b47fed1a-f9a3-4b2c-83ba-b66328dae771",
+    "rating": 2.7,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-11-12",
+    "reviewReply": []
+  },
+  {
+    "name": "0a9c7e55-5476-4696-8890-cdbbee936956",
+    "rating": 3.6,
+    "text": "It broke after a week.",
+    "date": "2023-07-15",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 1.6,
+    "text": "It broke after a week.",
+    "date": "2023-02-05",
+    "reviewReply": []
+  },
+  {
+    "name": "e9f1faba-aa66-4db4-99a3-882ef2482608",
+    "rating": 2.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-29",
+    "reviewReply": []
+  },
+  {
+    "name": "c6534d61-e40d-492c-a760-562ca8ee998e",
     "rating": 3.1,
     "text": "It's okay, but I've seen better.",
-    "date": "2022-12-14"
+    "date": "2023-04-15",
+    "reviewReply": []
+  },
+  {
+    "name": "b47fed1a-f9a3-4b2c-83ba-b66328dae771",
+    "rating": 2.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-11-02",
+    "reviewReply": []
+  },
+  {
+    "name": "7b3a77e4-8f8b-41d0-99bd-aad320056df7",
+    "rating": 3,
+    "text": "It broke after a week.",
+    "date": "2023-07-13",
+    "reviewReply": []
+  },
+  {
+    "name": "423c0f1d-df7a-4773-afeb-28d9069d0a67",
+    "rating": 3.4,
+    "text": "I didn't like this at all.",
+    "date": "2023-05-13",
+    "reviewReply": []
+  },
+  {
+    "name": "1b990721-8757-413c-88cb-0b2eb97c7ffa",
+    "rating": 3,
+    "text": "I didn't like this at all.",
+    "date": "2022-12-24",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 3.6,
+    "text": "It broke after a week.",
+    "date": "2023-10-22",
+    "reviewReply": []
+  },
+  {
+    "name": "e9f1faba-aa66-4db4-99a3-882ef2482608",
+    "rating": 2.2,
+    "text": "Great product!",
+    "date": "2023-01-11",
+    "reviewReply": []
+  },
+  {
+    "name": "7c9cf01a-d9c1-4727-bae7-78bec406ceba",
+    "rating": 3.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-05-30",
+    "reviewReply": []
+  },
+  {
+    "name": "dd1847bf-5cc9-464d-822f-e92f203487c9",
+    "rating": 3.9,
+    "text": "It broke after a week.",
+    "date": "2022-12-05",
+    "reviewReply": []
+  },
+  {
+    "name": "3831f3e3-a1e0-4f13-8cd1-264d26f2aad6",
+    "rating": 1.2,
+    "text": "Would definitely recommend!",
+    "date": "2023-01-21",
+    "reviewReply": []
+  },
+  {
+    "name": "2d4f7ccd-7969-4296-9dbd-9b652398bc96",
+    "rating": 3,
+    "text": "Great product!",
+    "date": "2022-09-04",
+    "reviewReply": []
+  },
+  {
+    "name": "edbcfaf6-ac65-42fa-9378-31b277a0844b",
+    "rating": 4.4,
+    "text": "Would definitely recommend!",
+    "date": "2022-02-19",
+    "reviewReply": []
+  },
+  {
+    "name": "803bf853-42fa-40a1-b283-67c1c4e03c68",
+    "rating": 1.2,
+    "text": "It broke after a week.",
+    "date": "2023-03-04",
+    "reviewReply": []
+  },
+  {
+    "name": "e90ef615-5c00-4557-be49-9dc26d307a68",
+    "rating": 2.6,
+    "text": "It broke after a week.",
+    "date": "2022-11-06",
+    "reviewReply": []
+  },
+  {
+    "name": "6d01ce02-67ab-4e21-8929-1823ba66ce8b",
+    "rating": 1.4,
+    "text": "It broke after a week.",
+    "date": "2023-10-03",
+    "reviewReply": []
+  },
+  {
+    "name": "7e1a2ed9-7ed1-4c63-871b-9ff77ac9111f",
+    "rating": 4.2,
+    "text": "I didn't like this at all.",
+    "date": "2022-10-28",
+    "reviewReply": []
+  },
+  {
+    "name": "ecc87dea-8c56-4b34-b82c-7859af94c601",
+    "rating": 4.1,
+    "text": "Would definitely recommend!",
+    "date": "2022-08-14",
+    "reviewReply": []
+  },
+  {
+    "name": "d666f8b0-635e-479f-8e2a-9afd8aecb05d",
+    "rating": 4.7,
+    "text": "Great product!",
+    "date": "2022-06-29",
+    "reviewReply": []
+  },
+  {
+    "name": "2bdb9953-3178-449b-a75b-489b6956d5b8",
+    "rating": 3.5,
+    "text": "It broke after a week.",
+    "date": "2023-07-27",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-04-12",
+    "reviewReply": []
+  },
+  {
+    "name": "3052cb56-c32f-4e97-a74d-d21ab315d22c",
+    "rating": 1.5,
+    "text": "It broke after a week.",
+    "date": "2023-10-23",
+    "reviewReply": []
+  },
+  {
+    "name": "2d4f7ccd-7969-4296-9dbd-9b652398bc96",
+    "rating": 3.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-03-02",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 2.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-01-18",
+    "reviewReply": []
+  },
+  {
+    "name": "76cf3d7c-c4b0-4939-b67f-315ad8a72794",
+    "rating": 1.3,
+    "text": "Great product!",
+    "date": "2023-04-12",
+    "reviewReply": []
+  },
+  {
+    "name": "91297cad-ef22-44a5-afde-433cf9756b82",
+    "rating": 2.4,
+    "text": "It broke after a week.",
+    "date": "2022-09-27",
+    "reviewReply": []
+  },
+  {
+    "name": "359de924-ef1b-43f0-9cab-dea5130932fe",
+    "rating": 2.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-12-21",
+    "reviewReply": []
+  },
+  {
+    "name": "0dcec804-5a9f-4648-bff2-185f1afaf415",
+    "rating": 2.7,
+    "text": "Great product!",
+    "date": "2022-11-01",
+    "reviewReply": []
+  },
+  {
+    "name": "ba3cc4d5-e44d-4ab0-8ac6-584b90def189",
+    "rating": 2.5,
+    "text": "Great product!",
+    "date": "2023-09-10",
+    "reviewReply": []
+  },
+  {
+    "name": "73bb5051-4a52-4353-a983-671cb852f95f",
+    "rating": 3,
+    "text": "It broke after a week.",
+    "date": "2023-12-27",
+    "reviewReply": []
+  },
+  {
+    "name": "edbcfaf6-ac65-42fa-9378-31b277a0844b",
+    "rating": 1.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-06-26",
+    "reviewReply": []
+  },
+  {
+    "name": "803bf853-42fa-40a1-b283-67c1c4e03c68",
+    "rating": 3.9,
+    "text": "It broke after a week.",
+    "date": "2023-06-20",
+    "reviewReply": []
+  },
+  {
+    "name": "1e766fc3-d98b-456b-9965-415663eeb7a2",
+    "rating": 2.3,
+    "text": "Would definitely recommend!",
+    "date": "2022-09-02",
+    "reviewReply": []
+  },
+  {
+    "name": "ba3cc4d5-e44d-4ab0-8ac6-584b90def189",
+    "rating": 1.4,
+    "text": "Great product!",
+    "date": "2022-01-10",
+    "reviewReply": []
+  },
+  {
+    "name": "26b74c37-4cfa-4c8f-8f32-3e46df29b4da",
+    "rating": 2.9,
+    "text": "Would definitely recommend!",
+    "date": "2023-10-02",
+    "reviewReply": []
+  },
+  {
+    "name": "63c3be68-8d75-4f39-b4e3-b212ccabfb7a",
+    "rating": 2.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-06",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 4.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-04-11",
+    "reviewReply": []
+  },
+  {
+    "name": "e4a653c5-eeec-4ca7-94d1-b37e20bbd527",
+    "rating": 3.3,
+    "text": "I didn't like this at all.",
+    "date": "2023-10-19",
+    "reviewReply": []
+  },
+  {
+    "name": "829025e5-b673-433e-9b9d-63ed0981814b",
+    "rating": 1.8,
+    "text": "Would definitely recommend!",
+    "date": "2022-11-12",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2023-12-28",
+    "reviewReply": []
+  },
+  {
+    "name": "19ac48e5-ccdd-4987-a4e5-88434d27837a",
+    "rating": 4.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-05-19",
+    "reviewReply": []
+  },
+  {
+    "name": "78efb502-e9a2-4890-a7e6-73b3cd4b39a6",
+    "rating": 2.7,
+    "text": "It broke after a week.",
+    "date": "2023-03-01",
+    "reviewReply": []
+  },
+  {
+    "name": "c699f803-8f68-4f0e-8549-bdf2b37537ed",
+    "rating": 1.9,
+    "text": "It broke after a week.",
+    "date": "2023-11-22",
+    "reviewReply": []
+  },
+  {
+    "name": "dd1847bf-5cc9-464d-822f-e92f203487c9",
+    "rating": 3.9,
+    "text": "Great product!",
+    "date": "2023-09-15",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 2.4,
+    "text": "It broke after a week.",
+    "date": "2023-09-23",
+    "reviewReply": []
+  },
+  {
+    "name": "97fa8ff9-963e-4a24-8ab0-3afcb8681c02",
+    "rating": 3.7,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-06-01",
+    "reviewReply": []
+  },
+  {
+    "name": "d8958a6a-47ed-4eef-ae1d-05591a66bc25",
+    "rating": 4.5,
+    "text": "Would definitely recommend!",
+    "date": "2022-01-16",
+    "reviewReply": []
+  },
+  {
+    "name": "6169ac8f-ec65-4180-9ce2-ef876cf0f115",
+    "rating": 2.3,
+    "text": "I didn't like this at all.",
+    "date": "2022-02-26",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 1.5,
+    "text": "It broke after a week.",
+    "date": "2023-05-11",
+    "reviewReply": []
+  },
+  {
+    "name": "73bb5051-4a52-4353-a983-671cb852f95f",
+    "rating": 3.9,
+    "text": "I didn't like this at all.",
+    "date": "2023-02-26",
+    "reviewReply": []
+  },
+  {
+    "name": "c090f7a5-cc4e-4db1-a166-9803b65772fd",
+    "rating": 1.3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-18",
+    "reviewReply": []
+  },
+  {
+    "name": "91297cad-ef22-44a5-afde-433cf9756b82",
+    "rating": 3,
+    "text": "I didn't like this at all.",
+    "date": "2023-03-06",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 2.5,
+    "text": "Would definitely recommend!",
+    "date": "2023-06-12",
+    "reviewReply": []
+  },
+  {
+    "name": "829025e5-b673-433e-9b9d-63ed0981814b",
+    "rating": 4.1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-11-12",
+    "reviewReply": []
+  },
+  {
+    "name": "1b990721-8757-413c-88cb-0b2eb97c7ffa",
+    "rating": 3.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-10-13",
+    "reviewReply": []
+  },
+  {
+    "name": "2550ca72-0a85-449e-9245-d412db166ac7",
+    "rating": 3.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-02-06",
+    "reviewReply": []
+  },
+  {
+    "name": "82fb7671-14a0-410b-b2ba-f167804cc282",
+    "rating": 3.2,
+    "text": "It broke after a week.",
+    "date": "2022-08-16",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 1.2,
+    "text": "It broke after a week.",
+    "date": "2022-04-22",
+    "reviewReply": []
+  },
+  {
+    "name": "e8ee1807-34da-4c48-86f1-cc7e3bea9579",
+    "rating": 4.7,
+    "text": "It broke after a week.",
+    "date": "2022-10-04",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 3.7,
+    "text": "Would definitely recommend!",
+    "date": "2022-07-19",
+    "reviewReply": []
+  },
+  {
+    "name": "82fb7671-14a0-410b-b2ba-f167804cc282",
+    "rating": 4.3,
+    "text": "Would definitely recommend!",
+    "date": "2022-03-31",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 1.1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-07-01",
+    "reviewReply": []
+  },
+  {
+    "name": "82133236-c219-435a-bee4-165711a51f7f",
+    "rating": 4.1,
+    "text": "Would definitely recommend!",
+    "date": "2022-02-10",
+    "reviewReply": []
+  },
+  {
+    "name": "42a5110a-f11a-4822-86a3-2f0514076e5b",
+    "rating": 4.3,
+    "text": "I didn't like this at all.",
+    "date": "2023-08-31",
+    "reviewReply": []
+  },
+  {
+    "name": "82133236-c219-435a-bee4-165711a51f7f",
+    "rating": 1.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-09-22",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 4.3,
+    "text": "It broke after a week.",
+    "date": "2023-08-14",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 1.5,
+    "text": "Would definitely recommend!",
+    "date": "2022-12-19",
+    "reviewReply": []
+  },
+  {
+    "name": "8d1a38b4-813a-4cc3-b774-0506f874de03",
+    "rating": 1.4,
+    "text": "Great product!",
+    "date": "2022-09-04",
+    "reviewReply": []
+  },
+  {
+    "name": "2beb3538-aff3-4427-ad30-8cb460986e40",
+    "rating": 2.3,
+    "text": "It broke after a week.",
+    "date": "2022-10-31",
+    "reviewReply": []
+  },
+  {
+    "name": "63c3be68-8d75-4f39-b4e3-b212ccabfb7a",
+    "rating": 2.9,
+    "text": "Great product!",
+    "date": "2023-05-04",
+    "reviewReply": []
+  },
+  {
+    "name": "e4a653c5-eeec-4ca7-94d1-b37e20bbd527",
+    "rating": 4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-08-01",
+    "reviewReply": []
+  },
+  {
+    "name": "6ca8a09a-122b-46e1-8d29-babb6d2dcd1a",
+    "rating": 1.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-15",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 3.7,
+    "text": "Great product!",
+    "date": "2022-06-17",
+    "reviewReply": []
+  },
+  {
+    "name": "7e1a2ed9-7ed1-4c63-871b-9ff77ac9111f",
+    "rating": 1.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-07-24",
+    "reviewReply": []
+  },
+  {
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
+    "rating": 1.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-02-05",
+    "reviewReply": []
+  },
+  {
+    "name": "d1fe94ca-bda4-4dc3-80e0-0af87330c9e8",
+    "rating": 4.9,
+    "text": "Great product!",
+    "date": "2023-03-29",
+    "reviewReply": []
+  },
+  {
+    "name": "2eb1c118-0151-4240-a41a-bbc41cbfda9c",
+    "rating": 3.3,
+    "text": "Would definitely recommend!",
+    "date": "2022-08-07",
+    "reviewReply": []
+  },
+  {
+    "name": "76cf3d7c-c4b0-4939-b67f-315ad8a72794",
+    "rating": 2.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-22",
+    "reviewReply": []
+  },
+  {
+    "name": "06930078-f14b-4620-b76d-2440f0a7a0db",
+    "rating": 2,
+    "text": "Would definitely recommend!",
+    "date": "2022-12-02",
+    "reviewReply": []
+  },
+  {
+    "name": "359de924-ef1b-43f0-9cab-dea5130932fe",
+    "rating": 2.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-01-25",
+    "reviewReply": []
+  },
+  {
+    "name": "78efb502-e9a2-4890-a7e6-73b3cd4b39a6",
+    "rating": 2.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-07",
+    "reviewReply": []
+  },
+  {
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
+    "rating": 4.4,
+    "text": "Would definitely recommend!",
+    "date": "2022-10-28",
+    "reviewReply": []
+  },
+  {
+    "name": "be37be8f-d1e9-44e9-b6c9-5c97b1667027",
+    "rating": 3.7,
+    "text": "It broke after a week.",
+    "date": "2022-10-14",
+    "reviewReply": []
+  },
+  {
+    "name": "4b5bd341-81d9-457c-8a35-b14386326ab2",
+    "rating": 2.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-11-23",
+    "reviewReply": []
+  },
+  {
+    "name": "c0d61d46-a81f-415e-a09d-fd3fcd52ff4d",
+    "rating": 1.6,
+    "text": "Great product!",
+    "date": "2023-01-02",
+    "reviewReply": []
+  },
+  {
+    "name": "84c24811-cdad-440f-b49b-810a97320e49",
+    "rating": 4.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-12-23",
+    "reviewReply": []
+  },
+  {
+    "name": "0039ade4-c68d-41b9-8e79-514cded207b3",
+    "rating": 4.8,
+    "text": "It broke after a week.",
+    "date": "2022-08-29",
+    "reviewReply": []
+  },
+  {
+    "name": "7e1a2ed9-7ed1-4c63-871b-9ff77ac9111f",
+    "rating": 3.9,
+    "text": "It broke after a week.",
+    "date": "2022-07-20",
+    "reviewReply": []
+  },
+  {
+    "name": "7daacd6c-a909-4615-b257-d47316df550a",
+    "rating": 3.3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-01-19",
+    "reviewReply": []
+  },
+  {
+    "name": "493d5d5d-4892-415e-b88d-4d315654d633",
+    "rating": 4.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-04-01",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 2.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-01-02",
+    "reviewReply": []
+  },
+  {
+    "name": "97fa8ff9-963e-4a24-8ab0-3afcb8681c02",
+    "rating": 4.6,
+    "text": "Great product!",
+    "date": "2022-03-09",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 4.7,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-20",
+    "reviewReply": []
+  },
+  {
+    "name": "ff72503e-8920-4462-9025-b5f902311ec8",
+    "rating": 4.7,
+    "text": "It broke after a week.",
+    "date": "2023-06-12",
+    "reviewReply": []
+  },
+  {
+    "name": "a1b2406c-7b04-45a3-bc5f-1be7861a02e1",
+    "rating": 4.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-06-05",
+    "reviewReply": []
+  },
+  {
+    "name": "2bdb9953-3178-449b-a75b-489b6956d5b8",
+    "rating": 2,
+    "text": "Would definitely recommend!",
+    "date": "2022-09-14",
+    "reviewReply": []
+  },
+  {
+    "name": "19b3748b-0923-4f0f-99c4-c25dabf25c8b",
+    "rating": 4.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-12-02",
+    "reviewReply": []
+  },
+  {
+    "name": "ba3cc4d5-e44d-4ab0-8ac6-584b90def189",
+    "rating": 2.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-02-17",
+    "reviewReply": []
+  },
+  {
+    "name": "174f603b-40a4-4961-81e5-5508148b3b0d",
+    "rating": 3.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-08-22",
+    "reviewReply": []
+  },
+  {
+    "name": "174f603b-40a4-4961-81e5-5508148b3b0d",
+    "rating": 4.1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-04-20",
+    "reviewReply": []
+  },
+  {
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
+    "rating": 4.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-11-11",
+    "reviewReply": []
+  },
+  {
+    "name": "d19abd60-0b96-4c09-b753-2f205a9a5709",
+    "rating": 4.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-04-17",
+    "reviewReply": []
+  },
+  {
+    "name": "1e766fc3-d98b-456b-9965-415663eeb7a2",
+    "rating": 4.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-09-27",
+    "reviewReply": []
+  },
+  {
+    "name": "0dcec804-5a9f-4648-bff2-185f1afaf415",
+    "rating": 4.2,
+    "text": "Would definitely recommend!",
+    "date": "2023-04-30",
+    "reviewReply": []
+  },
+  {
+    "name": "d8958a6a-47ed-4eef-ae1d-05591a66bc25",
+    "rating": 2.3,
+    "text": "It broke after a week.",
+    "date": "2023-05-31",
+    "reviewReply": []
+  },
+  {
+    "name": "ac8ad2bf-eb27-4551-8aa7-3c08d64804a6",
+    "rating": 3.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-11-11",
+    "reviewReply": []
+  },
+  {
+    "name": "91297cad-ef22-44a5-afde-433cf9756b82",
+    "rating": 2.4,
+    "text": "Great product!",
+    "date": "2022-06-19",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 2.4,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-11",
+    "reviewReply": []
+  },
+  {
+    "name": "d8958a6a-47ed-4eef-ae1d-05591a66bc25",
+    "rating": 1.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-08-11",
+    "reviewReply": []
+  },
+  {
+    "name": "bbf29a54-3e79-4000-ab7c-0695b02b0f8a",
+    "rating": 3.6,
+    "text": "Would definitely recommend!",
+    "date": "2022-05-14",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 3.4,
+    "text": "It broke after a week.",
+    "date": "2022-11-14",
+    "reviewReply": []
+  },
+  {
+    "name": "6d01ce02-67ab-4e21-8929-1823ba66ce8b",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2023-09-25",
+    "reviewReply": []
+  },
+  {
+    "name": "dd1847bf-5cc9-464d-822f-e92f203487c9",
+    "rating": 3.5,
+    "text": "Great product!",
+    "date": "2022-10-19",
+    "reviewReply": []
+  },
+  {
+    "name": "5de56a86-be82-4d57-9626-1ad6c3522a42",
+    "rating": 4.9,
+    "text": "Would definitely recommend!",
+    "date": "2023-10-02",
+    "reviewReply": []
+  },
+  {
+    "name": "18e2ded3-e638-40ed-8ca1-9d3d24355c01",
+    "rating": 2.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-12-25",
+    "reviewReply": []
+  },
+  {
+    "name": "f80d749b-4b1b-4432-ae62-fc2c397e47f9",
+    "rating": 3.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-02-24",
+    "reviewReply": []
+  },
+  {
+    "name": "7b576bf2-5bd7-4a16-8fb1-9e901f772bb5",
+    "rating": 3.8,
+    "text": "Would definitely recommend!",
+    "date": "2022-09-06",
+    "reviewReply": []
+  },
+  {
+    "name": "78efb502-e9a2-4890-a7e6-73b3cd4b39a6",
+    "rating": 2.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-17",
+    "reviewReply": []
+  },
+  {
+    "name": "dd1847bf-5cc9-464d-822f-e92f203487c9",
+    "rating": 4.5,
+    "text": "Would definitely recommend!",
+    "date": "2023-07-26",
+    "reviewReply": []
+  },
+  {
+    "name": "a1b2406c-7b04-45a3-bc5f-1be7861a02e1",
+    "rating": 1.7,
+    "text": "It broke after a week.",
+    "date": "2022-09-09",
+    "reviewReply": []
+  },
+  {
+    "name": "32169316-206f-4c43-9278-10830c9dd20b",
+    "rating": 3.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-08-13",
+    "reviewReply": []
+  },
+  {
+    "name": "63c3be68-8d75-4f39-b4e3-b212ccabfb7a",
+    "rating": 3.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-19",
+    "reviewReply": []
+  },
+  {
+    "name": "6169ac8f-ec65-4180-9ce2-ef876cf0f115",
+    "rating": 2.6,
+    "text": "Would definitely recommend!",
+    "date": "2022-03-20",
+    "reviewReply": []
+  },
+  {
+    "name": "2550ca72-0a85-449e-9245-d412db166ac7",
+    "rating": 2.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-02",
+    "reviewReply": []
+  },
+  {
+    "name": "94f9b002-4688-4431-989f-04709b93a804",
+    "rating": 4.8,
+    "text": "I didn't like this at all.",
+    "date": "2023-06-24",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 2.2,
+    "text": "I didn't like this at all.",
+    "date": "2022-11-24",
+    "reviewReply": []
+  },
+  {
+    "name": "8d1a38b4-813a-4cc3-b774-0506f874de03",
+    "rating": 1,
+    "text": "Would definitely recommend!",
+    "date": "2022-01-23",
+    "reviewReply": []
+  },
+  {
+    "name": "bbf29a54-3e79-4000-ab7c-0695b02b0f8a",
+    "rating": 4.4,
+    "text": "It broke after a week.",
+    "date": "2022-12-22",
+    "reviewReply": []
+  },
+  {
+    "name": "d1fe94ca-bda4-4dc3-80e0-0af87330c9e8",
+    "rating": 4.1,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-09",
+    "reviewReply": []
+  },
+  {
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
+    "rating": 1.5,
+    "text": "Would definitely recommend!",
+    "date": "2022-01-11",
+    "reviewReply": []
+  },
+  {
+    "name": "06673e42-fa81-4c03-a067-a6ca129cd8c5",
+    "rating": 4.5,
+    "text": "Would definitely recommend!",
+    "date": "2023-08-20",
+    "reviewReply": []
+  },
+  {
+    "name": "0180f556-0bf4-4b20-820b-24fd2ca73d1f",
+    "rating": 2.7,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-10-11",
+    "reviewReply": []
+  },
+  {
+    "name": "d88b2a12-f7b7-43c3-b715-70c8cd4d546a",
+    "rating": 2.8,
+    "text": "It broke after a week.",
+    "date": "2023-03-16",
+    "reviewReply": []
+  },
+  {
+    "name": "d19abd60-0b96-4c09-b753-2f205a9a5709",
+    "rating": 3.3,
+    "text": "I didn't like this at all.",
+    "date": "2023-08-06",
+    "reviewReply": []
+  },
+  {
+    "name": "c6534d61-e40d-492c-a760-562ca8ee998e",
+    "rating": 3,
+    "text": "Would definitely recommend!",
+    "date": "2022-08-31",
+    "reviewReply": []
+  },
+  {
+    "name": "ecc87dea-8c56-4b34-b82c-7859af94c601",
+    "rating": 4.6,
+    "text": "I didn't like this at all.",
+    "date": "2022-03-28",
+    "reviewReply": []
+  },
+  {
+    "name": "26b74c37-4cfa-4c8f-8f32-3e46df29b4da",
+    "rating": 1.8,
+    "text": "Would definitely recommend!",
+    "date": "2022-03-14",
+    "reviewReply": []
+  },
+  {
+    "name": "493d5d5d-4892-415e-b88d-4d315654d633",
+    "rating": 4.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-12-21",
+    "reviewReply": []
+  },
+  {
+    "name": "ccd66051-5ecb-4698-a87b-7825cf7db9bb",
+    "rating": 2.5,
+    "text": "Great product!",
+    "date": "2023-07-02",
+    "reviewReply": []
+  },
+  {
+    "name": "06930078-f14b-4620-b76d-2440f0a7a0db",
+    "rating": 4.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-02-13",
+    "reviewReply": []
+  },
+  {
+    "name": "b71c91ba-9628-44d9-b5a3-e6276e0161a8",
+    "rating": 4.2,
+    "text": "It broke after a week.",
+    "date": "2022-03-28",
+    "reviewReply": []
+  },
+  {
+    "name": "9059848b-56f4-4735-8ef7-d59cfbeab9f5",
+    "rating": 2.7,
+    "text": "Great product!",
+    "date": "2023-01-20",
+    "reviewReply": []
+  },
+  {
+    "name": "9059848b-56f4-4735-8ef7-d59cfbeab9f5",
+    "rating": 1.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-01-16",
+    "reviewReply": []
+  },
+  {
+    "name": "f80d749b-4b1b-4432-ae62-fc2c397e47f9",
+    "rating": 1.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-09-27",
+    "reviewReply": []
+  },
+  {
+    "name": "957d15c6-7df0-483f-85a0-c4b2f7d7bd49",
+    "rating": 4.6,
+    "text": "Great product!",
+    "date": "2022-09-22",
+    "reviewReply": []
+  },
+  {
+    "name": "63c3be68-8d75-4f39-b4e3-b212ccabfb7a",
+    "rating": 3.1,
+    "text": "Would definitely recommend!",
+    "date": "2022-11-23",
+    "reviewReply": []
+  },
+  {
+    "name": "ecc87dea-8c56-4b34-b82c-7859af94c601",
+    "rating": 4.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-06",
+    "reviewReply": []
+  },
+  {
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2023-03-24",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 4.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-02-15",
+    "reviewReply": []
+  },
+  {
+    "name": "359de924-ef1b-43f0-9cab-dea5130932fe",
+    "rating": 3.2,
+    "text": "Great product!",
+    "date": "2023-02-15",
+    "reviewReply": []
+  },
+  {
+    "name": "6d01ce02-67ab-4e21-8929-1823ba66ce8b",
+    "rating": 3.4,
+    "text": "Would definitely recommend!",
+    "date": "2022-09-18",
+    "reviewReply": []
+  },
+  {
+    "name": "489485cb-e941-40ee-99be-e1108cd94cec",
+    "rating": 1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-01-27",
+    "reviewReply": []
+  },
+  {
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
+    "rating": 4.4,
+    "text": "I didn't like this at all.",
+    "date": "2022-08-30",
+    "reviewReply": []
+  },
+  {
+    "name": "c4f8b6cc-fa9c-4e12-a096-c83b159bb8d4",
+    "rating": 3.8,
+    "text": "It broke after a week.",
+    "date": "2023-07-26",
+    "reviewReply": []
+  },
+  {
+    "name": "70aa7474-5e24-4538-b2dd-43eb317b72e1",
+    "rating": 3.3,
+    "text": "Great product!",
+    "date": "2023-04-08",
+    "reviewReply": []
+  },
+  {
+    "name": "e4a653c5-eeec-4ca7-94d1-b37e20bbd527",
+    "rating": 2.7,
+    "text": "Would definitely recommend!",
+    "date": "2023-03-07",
+    "reviewReply": []
+  },
+  {
+    "name": "6169ac8f-ec65-4180-9ce2-ef876cf0f115",
+    "rating": 2.4,
+    "text": "Great product!",
+    "date": "2023-02-17",
+    "reviewReply": []
+  },
+  {
+    "name": "bbf29a54-3e79-4000-ab7c-0695b02b0f8a",
+    "rating": 3.2,
+    "text": "Great product!",
+    "date": "2022-02-10",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 2.3,
+    "text": "It broke after a week.",
+    "date": "2023-06-16",
+    "reviewReply": []
+  },
+  {
+    "name": "828cd691-48cf-437d-87e4-9f90423d8c61",
+    "rating": 3.3,
+    "text": "It broke after a week.",
+    "date": "2022-08-11",
+    "reviewReply": []
+  },
+  {
+    "name": "b71c91ba-9628-44d9-b5a3-e6276e0161a8",
+    "rating": 4.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-07-29",
+    "reviewReply": []
+  },
+  {
+    "name": "2550ca72-0a85-449e-9245-d412db166ac7",
+    "rating": 3.3,
+    "text": "Would definitely recommend!",
+    "date": "2023-03-18",
+    "reviewReply": []
+  },
+  {
+    "name": "fb30f1f4-ac3b-4306-b601-45d14bb0b126",
+    "rating": 3.6,
+    "text": "It broke after a week.",
+    "date": "2023-11-07",
+    "reviewReply": []
+  },
+  {
+    "name": "be37be8f-d1e9-44e9-b6c9-5c97b1667027",
+    "rating": 3.4,
+    "text": "Would definitely recommend!",
+    "date": "2023-05-09",
+    "reviewReply": []
+  },
+  {
+    "name": "493d5d5d-4892-415e-b88d-4d315654d633",
+    "rating": 1.1,
+    "text": "Would definitely recommend!",
+    "date": "2022-02-23",
+    "reviewReply": []
+  },
+  {
+    "name": "06930078-f14b-4620-b76d-2440f0a7a0db",
+    "rating": 2.8,
+    "text": "I didn't like this at all.",
+    "date": "2023-04-12",
+    "reviewReply": []
+  },
+  {
+    "name": "a42f4e4a-c3ed-4022-a107-80268d01611b",
+    "rating": 3.7,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-28",
+    "reviewReply": []
+  },
+  {
+    "name": "edbcfaf6-ac65-42fa-9378-31b277a0844b",
+    "rating": 1.1,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-19",
+    "reviewReply": []
+  },
+  {
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
+    "rating": 1.8,
+    "text": "Great product!",
+    "date": "2022-10-28",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 4.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-26",
+    "reviewReply": []
+  },
+  {
+    "name": "ba3cc4d5-e44d-4ab0-8ac6-584b90def189",
+    "rating": 3.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-09-30",
+    "reviewReply": []
+  },
+  {
+    "name": "18e2ded3-e638-40ed-8ca1-9d3d24355c01",
+    "rating": 4.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-02-09",
+    "reviewReply": []
+  },
+  {
+    "name": "e90ef615-5c00-4557-be49-9dc26d307a68",
+    "rating": 1.7,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-05-26",
+    "reviewReply": []
+  },
+  {
+    "name": "493d5d5d-4892-415e-b88d-4d315654d633",
+    "rating": 3.8,
+    "text": "Great product!",
+    "date": "2022-03-28",
+    "reviewReply": []
+  },
+  {
+    "name": "d88b2a12-f7b7-43c3-b715-70c8cd4d546a",
+    "rating": 2.3,
+    "text": "It broke after a week.",
+    "date": "2023-06-12",
+    "reviewReply": []
+  },
+  {
+    "name": "2bdb9953-3178-449b-a75b-489b6956d5b8",
+    "rating": 4.6,
+    "text": "Would definitely recommend!",
+    "date": "2022-03-02",
+    "reviewReply": []
+  },
+  {
+    "name": "803bf853-42fa-40a1-b283-67c1c4e03c68",
+    "rating": 4.8,
+    "text": "It broke after a week.",
+    "date": "2023-10-04",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 1,
+    "text": "It broke after a week.",
+    "date": "2022-05-25",
+    "reviewReply": []
+  },
+  {
+    "name": "2550ca72-0a85-449e-9245-d412db166ac7",
+    "rating": 1.4,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-23",
+    "reviewReply": []
+  },
+  {
+    "name": "b71c91ba-9628-44d9-b5a3-e6276e0161a8",
+    "rating": 3.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-05-05",
+    "reviewReply": []
+  },
+  {
+    "name": "bf421c16-e864-49aa-a1b5-8c8e0b8f3779",
+    "rating": 5,
+    "text": "Great product!",
+    "date": "2022-02-23",
+    "reviewReply": []
+  },
+  {
+    "name": "70525676-f0e1-4be6-8d58-40b97316c0fa",
+    "rating": 2.7,
+    "text": "Great product!",
+    "date": "2023-07-11",
+    "reviewReply": []
+  },
+  {
+    "name": "6169ac8f-ec65-4180-9ce2-ef876cf0f115",
+    "rating": 1.1,
+    "text": "It broke after a week.",
+    "date": "2023-07-27",
+    "reviewReply": []
+  },
+  {
+    "name": "3052cb56-c32f-4e97-a74d-d21ab315d22c",
+    "rating": 2.1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-02-18",
+    "reviewReply": []
+  },
+  {
+    "name": "7b576bf2-5bd7-4a16-8fb1-9e901f772bb5",
+    "rating": 3.4,
+    "text": "Would definitely recommend!",
+    "date": "2023-04-22",
+    "reviewReply": []
+  },
+  {
+    "name": "76cf3d7c-c4b0-4939-b67f-315ad8a72794",
+    "rating": 3,
+    "text": "Great product!",
+    "date": "2022-11-30",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 1.5,
+    "text": "It broke after a week.",
+    "date": "2022-06-18",
+    "reviewReply": []
+  },
+  {
+    "name": "06673e42-fa81-4c03-a067-a6ca129cd8c5",
+    "rating": 4.2,
+    "text": "Would definitely recommend!",
+    "date": "2023-08-05",
+    "reviewReply": []
+  },
+  {
+    "name": "f80d749b-4b1b-4432-ae62-fc2c397e47f9",
+    "rating": 1.4,
+    "text": "Great product!",
+    "date": "2023-05-18",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 3.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-03-11",
+    "reviewReply": []
+  },
+  {
+    "name": "dd1847bf-5cc9-464d-822f-e92f203487c9",
+    "rating": 2.9,
+    "text": "Would definitely recommend!",
+    "date": "2022-03-15",
+    "reviewReply": []
+  },
+  {
+    "name": "b71c91ba-9628-44d9-b5a3-e6276e0161a8",
+    "rating": 4.1,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-18",
+    "reviewReply": []
+  },
+  {
+    "name": "2d4f7ccd-7969-4296-9dbd-9b652398bc96",
+    "rating": 3.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-05-15",
+    "reviewReply": []
+  },
+  {
+    "name": "3831f3e3-a1e0-4f13-8cd1-264d26f2aad6",
+    "rating": 1.2,
+    "text": "I didn't like this at all.",
+    "date": "2022-11-26",
+    "reviewReply": []
+  },
+  {
+    "name": "2eb1c118-0151-4240-a41a-bbc41cbfda9c",
+    "rating": 2.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-01-30",
+    "reviewReply": []
+  },
+  {
+    "name": "06673e42-fa81-4c03-a067-a6ca129cd8c5",
+    "rating": 4.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-01-15",
+    "reviewReply": []
+  },
+  {
+    "name": "6d01ce02-67ab-4e21-8929-1823ba66ce8b",
+    "rating": 3.4,
+    "text": "Great product!",
+    "date": "2022-07-23",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 2.1,
+    "text": "Would definitely recommend!",
+    "date": "2022-12-14",
+    "reviewReply": []
+  },
+  {
+    "name": "ff72503e-8920-4462-9025-b5f902311ec8",
+    "rating": 3,
+    "text": "It broke after a week.",
+    "date": "2022-08-28",
+    "reviewReply": []
+  },
+  {
+    "name": "7daacd6c-a909-4615-b257-d47316df550a",
+    "rating": 1.7,
+    "text": "Great product!",
+    "date": "2023-01-19",
+    "reviewReply": []
+  },
+  {
+    "name": "f80d749b-4b1b-4432-ae62-fc2c397e47f9",
+    "rating": 2.1,
+    "text": "It broke after a week.",
+    "date": "2023-07-23",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 1.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-14",
+    "reviewReply": []
+  },
+  {
+    "name": "4e5d0cb5-f3e6-4fcc-a8a3-107150b81a0f",
+    "rating": 4.4,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-21",
+    "reviewReply": []
+  },
+  {
+    "name": "19b3748b-0923-4f0f-99c4-c25dabf25c8b",
+    "rating": 1.4,
+    "text": "I didn't like this at all.",
+    "date": "2023-07-30",
+    "reviewReply": []
+  },
+  {
+    "name": "70aa7474-5e24-4538-b2dd-43eb317b72e1",
+    "rating": 2.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-08-22",
+    "reviewReply": []
+  },
+  {
+    "name": "3831f3e3-a1e0-4f13-8cd1-264d26f2aad6",
+    "rating": 2.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-02-11",
+    "reviewReply": []
+  },
+  {
+    "name": "8d1a38b4-813a-4cc3-b774-0506f874de03",
+    "rating": 2.2,
+    "text": "It broke after a week.",
+    "date": "2023-08-04",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 3.4,
+    "text": "Great product!",
+    "date": "2023-07-31",
+    "reviewReply": []
+  },
+  {
+    "name": "957d15c6-7df0-483f-85a0-c4b2f7d7bd49",
+    "rating": 3.7,
+    "text": "I didn't like this at all.",
+    "date": "2022-04-16",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 1,
+    "text": "I didn't like this at all.",
+    "date": "2023-01-28",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 2.5,
+    "text": "It broke after a week.",
+    "date": "2023-09-21",
+    "reviewReply": []
+  },
+  {
+    "name": "bcf6fd98-846b-4435-88e0-f3dd6db3b96b",
+    "rating": 5,
+    "text": "Great product!",
+    "date": "2022-09-12",
+    "reviewReply": []
+  },
+  {
+    "name": "9059848b-56f4-4735-8ef7-d59cfbeab9f5",
+    "rating": 3.3,
+    "text": "Would definitely recommend!",
+    "date": "2022-07-30",
+    "reviewReply": []
+  },
+  {
+    "name": "7b3a77e4-8f8b-41d0-99bd-aad320056df7",
+    "rating": 2.2,
+    "text": "Great product!",
+    "date": "2022-05-02",
+    "reviewReply": []
+  },
+  {
+    "name": "b71c91ba-9628-44d9-b5a3-e6276e0161a8",
+    "rating": 3.7,
+    "text": "Would definitely recommend!",
+    "date": "2022-10-04",
+    "reviewReply": []
+  },
+  {
+    "name": "e90ef615-5c00-4557-be49-9dc26d307a68",
+    "rating": 3.9,
+    "text": "I didn't like this at all.",
+    "date": "2023-07-30",
+    "reviewReply": []
+  },
+  {
+    "name": "d88b2a12-f7b7-43c3-b715-70c8cd4d546a",
+    "rating": 4.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-09-23",
+    "reviewReply": []
+  },
+  {
+    "name": "18e2ded3-e638-40ed-8ca1-9d3d24355c01",
+    "rating": 2.1,
+    "text": "Great product!",
+    "date": "2022-06-29",
+    "reviewReply": []
+  },
+  {
+    "name": "91297cad-ef22-44a5-afde-433cf9756b82",
+    "rating": 4,
+    "text": "Would definitely recommend!",
+    "date": "2022-09-09",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 4.3,
+    "text": "Great product!",
+    "date": "2023-07-04",
+    "reviewReply": []
+  },
+  {
+    "name": "957d15c6-7df0-483f-85a0-c4b2f7d7bd49",
+    "rating": 5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-08-12",
+    "reviewReply": []
+  },
+  {
+    "name": "91297cad-ef22-44a5-afde-433cf9756b82",
+    "rating": 4.5,
+    "text": "It broke after a week.",
+    "date": "2023-10-14",
+    "reviewReply": []
+  },
+  {
+    "name": "f80d749b-4b1b-4432-ae62-fc2c397e47f9",
+    "rating": 2.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-10",
+    "reviewReply": []
+  },
+  {
+    "name": "7b3a77e4-8f8b-41d0-99bd-aad320056df7",
+    "rating": 2.5,
+    "text": "It broke after a week.",
+    "date": "2023-05-13",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 3.8,
+    "text": "Great product!",
+    "date": "2023-01-31",
+    "reviewReply": []
+  },
+  {
+    "name": "6ca8a09a-122b-46e1-8d29-babb6d2dcd1a",
+    "rating": 2.4,
+    "text": "I didn't like this at all.",
+    "date": "2022-02-10",
+    "reviewReply": []
+  },
+  {
+    "name": "174f603b-40a4-4961-81e5-5508148b3b0d",
+    "rating": 2.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-12-26",
+    "reviewReply": []
+  },
+  {
+    "name": "1b990721-8757-413c-88cb-0b2eb97c7ffa",
+    "rating": 4.2,
+    "text": "Great product!",
+    "date": "2022-05-02",
+    "reviewReply": []
+  },
+  {
+    "name": "91297cad-ef22-44a5-afde-433cf9756b82",
+    "rating": 4.8,
+    "text": "Would definitely recommend!",
+    "date": "2022-06-13",
+    "reviewReply": []
+  },
+  {
+    "name": "32169316-206f-4c43-9278-10830c9dd20b",
+    "rating": 1.9,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-23",
+    "reviewReply": []
+  },
+  {
+    "name": "0a9c7e55-5476-4696-8890-cdbbee936956",
+    "rating": 2.1,
+    "text": "Great product!",
+    "date": "2023-06-26",
+    "reviewReply": []
+  },
+  {
+    "name": "19ac48e5-ccdd-4987-a4e5-88434d27837a",
+    "rating": 3.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-06-23",
+    "reviewReply": []
+  },
+  {
+    "name": "a1b2406c-7b04-45a3-bc5f-1be7861a02e1",
+    "rating": 3.7,
+    "text": "Great product!",
+    "date": "2022-04-20",
+    "reviewReply": []
+  },
+  {
+    "name": "19ac48e5-ccdd-4987-a4e5-88434d27837a",
+    "rating": 2.2,
+    "text": "Great product!",
+    "date": "2023-04-04",
+    "reviewReply": []
+  },
+  {
+    "name": "ccd66051-5ecb-4698-a87b-7825cf7db9bb",
+    "rating": 1.8,
+    "text": "It broke after a week.",
+    "date": "2023-08-21",
+    "reviewReply": []
+  },
+  {
+    "name": "82133236-c219-435a-bee4-165711a51f7f",
+    "rating": 1.5,
+    "text": "Great product!",
+    "date": "2023-02-18",
+    "reviewReply": []
+  },
+  {
+    "name": "1332fa10-eefc-4f9f-b8c4-2643fb837545",
+    "rating": 4.4,
+    "text": "It broke after a week.",
+    "date": "2022-06-13",
+    "reviewReply": []
+  },
+  {
+    "name": "70525676-f0e1-4be6-8d58-40b97316c0fa",
+    "rating": 2.4,
+    "text": "I didn't like this at all.",
+    "date": "2023-08-15",
+    "reviewReply": []
+  },
+  {
+    "name": "73bb5051-4a52-4353-a983-671cb852f95f",
+    "rating": 2.8,
+    "text": "I didn't like this at all.",
+    "date": "2023-06-11",
+    "reviewReply": []
+  },
+  {
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
+    "rating": 3.1,
+    "text": "Would definitely recommend!",
+    "date": "2022-11-14",
+    "reviewReply": []
+  },
+  {
+    "name": "2bdb9953-3178-449b-a75b-489b6956d5b8",
+    "rating": 3.1,
+    "text": "I didn't like this at all.",
+    "date": "2022-04-10",
+    "reviewReply": []
+  },
+  {
+    "name": "ff72503e-8920-4462-9025-b5f902311ec8",
+    "rating": 2.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-01-31",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 2.6,
+    "text": "It broke after a week.",
+    "date": "2023-08-09",
+    "reviewReply": []
+  },
+  {
+    "name": "c6534d61-e40d-492c-a760-562ca8ee998e",
+    "rating": 2.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-05-27",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 4.1,
+    "text": "Great product!",
+    "date": "2022-02-06",
+    "reviewReply": []
+  },
+  {
+    "name": "70525676-f0e1-4be6-8d58-40b97316c0fa",
+    "rating": 1.2,
+    "text": "Great product!",
+    "date": "2022-12-18",
+    "reviewReply": []
+  },
+  {
+    "name": "828cd691-48cf-437d-87e4-9f90423d8c61",
+    "rating": 3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-29",
+    "reviewReply": []
+  },
+  {
+    "name": "829025e5-b673-433e-9b9d-63ed0981814b",
+    "rating": 4.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-25",
+    "reviewReply": []
+  },
+  {
+    "name": "2beb3538-aff3-4427-ad30-8cb460986e40",
+    "rating": 1.2,
+    "text": "I didn't like this at all.",
+    "date": "2022-03-22",
+    "reviewReply": []
+  },
+  {
+    "name": "493d5d5d-4892-415e-b88d-4d315654d633",
+    "rating": 1.7,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-16",
+    "reviewReply": []
+  },
+  {
+    "name": "e9f1faba-aa66-4db4-99a3-882ef2482608",
+    "rating": 3.6,
+    "text": "Would definitely recommend!",
+    "date": "2023-01-14",
+    "reviewReply": []
+  },
+  {
+    "name": "b71c91ba-9628-44d9-b5a3-e6276e0161a8",
+    "rating": 5,
+    "text": "It broke after a week.",
+    "date": "2023-12-06",
+    "reviewReply": []
+  },
+  {
+    "name": "3831f3e3-a1e0-4f13-8cd1-264d26f2aad6",
+    "rating": 4.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-04",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 2.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-04-25",
+    "reviewReply": []
+  },
+  {
+    "name": "7c9cf01a-d9c1-4727-bae7-78bec406ceba",
+    "rating": 2.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-03-12",
+    "reviewReply": []
+  },
+  {
+    "name": "2bdb9953-3178-449b-a75b-489b6956d5b8",
+    "rating": 1.7,
+    "text": "I didn't like this at all.",
+    "date": "2022-03-28",
+    "reviewReply": []
+  },
+  {
+    "name": "6c9d2256-672f-41e8-ab56-db57f98048be",
+    "rating": 1.8,
+    "text": "It broke after a week.",
+    "date": "2022-05-14",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 3.7,
+    "text": "Would definitely recommend!",
+    "date": "2023-07-19",
+    "reviewReply": []
+  },
+  {
+    "name": "c090f7a5-cc4e-4db1-a166-9803b65772fd",
+    "rating": 2.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-07-02",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 3.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-08",
+    "reviewReply": []
+  },
+  {
+    "name": "bbf29a54-3e79-4000-ab7c-0695b02b0f8a",
+    "rating": 4.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-08-20",
+    "reviewReply": []
+  },
+  {
+    "name": "d8958a6a-47ed-4eef-ae1d-05591a66bc25",
+    "rating": 3.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-05-23",
+    "reviewReply": []
+  },
+  {
+    "name": "0039ade4-c68d-41b9-8e79-514cded207b3",
+    "rating": 1.9,
+    "text": "It broke after a week.",
+    "date": "2022-05-04",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 4.2,
+    "text": "Great product!",
+    "date": "2022-01-11",
+    "reviewReply": []
+  },
+  {
+    "name": "97fa8ff9-963e-4a24-8ab0-3afcb8681c02",
+    "rating": 5,
+    "text": "It broke after a week.",
+    "date": "2023-12-20",
+    "reviewReply": []
+  },
+  {
+    "name": "6d01ce02-67ab-4e21-8929-1823ba66ce8b",
+    "rating": 4.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-04-04",
+    "reviewReply": []
+  },
+  {
+    "name": "ac8ad2bf-eb27-4551-8aa7-3c08d64804a6",
+    "rating": 2.6,
+    "text": "I didn't like this at all.",
+    "date": "2023-12-15",
+    "reviewReply": []
+  },
+  {
+    "name": "73bb5051-4a52-4353-a983-671cb852f95f",
+    "rating": 2.7,
+    "text": "Great product!",
+    "date": "2022-09-02",
+    "reviewReply": []
+  },
+  {
+    "name": "e90ef615-5c00-4557-be49-9dc26d307a68",
+    "rating": 1.3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-04-09",
+    "reviewReply": []
+  },
+  {
+    "name": "e6e3d1e1-85b2-4a68-9e01-46901fbcd1b2",
+    "rating": 3.3,
+    "text": "I didn't like this at all.",
+    "date": "2023-05-04",
+    "reviewReply": []
+  },
+  {
+    "name": "493d5d5d-4892-415e-b88d-4d315654d633",
+    "rating": 5,
+    "text": "It broke after a week.",
+    "date": "2022-06-16",
+    "reviewReply": []
+  },
+  {
+    "name": "6ca8a09a-122b-46e1-8d29-babb6d2dcd1a",
+    "rating": 5,
+    "text": "Would definitely recommend!",
+    "date": "2022-08-22",
+    "reviewReply": []
+  },
+  {
+    "name": "d1fe94ca-bda4-4dc3-80e0-0af87330c9e8",
+    "rating": 1.5,
+    "text": "Great product!",
+    "date": "2023-08-22",
+    "reviewReply": []
+  },
+  {
+    "name": "423c0f1d-df7a-4773-afeb-28d9069d0a67",
+    "rating": 2.2,
+    "text": "Would definitely recommend!",
+    "date": "2023-11-01",
+    "reviewReply": []
+  },
+  {
+    "name": "2550ca72-0a85-449e-9245-d412db166ac7",
+    "rating": 3.4,
+    "text": "Great product!",
+    "date": "2023-09-19",
+    "reviewReply": []
+  },
+  {
+    "name": "e4a653c5-eeec-4ca7-94d1-b37e20bbd527",
+    "rating": 3.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-03-27",
+    "reviewReply": []
+  },
+  {
+    "name": "7c9cf01a-d9c1-4727-bae7-78bec406ceba",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2023-08-07",
+    "reviewReply": []
+  },
+  {
+    "name": "ccd66051-5ecb-4698-a87b-7825cf7db9bb",
+    "rating": 1.4,
+    "text": "It broke after a week.",
+    "date": "2023-06-15",
+    "reviewReply": []
+  },
+  {
+    "name": "d666f8b0-635e-479f-8e2a-9afd8aecb05d",
+    "rating": 4.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-09-17",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 3.3,
+    "text": "I didn't like this at all.",
+    "date": "2022-01-25",
+    "reviewReply": []
+  },
+  {
+    "name": "0dcec804-5a9f-4648-bff2-185f1afaf415",
+    "rating": 2.2,
+    "text": "Would definitely recommend!",
+    "date": "2023-06-06",
+    "reviewReply": []
+  },
+  {
+    "name": "7b3a77e4-8f8b-41d0-99bd-aad320056df7",
+    "rating": 2.3,
+    "text": "It broke after a week.",
+    "date": "2023-01-17",
+    "reviewReply": []
+  },
+  {
+    "name": "82fb7671-14a0-410b-b2ba-f167804cc282",
+    "rating": 1.1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-05-12",
+    "reviewReply": []
+  },
+  {
+    "name": "e6e3d1e1-85b2-4a68-9e01-46901fbcd1b2",
+    "rating": 2.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-07",
+    "reviewReply": []
+  },
+  {
+    "name": "19b3748b-0923-4f0f-99c4-c25dabf25c8b",
+    "rating": 2.7,
+    "text": "Great product!",
+    "date": "2022-03-27",
+    "reviewReply": []
+  },
+  {
+    "name": "e8ee1807-34da-4c48-86f1-cc7e3bea9579",
+    "rating": 4.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-10-05",
+    "reviewReply": []
+  },
+  {
+    "name": "76cf3d7c-c4b0-4939-b67f-315ad8a72794",
+    "rating": 2.2,
+    "text": "I didn't like this at all.",
+    "date": "2022-10-28",
+    "reviewReply": []
+  },
+  {
+    "name": "42a5110a-f11a-4822-86a3-2f0514076e5b",
+    "rating": 4.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-10-23",
+    "reviewReply": []
+  },
+  {
+    "name": "4b5bd341-81d9-457c-8a35-b14386326ab2",
+    "rating": 3.3,
+    "text": "Great product!",
+    "date": "2023-02-04",
+    "reviewReply": []
+  },
+  {
+    "name": "be17098e-63d4-4244-bae1-20661d91493e",
+    "rating": 5,
+    "text": "Great product!",
+    "date": "2022-01-20",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 3.1,
+    "text": "Great product!",
+    "date": "2023-09-27",
+    "reviewReply": []
+  },
+  {
+    "name": "06673e42-fa81-4c03-a067-a6ca129cd8c5",
+    "rating": 3.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-04-18",
+    "reviewReply": []
+  },
+  {
+    "name": "70aa7474-5e24-4538-b2dd-43eb317b72e1",
+    "rating": 3.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-19",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2023-12-13",
+    "reviewReply": []
+  },
+  {
+    "name": "e9f1faba-aa66-4db4-99a3-882ef2482608",
+    "rating": 1.1,
+    "text": "I didn't like this at all.",
+    "date": "2023-06-08",
+    "reviewReply": []
+  },
+  {
+    "name": "06673e42-fa81-4c03-a067-a6ca129cd8c5",
+    "rating": 4.8,
+    "text": "Great product!",
+    "date": "2023-09-04",
+    "reviewReply": []
+  },
+  {
+    "name": "1332fa10-eefc-4f9f-b8c4-2643fb837545",
+    "rating": 2.8,
+    "text": "It broke after a week.",
+    "date": "2022-10-11",
+    "reviewReply": []
+  },
+  {
+    "name": "0039ade4-c68d-41b9-8e79-514cded207b3",
+    "rating": 3.9,
+    "text": "Would definitely recommend!",
+    "date": "2022-05-24",
+    "reviewReply": []
+  },
+  {
+    "name": "84c24811-cdad-440f-b49b-810a97320e49",
+    "rating": 2.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-11-01",
+    "reviewReply": []
+  },
+  {
+    "name": "1b990721-8757-413c-88cb-0b2eb97c7ffa",
+    "rating": 3.1,
+    "text": "I didn't like this at all.",
+    "date": "2023-08-04",
+    "reviewReply": []
+  },
+  {
+    "name": "4e5d0cb5-f3e6-4fcc-a8a3-107150b81a0f",
+    "rating": 3.3,
+    "text": "I didn't like this at all.",
+    "date": "2023-01-17",
+    "reviewReply": []
+  },
+  {
+    "name": "0039ade4-c68d-41b9-8e79-514cded207b3",
+    "rating": 2.2,
+    "text": "It broke after a week.",
+    "date": "2023-06-06",
+    "reviewReply": []
+  },
+  {
+    "name": "06673e42-fa81-4c03-a067-a6ca129cd8c5",
+    "rating": 1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-12-28",
+    "reviewReply": []
+  },
+  {
+    "name": "42a5110a-f11a-4822-86a3-2f0514076e5b",
+    "rating": 4.7,
+    "text": "It broke after a week.",
+    "date": "2022-09-08",
+    "reviewReply": []
+  },
+  {
+    "name": "3831f3e3-a1e0-4f13-8cd1-264d26f2aad6",
+    "rating": 3.2,
+    "text": "Great product!",
+    "date": "2023-08-27",
+    "reviewReply": []
+  },
+  {
+    "name": "d1fe94ca-bda4-4dc3-80e0-0af87330c9e8",
+    "rating": 2.9,
+    "text": "Would definitely recommend!",
+    "date": "2022-01-13",
+    "reviewReply": []
+  },
+  {
+    "name": "489485cb-e941-40ee-99be-e1108cd94cec",
+    "rating": 4.3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-12-22",
+    "reviewReply": []
+  },
+  {
+    "name": "6349d767-226f-433d-80e5-32e2d0d11f24",
+    "rating": 4.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-28",
+    "reviewReply": []
+  },
+  {
+    "name": "2eb1c118-0151-4240-a41a-bbc41cbfda9c",
+    "rating": 4.3,
+    "text": "It broke after a week.",
+    "date": "2023-08-01",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 1.6,
+    "text": "I didn't like this at all.",
+    "date": "2023-12-16",
+    "reviewReply": []
+  },
+  {
+    "name": "493d5d5d-4892-415e-b88d-4d315654d633",
+    "rating": 3.1,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-02-08",
+    "reviewReply": []
+  },
+  {
+    "name": "8d1a38b4-813a-4cc3-b774-0506f874de03",
+    "rating": 5,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-01",
+    "reviewReply": []
+  },
+  {
+    "name": "ccd66051-5ecb-4698-a87b-7825cf7db9bb",
+    "rating": 1.2,
+    "text": "It broke after a week.",
+    "date": "2023-06-29",
+    "reviewReply": []
+  },
+  {
+    "name": "0292af6b-cebb-4a59-bef1-73a8244bfe99",
+    "rating": 4,
+    "text": "Great product!",
+    "date": "2023-03-14",
+    "reviewReply": []
+  },
+  {
+    "name": "be17098e-63d4-4244-bae1-20661d91493e",
+    "rating": 4.1,
+    "text": "It broke after a week.",
+    "date": "2022-07-08",
+    "reviewReply": []
+  },
+  {
+    "name": "6d01ce02-67ab-4e21-8929-1823ba66ce8b",
+    "rating": 4.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-12-01",
+    "reviewReply": []
+  },
+  {
+    "name": "0dcec804-5a9f-4648-bff2-185f1afaf415",
+    "rating": 3.2,
+    "text": "Great product!",
+    "date": "2022-02-21",
+    "reviewReply": []
+  },
+  {
+    "name": "7b3a77e4-8f8b-41d0-99bd-aad320056df7",
+    "rating": 2.2,
+    "text": "It broke after a week.",
+    "date": "2022-06-01",
+    "reviewReply": []
+  },
+  {
+    "name": "9059848b-56f4-4735-8ef7-d59cfbeab9f5",
+    "rating": 2.6,
+    "text": "Great product!",
+    "date": "2023-12-20",
+    "reviewReply": []
+  },
+  {
+    "name": "0dcec804-5a9f-4648-bff2-185f1afaf415",
+    "rating": 4.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-03-24",
+    "reviewReply": []
+  },
+  {
+    "name": "94f9b002-4688-4431-989f-04709b93a804",
+    "rating": 2.8,
+    "text": "I didn't like this at all.",
+    "date": "2023-04-11",
+    "reviewReply": []
+  },
+  {
+    "name": "6169ac8f-ec65-4180-9ce2-ef876cf0f115",
+    "rating": 1.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-12-19",
+    "reviewReply": []
+  },
+  {
+    "name": "0a9c7e55-5476-4696-8890-cdbbee936956",
+    "rating": 3,
+    "text": "I didn't like this at all.",
+    "date": "2022-05-24",
+    "reviewReply": []
+  },
+  {
+    "name": "32169316-206f-4c43-9278-10830c9dd20b",
+    "rating": 1.2,
+    "text": "Great product!",
+    "date": "2023-07-29",
+    "reviewReply": []
+  },
+  {
+    "name": "0dcec804-5a9f-4648-bff2-185f1afaf415",
+    "rating": 3.3,
+    "text": "It broke after a week.",
+    "date": "2022-01-05",
+    "reviewReply": []
+  },
+  {
+    "name": "7c9cf01a-d9c1-4727-bae7-78bec406ceba",
+    "rating": 3.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-01-13",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 2.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-12-12",
+    "reviewReply": []
+  },
+  {
+    "name": "76cf3d7c-c4b0-4939-b67f-315ad8a72794",
+    "rating": 4.4,
+    "text": "It broke after a week.",
+    "date": "2023-01-12",
+    "reviewReply": []
+  },
+  {
+    "name": "be37be8f-d1e9-44e9-b6c9-5c97b1667027",
+    "rating": 4.9,
+    "text": "It broke after a week.",
+    "date": "2023-01-24",
+    "reviewReply": []
+  },
+  {
+    "name": "6349d767-226f-433d-80e5-32e2d0d11f24",
+    "rating": 3.5,
+    "text": "Would definitely recommend!",
+    "date": "2023-07-01",
+    "reviewReply": []
+  },
+  {
+    "name": "6349d767-226f-433d-80e5-32e2d0d11f24",
+    "rating": 3.6,
+    "text": "I didn't like this at all.",
+    "date": "2023-07-06",
+    "reviewReply": []
+  },
+  {
+    "name": "c4f8b6cc-fa9c-4e12-a096-c83b159bb8d4",
+    "rating": 4.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-08-29",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 4,
+    "text": "Would definitely recommend!",
+    "date": "2023-11-05",
+    "reviewReply": []
+  },
+  {
+    "name": "6349d767-226f-433d-80e5-32e2d0d11f24",
+    "rating": 1.7,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-18",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 4.1,
+    "text": "I didn't like this at all.",
+    "date": "2023-07-23",
+    "reviewReply": []
+  },
+  {
+    "name": "0180f556-0bf4-4b20-820b-24fd2ca73d1f",
+    "rating": 3.9,
+    "text": "Great product!",
+    "date": "2022-04-20",
+    "reviewReply": []
+  },
+  {
+    "name": "6ca8a09a-122b-46e1-8d29-babb6d2dcd1a",
+    "rating": 1.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-26",
+    "reviewReply": []
+  },
+  {
+    "name": "ba3cc4d5-e44d-4ab0-8ac6-584b90def189",
+    "rating": 1.1,
+    "text": "Great product!",
+    "date": "2023-10-25",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 3.4,
+    "text": "It broke after a week.",
+    "date": "2023-04-18",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-10-27",
+    "reviewReply": []
+  },
+  {
+    "name": "19ac48e5-ccdd-4987-a4e5-88434d27837a",
+    "rating": 4.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-09-26",
+    "reviewReply": []
+  },
+  {
+    "name": "97fa8ff9-963e-4a24-8ab0-3afcb8681c02",
+    "rating": 3.7,
+    "text": "Great product!",
+    "date": "2023-04-17",
+    "reviewReply": []
+  },
+  {
+    "name": "d666f8b0-635e-479f-8e2a-9afd8aecb05d",
+    "rating": 3.3,
+    "text": "Would definitely recommend!",
+    "date": "2022-04-27",
+    "reviewReply": []
+  },
+  {
+    "name": "6c9d2256-672f-41e8-ab56-db57f98048be",
+    "rating": 4.9,
+    "text": "It broke after a week.",
+    "date": "2023-01-02",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 2.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-01-18",
+    "reviewReply": []
+  },
+  {
+    "name": "63c3be68-8d75-4f39-b4e3-b212ccabfb7a",
+    "rating": 4.4,
+    "text": "I didn't like this at all.",
+    "date": "2023-09-15",
+    "reviewReply": []
+  },
+  {
+    "name": "63c3be68-8d75-4f39-b4e3-b212ccabfb7a",
+    "rating": 1.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-02-27",
+    "reviewReply": []
+  },
+  {
+    "name": "e6e3d1e1-85b2-4a68-9e01-46901fbcd1b2",
+    "rating": 3.8,
+    "text": "Would definitely recommend!",
+    "date": "2022-07-10",
+    "reviewReply": []
+  },
+  {
+    "name": "1332fa10-eefc-4f9f-b8c4-2643fb837545",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-05-31",
+    "reviewReply": []
+  },
+  {
+    "name": "70525676-f0e1-4be6-8d58-40b97316c0fa",
+    "rating": 2.6,
+    "text": "I didn't like this at all.",
+    "date": "2022-03-29",
+    "reviewReply": []
+  },
+  {
+    "name": "edbcfaf6-ac65-42fa-9378-31b277a0844b",
+    "rating": 1.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-05-10",
+    "reviewReply": []
+  },
+  {
+    "name": "7c9cf01a-d9c1-4727-bae7-78bec406ceba",
+    "rating": 2.3,
+    "text": "I didn't like this at all.",
+    "date": "2022-05-03",
+    "reviewReply": []
+  },
+  {
+    "name": "edbcfaf6-ac65-42fa-9378-31b277a0844b",
+    "rating": 1.5,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-01-10",
+    "reviewReply": []
+  },
+  {
+    "name": "76cf3d7c-c4b0-4939-b67f-315ad8a72794",
+    "rating": 2.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-01-15",
+    "reviewReply": []
+  },
+  {
+    "name": "bcf6fd98-846b-4435-88e0-f3dd6db3b96b",
+    "rating": 1.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-08-05",
+    "reviewReply": []
+  },
+  {
+    "name": "19b3748b-0923-4f0f-99c4-c25dabf25c8b",
+    "rating": 3.2,
+    "text": "It broke after a week.",
+    "date": "2022-01-25",
+    "reviewReply": []
+  },
+  {
+    "name": "4b5bd341-81d9-457c-8a35-b14386326ab2",
+    "rating": 1,
+    "text": "Would definitely recommend!",
+    "date": "2023-11-14",
+    "reviewReply": []
+  },
+  {
+    "name": "0a9c7e55-5476-4696-8890-cdbbee936956",
+    "rating": 1.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-12-08",
+    "reviewReply": []
+  },
+  {
+    "name": "bf421c16-e864-49aa-a1b5-8c8e0b8f3779",
+    "rating": 3.7,
+    "text": "Would definitely recommend!",
+    "date": "2023-03-15",
+    "reviewReply": []
+  },
+  {
+    "name": "5cf25a38-e287-425d-8a2a-021381c7239a",
+    "rating": 2.8,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-03-08",
+    "reviewReply": []
+  },
+  {
+    "name": "7b576bf2-5bd7-4a16-8fb1-9e901f772bb5",
+    "rating": 1.2,
+    "text": "It broke after a week.",
+    "date": "2023-07-18",
+    "reviewReply": []
+  },
+  {
+    "name": "d666f8b0-635e-479f-8e2a-9afd8aecb05d",
+    "rating": 2,
+    "text": "Great product!",
+    "date": "2022-04-30",
+    "reviewReply": []
+  },
+  {
+    "name": "423c0f1d-df7a-4773-afeb-28d9069d0a67",
+    "rating": 4.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-12-19",
+    "reviewReply": []
+  },
+  {
+    "name": "1b990721-8757-413c-88cb-0b2eb97c7ffa",
+    "rating": 4.5,
+    "text": "Great product!",
+    "date": "2023-03-31",
+    "reviewReply": []
+  },
+  {
+    "name": "ecc87dea-8c56-4b34-b82c-7859af94c601",
+    "rating": 3.9,
+    "text": "Would definitely recommend!",
+    "date": "2022-04-07",
+    "reviewReply": []
+  },
+  {
+    "name": "0a9c7e55-5476-4696-8890-cdbbee936956",
+    "rating": 4.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-02-26",
+    "reviewReply": []
+  },
+  {
+    "name": "c0d61d46-a81f-415e-a09d-fd3fcd52ff4d",
+    "rating": 3.4,
+    "text": "I didn't like this at all.",
+    "date": "2023-07-23",
+    "reviewReply": []
+  },
+  {
+    "name": "bc45c113-a579-483e-aa53-4d9320db2e62",
+    "rating": 1.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-09-07",
+    "reviewReply": []
+  },
+  {
+    "name": "c4f8b6cc-fa9c-4e12-a096-c83b159bb8d4",
+    "rating": 2.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-10-19",
+    "reviewReply": []
+  },
+  {
+    "name": "1b990721-8757-413c-88cb-0b2eb97c7ffa",
+    "rating": 4.3,
+    "text": "I didn't like this at all.",
+    "date": "2023-08-21",
+    "reviewReply": []
+  },
+  {
+    "name": "a42f4e4a-c3ed-4022-a107-80268d01611b",
+    "rating": 3.3,
+    "text": "Great product!",
+    "date": "2023-11-16",
+    "reviewReply": []
+  },
+  {
+    "name": "0039ade4-c68d-41b9-8e79-514cded207b3",
+    "rating": 3.6,
+    "text": "Great product!",
+    "date": "2023-12-20",
+    "reviewReply": []
+  },
+  {
+    "name": "124a041b-7d2d-4db7-b3e6-e97b89756cdd",
+    "rating": 3,
+    "text": "Would definitely recommend!",
+    "date": "2022-02-08",
+    "reviewReply": []
+  },
+  {
+    "name": "d19abd60-0b96-4c09-b753-2f205a9a5709",
+    "rating": 1.7,
+    "text": "Great product!",
+    "date": "2022-03-31",
+    "reviewReply": []
+  },
+  {
+    "name": "be37be8f-d1e9-44e9-b6c9-5c97b1667027",
+    "rating": 4.6,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-13",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 1.7,
+    "text": "It broke after a week.",
+    "date": "2023-06-27",
+    "reviewReply": []
+  },
+  {
+    "name": "e9f1faba-aa66-4db4-99a3-882ef2482608",
+    "rating": 3,
+    "text": "Would definitely recommend!",
+    "date": "2023-03-19",
+    "reviewReply": []
+  },
+  {
+    "name": "957d15c6-7df0-483f-85a0-c4b2f7d7bd49",
+    "rating": 4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-01-15",
+    "reviewReply": []
+  },
+  {
+    "name": "2d550ebd-cebe-4b4b-964c-79ca7684eeec",
+    "rating": 1.2,
+    "text": "Would definitely recommend!",
+    "date": "2022-02-15",
+    "reviewReply": []
+  },
+  {
+    "name": "24b01a5d-bff7-4e1f-93ca-e4c920c92d87",
+    "rating": 3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-12-20",
+    "reviewReply": []
+  },
+  {
+    "name": "c090f7a5-cc4e-4db1-a166-9803b65772fd",
+    "rating": 4.2,
+    "text": "I didn't like this at all.",
+    "date": "2022-08-21",
+    "reviewReply": []
+  },
+  {
+    "name": "0180f556-0bf4-4b20-820b-24fd2ca73d1f",
+    "rating": 3.5,
+    "text": "Would definitely recommend!",
+    "date": "2022-01-31",
+    "reviewReply": []
+  },
+  {
+    "name": "c6534d61-e40d-492c-a760-562ca8ee998e",
+    "rating": 2.2,
+    "text": "It broke after a week.",
+    "date": "2022-02-04",
+    "reviewReply": []
+  },
+  {
+    "name": "be37be8f-d1e9-44e9-b6c9-5c97b1667027",
+    "rating": 3,
+    "text": "I didn't like this at all.",
+    "date": "2023-08-12",
+    "reviewReply": []
+  },
+  {
+    "name": "18e2ded3-e638-40ed-8ca1-9d3d24355c01",
+    "rating": 1.4,
+    "text": "It broke after a week.",
+    "date": "2023-10-18",
+    "reviewReply": []
+  },
+  {
+    "name": "0039ade4-c68d-41b9-8e79-514cded207b3",
+    "rating": 2.6,
+    "text": "It broke after a week.",
+    "date": "2023-05-06",
+    "reviewReply": []
+  },
+  {
+    "name": "6349d767-226f-433d-80e5-32e2d0d11f24",
+    "rating": 5,
+    "text": "It broke after a week.",
+    "date": "2022-11-23",
+    "reviewReply": []
+  },
+  {
+    "name": "06930078-f14b-4620-b76d-2440f0a7a0db",
+    "rating": 2.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-12-09",
+    "reviewReply": []
+  },
+  {
+    "name": "e9f1faba-aa66-4db4-99a3-882ef2482608",
+    "rating": 4.9,
+    "text": "It broke after a week.",
+    "date": "2022-06-07",
+    "reviewReply": []
+  },
+  {
+    "name": "ff72503e-8920-4462-9025-b5f902311ec8",
+    "rating": 4.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-10-25",
+    "reviewReply": []
+  },
+  {
+    "name": "c699f803-8f68-4f0e-8549-bdf2b37537ed",
+    "rating": 4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-06-16",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 3.9,
+    "text": "Would definitely recommend!",
+    "date": "2023-12-02",
+    "reviewReply": []
+  },
+  {
+    "name": "06930078-f14b-4620-b76d-2440f0a7a0db",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2023-07-21",
+    "reviewReply": []
+  },
+  {
+    "name": "e6e3d1e1-85b2-4a68-9e01-46901fbcd1b2",
+    "rating": 4,
+    "text": "Great product!",
+    "date": "2023-01-11",
+    "reviewReply": []
+  },
+  {
+    "name": "e4a653c5-eeec-4ca7-94d1-b37e20bbd527",
+    "rating": 1.8,
+    "text": "Great product!",
+    "date": "2023-07-21",
+    "reviewReply": []
+  },
+  {
+    "name": "1e766fc3-d98b-456b-9965-415663eeb7a2",
+    "rating": 2.7,
+    "text": "It broke after a week.",
+    "date": "2022-05-30",
+    "reviewReply": []
+  },
+  {
+    "name": "d666f8b0-635e-479f-8e2a-9afd8aecb05d",
+    "rating": 4.4,
+    "text": "Great product!",
+    "date": "2023-04-06",
+    "reviewReply": []
+  },
+  {
+    "name": "70525676-f0e1-4be6-8d58-40b97316c0fa",
+    "rating": 2.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-10-24",
+    "reviewReply": []
+  },
+  {
+    "name": "a42f4e4a-c3ed-4022-a107-80268d01611b",
+    "rating": 1.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-04-14",
+    "reviewReply": []
+  },
+  {
+    "name": "957d15c6-7df0-483f-85a0-c4b2f7d7bd49",
+    "rating": 2.4,
+    "text": "I didn't like this at all.",
+    "date": "2023-03-19",
+    "reviewReply": []
+  },
+  {
+    "name": "d19abd60-0b96-4c09-b753-2f205a9a5709",
+    "rating": 3.1,
+    "text": "It broke after a week.",
+    "date": "2022-06-21",
+    "reviewReply": []
+  },
+  {
+    "name": "c699f803-8f68-4f0e-8549-bdf2b37537ed",
+    "rating": 1.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-08-13",
+    "reviewReply": []
+  },
+  {
+    "name": "19b3748b-0923-4f0f-99c4-c25dabf25c8b",
+    "rating": 1.7,
+    "text": "Great product!",
+    "date": "2023-08-11",
+    "reviewReply": []
+  },
+  {
+    "name": "19ac48e5-ccdd-4987-a4e5-88434d27837a",
+    "rating": 2.2,
+    "text": "Would definitely recommend!",
+    "date": "2023-02-04",
+    "reviewReply": []
+  },
+  {
+    "name": "c699f803-8f68-4f0e-8549-bdf2b37537ed",
+    "rating": 2.3,
+    "text": "It broke after a week.",
+    "date": "2023-01-26",
+    "reviewReply": []
+  },
+  {
+    "name": "8d1a38b4-813a-4cc3-b774-0506f874de03",
+    "rating": 3.2,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-10-28",
+    "reviewReply": []
+  },
+  {
+    "name": "19ac48e5-ccdd-4987-a4e5-88434d27837a",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-02-25",
+    "reviewReply": []
+  },
+  {
+    "name": "a127b47c-4aaa-499e-98d6-df87b3b1df1b",
+    "rating": 4.4,
+    "text": "I didn't like this at all.",
+    "date": "2022-09-09",
+    "reviewReply": []
+  },
+  {
+    "name": "6349d767-226f-433d-80e5-32e2d0d11f24",
+    "rating": 3.8,
+    "text": "It broke after a week.",
+    "date": "2023-08-11",
+    "reviewReply": []
+  },
+  {
+    "name": "5de56a86-be82-4d57-9626-1ad6c3522a42",
+    "rating": 4.3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-07",
+    "reviewReply": []
+  },
+  {
+    "name": "803bf853-42fa-40a1-b283-67c1c4e03c68",
+    "rating": 4.5,
+    "text": "I didn't like this at all.",
+    "date": "2022-10-15",
+    "reviewReply": []
+  },
+  {
+    "name": "8d1a38b4-813a-4cc3-b774-0506f874de03",
+    "rating": 3.8,
+    "text": "Would definitely recommend!",
+    "date": "2023-01-25",
+    "reviewReply": []
+  },
+  {
+    "name": "26b74c37-4cfa-4c8f-8f32-3e46df29b4da",
+    "rating": 2.9,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-11-12",
+    "reviewReply": []
+  },
+  {
+    "name": "d1fe94ca-bda4-4dc3-80e0-0af87330c9e8",
+    "rating": 4.4,
+    "text": "I didn't like this at all.",
+    "date": "2023-01-15",
+    "reviewReply": []
+  },
+  {
+    "name": "edbcfaf6-ac65-42fa-9378-31b277a0844b",
+    "rating": 3.8,
+    "text": "Great product!",
+    "date": "2023-02-21",
+    "reviewReply": []
+  },
+  {
+    "name": "1e766fc3-d98b-456b-9965-415663eeb7a2",
+    "rating": 1.3,
+    "text": "I didn't like this at all.",
+    "date": "2022-09-21",
+    "reviewReply": []
+  },
+  {
+    "name": "0a9c7e55-5476-4696-8890-cdbbee936956",
+    "rating": 4.7,
+    "text": "I didn't like this at all.",
+    "date": "2022-08-27",
+    "reviewReply": []
+  },
+  {
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
+    "rating": 2.3,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-10-31",
+    "reviewReply": []
+  },
+  {
+    "name": "b1c2ca34-b46b-4cfc-9dad-c12fd28c2cd8",
+    "rating": 1.1,
+    "text": "It broke after a week.",
+    "date": "2022-09-23",
+    "reviewReply": []
+  },
+  {
+    "name": "e9f1faba-aa66-4db4-99a3-882ef2482608",
+    "rating": 3.1,
+    "text": "Great product!",
+    "date": "2022-04-28",
+    "reviewReply": []
+  },
+  {
+    "name": "1332fa10-eefc-4f9f-b8c4-2643fb837545",
+    "rating": 2.3,
+    "text": "Would definitely recommend!",
+    "date": "2022-01-27",
+    "reviewReply": []
+  },
+  {
+    "name": "f80d749b-4b1b-4432-ae62-fc2c397e47f9",
+    "rating": 4,
+    "text": "It broke after a week.",
+    "date": "2022-06-29",
+    "reviewReply": []
+  },
+  {
+    "name": "2beb3538-aff3-4427-ad30-8cb460986e40",
+    "rating": 3.2,
+    "text": "I didn't like this at all.",
+    "date": "2023-10-26",
+    "reviewReply": []
+  },
+  {
+    "name": "6ca8a09a-122b-46e1-8d29-babb6d2dcd1a",
+    "rating": 3.1,
+    "text": "Would definitely recommend!",
+    "date": "2023-02-16",
+    "reviewReply": []
+  },
+  {
+    "name": "e8ee1807-34da-4c48-86f1-cc7e3bea9579",
+    "rating": 1.7,
+    "text": "I didn't like this at all.",
+    "date": "2023-09-23",
+    "reviewReply": []
+  },
+  {
+    "name": "ac8ad2bf-eb27-4551-8aa7-3c08d64804a6",
+    "rating": 1.7,
+    "text": "Great product!",
+    "date": "2023-06-15",
+    "reviewReply": []
+  },
+  {
+    "name": "94f9b002-4688-4431-989f-04709b93a804",
+    "rating": 2.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2023-06-06",
+    "reviewReply": []
+  },
+  {
+    "name": "73bb5051-4a52-4353-a983-671cb852f95f",
+    "rating": 3.4,
+    "text": "Would definitely recommend!",
+    "date": "2023-07-18",
+    "reviewReply": []
+  },
+  {
+    "name": "e6e3d1e1-85b2-4a68-9e01-46901fbcd1b2",
+    "rating": 2.4,
+    "text": "It broke after a week.",
+    "date": "2023-09-30",
+    "reviewReply": []
+  },
+  {
+    "name": "828cd691-48cf-437d-87e4-9f90423d8c61",
+    "rating": 3.1,
+    "text": "Would definitely recommend!",
+    "date": "2022-02-12",
+    "reviewReply": []
+  },
+  {
+    "name": "9059848b-56f4-4735-8ef7-d59cfbeab9f5",
+    "rating": 4.4,
+    "text": "It's okay, but I've seen better.",
+    "date": "2022-03-09",
+    "reviewReply": []
+  },
+  {
+    "name": "803bf853-42fa-40a1-b283-67c1c4e03c68",
+    "rating": 2.6,
+    "text": "It broke after a week.",
+    "date": "2023-02-03",
+    "reviewReply": []
+  },
+  {
+    "name": "1e766fc3-d98b-456b-9965-415663eeb7a2",
+    "rating": 4.7,
+    "text": "Great product!",
+    "date": "2023-07-18",
+    "reviewReply": []
+  },
+  {
+    "name": "d19abd60-0b96-4c09-b753-2f205a9a5709",
+    "rating": 2.2,
+    "text": "I didn't like this at all.",
+    "date": "2022-04-26",
+    "reviewReply": []
+  },
+  {
+    "name": "4f0123c8-2bcb-441d-8062-3fe86b648d34",
+    "rating": 1.1,
+    "text": "Would definitely recommend!",
+    "date": "2023-11-22",
+    "reviewReply": []
+  },
+  {
+    "name": "d666f8b0-635e-479f-8e2a-9afd8aecb05d",
+    "rating": 3.9,
+    "text": "I didn't like this at all.",
+    "date": "2022-10-15",
+    "reviewReply": []
   }
 ]

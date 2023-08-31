@@ -1,10 +1,8 @@
 import { gql } from '@apollo/client';
 
-
-
 export const GET_PRODUCT_DETAILS = gql`
 query GetProduct($id: ID!) {
-  getProduct(_id: $id) {
+  productById(_id: $id) {
     _id
     animalType
     colors
@@ -14,8 +12,9 @@ query GetProduct($id: ID!) {
     price
     sizes
     reviews {
-      name
-      user
+      name {
+        name
+      }
       rating
       text
       date
@@ -33,40 +32,36 @@ query GetAllProductIds {
 }
 `;
 
-
-
-// Query to get all orders
 export const ADMIN_GET_ALL_ORDERS = gql`
   query AdminGetAllOrders {
-    adminGetAllOrders {
+    getAllOrders {
       _id
       products {
-        name
-        price
+        product {
+          name
+          price
+        }
       }
-      orderDate
+      date
       status
       invoiceAmount
-      email
     }
   }
 `;
 
 export const GET_ALL_CUSTOMERS = gql`
   query GetAllCustomers {
-    profiles {
+    getAllUsers {
       _id
       name
       email
-      totalOrders
     }
   }
 `;
 
-// Fetch All Messages
 export const GET_ALL_MESSAGES = gql`
   query GetAllMessages {
-    messages {
+    getAllMessages {
       _id
       user {
         name
@@ -78,35 +73,35 @@ export const GET_ALL_MESSAGES = gql`
   }
 `;
 
-
-// Fetch All Reviews
 export const GET_ALL_REVIEWS = gql`
-query getAllReviews {
-  id
-  user
-  product
-  date
-  content
-  rating
-  replies {
-    id
-    reviewId
-    content
+query GetAllReviews {
+  getAllReviews {
+    name {
+      name
+    }
+    rating
+    text
     date
+    replies {
+      adminId
+      reviewId
+      text
+      date
+    }
   }
 }
-`; 
+`;
 
-// Get Tasks
 export const GET_TASKS = gql`
 query GetTasks {
-  getTasks {
+  tasks {
     id
     text
     completed
   }
 }
 `;
+
 
 
 export const GET_ORDERS_BY_USER = gql`
@@ -124,16 +119,14 @@ export const GET_ORDERS_BY_USER = gql`
 
 
 
-
-
 export const PROFILE_QUERY = gql`
-  query Profile($uid: Int!) {
-    profile(uid: $uid) {
+  query Profile($uid: ID!) {
+    userById(userId: $uid) {
       _id
       name
       email
-      password
     }
   }
 `;
+
 

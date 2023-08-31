@@ -25,7 +25,6 @@ const productSchema = new Schema({
     type: String,
     required: true,
   },
-  
   model: {
     type: String,
   },
@@ -39,6 +38,4 @@ const productSchema = new Schema({
 const Product = model('Product', productSchema);
 
 
-module.exports =  Product ;
-
-
+module.exports = Product;
