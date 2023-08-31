@@ -77,8 +77,8 @@ import { CREATE_REPLY, UPDATE_REPLY, DELETE_REPLY } from '../../utils/mutations'
         {reviews.sort((a, b) => new Date(b.date) - new Date(a.date)).map((review) => (
         <div key={review.id} className='bg-dark p-4 mb-4 rounded'>
         <div className="text-offWhite flex justify-between">
-          <span>{review.name}</span>
-          <span>Product: {review.product}</span>
+          <span>{review.name.name}</span>
+          <span>Rating: {review.rating}</span>
           <span>Date: {review.date}</span>
         </div>
         <p className='text-offWhite'>Review: {review.text}</p>

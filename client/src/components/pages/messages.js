@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery, useMutation, useSubscription } from '@apollo/client';
 import { GET_ALL_MESSAGES } from '../../utils/queries';
-import { ADD_MESSAGE, NEW_MESSAGE_SUBSCRIPTION } from '../../utils/mutations';
+import { 
+  // ADD_MESSAGE, 
+  NEW_MESSAGE_SUBSCRIPTION,
+  REPLY_TO_MESSAGE } from '../../utils/mutations';
 import { BiMailSend } from 'react-icons/bi';
 
 
 
 function Messages() {
  // Fetching Messages from Server
- const { data, loading, error } = useQuery(GET_ALL_MESSAGES);
- const [addMessage] = useMutation(ADD_MESSAGE);
+ const { data, loading, error } = useQuery(GET_ALL_MESSAGES); // Fetch messages
+  const { data: newMessageData } = useSubscription(NEW_MESSAGE_SUBSCRIPTION); // Real-time updates
 
- // Real Time Updates
- const { data: newMessageData } = useSubscription(NEW_MESSAGE_SUBSCRIPTION);
+     const [messages, setMessages] = useState([]);
 
-
-    // Using useState to set the mock data
-    
-    const [messages, setMessages] = useState([]);
-    useEffect(() => {
-      if (data) {
-        setMessages(data.messages);
+     useEffect(() => {
+      if (newMessageData) {
+        setMessages(prevMessages => [...prevMessages, newMessageData.newMessage]);
       }
-    }, [data]);
+    }, [newMessageData]);
+    
 
-   
+    // const [addMessage] = useMutation(ADD_MESSAGE); 
+    const [replyToMessage] = useMutation(REPLY_TO_MESSAGE); // Mutation for sending a reply
 
     const [showModal, setShowModal] = useState(false);
     const [selectedMessage, setSelectedMessage] = useState(null);
@@ -45,12 +45,11 @@ function Messages() {
   const handleSendReply = async () => {
     // Sending reply using GraphQL Mutation
     try {
-      const { data } = await addMessage({
+      const { data } = await replyToMessage({
         variables: {
-          userId: "",  
-          subject: `Re: ${selectedMessage.subject}`,
-          content: replyContent
-        }
+          messageId: selectedMessage._id,
+          content: replyContent,
+        },
       });
       
       setMessages([...messages, data.addMessage]);
@@ -62,6 +61,8 @@ function Messages() {
     setIsReplying(false);
     setReplyContent(''); 
     setShowModal(false);
+    
+    
 };
 
     return (
@@ -80,11 +81,12 @@ function Messages() {
                         </thead>
                         {/* Messages displayed */}
                         <tbody className="border-b border-dotted ">
-  {messages.map((message, index) => (
-    <tr key={index} className='flex justify-between'>
-      <td >{message.user}</td>
+  {messages.map((message) => (
+    <tr key={message._id} className='flex justify-between'>
+      <td >{message.user.name}</td>
       <td >{message.subject}</td>
-      <td className="flex">{message.date} <button onClick={() => handleViewMessage(message)} className="ml-2 p-1 bg-yellow text-darkBlue text-xs rounded">View</button></td>
+      <td className="flex">{message.date}
+       <button onClick={() => handleViewMessage(message)} className="ml-2 p-1 bg-yellow text-darkBlue text-xs rounded">View</button></td>
     </tr>
   ))}
 </tbody>

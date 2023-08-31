@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "dotenv": "^16.3.1",
-    "mongodb": "^6.0.0",
-    "react-bootstrap": "^2.8.0"
+    "mongodb": "^6.0.0"
   }
 }

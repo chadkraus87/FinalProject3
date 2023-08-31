@@ -1,8 +1,8 @@
 const { spawn } = require('child_process');
 const db = require('../config/connection');
-const { User, Product, Review, Order } = require('../models');
+const { User, Product, Review, Order, Message } = require('../models');
 
-const productSeeds = require('./productSeeds.json');  // Assuming productSeeds.json is still used for products
+const productSeeds = require('./productSeeds.json'); 
 
 const runSeedFile = (fileName) => {
   return new Promise((resolve, reject) => {
@@ -26,6 +26,7 @@ db.once('open', async () => {
     await Product.deleteMany({});
     await Review.deleteMany({});
     await Order.deleteMany({});
+    await Message.deleteMany({});
 
     console.log('Deleted all existing data in MongoDB.');
 
@@ -37,6 +38,7 @@ db.once('open', async () => {
     await runSeedFile('user');
     await runSeedFile('orders');
     await runSeedFile('reviews');
+    await runSeedFile('messages');
 
     console.log('all done!');
     process.exit(0);

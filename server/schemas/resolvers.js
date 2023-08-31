@@ -1,10 +1,7 @@
 const { AuthenticationError} = require('apollo-server-express');
 const { PubSub, withFilter } = require("graphql-subscriptions") 
 const {  User, Product, Review, Task, Message, Order } = require('../models');
-const { signToken } = require('../utils/generateToken');
-const { AuthenticationError } = require('apollo-server-express');
-const { withFilter } = require('graphql-subscriptions');
-const { PubSub } = require('graphql-subscriptions');const { protect, isAdmin } = require('../utils/helpers');
+const { protect, isAdmin } = require('../utils/helpers');
 
 const pubsub = new PubSub();
 const MESSAGE_CREATED = 'MESSAGE_CREATED';
@@ -63,8 +60,22 @@ const resolvers = {
         console.error("Error retrieving products:", error);
         throw new Error(`Unable to fetch the products: ${error.message}`);
       }
-    
     },
+
+    getOrdersByUser: async (_, { userId }) => {
+      try {
+        protect(context);
+        const orders = await Order.find({ userId }); 
+        return orders;
+      } catch (error) {
+        throw new Error('Error fetching orders by user');
+      }
+  },
+
+  orderById: async (_, { _id }) => {
+    protect(context);
+    return Order.findById(_id);
+  },
 
     getAllOrders: async (_, args, context) => {
       protect(context);
