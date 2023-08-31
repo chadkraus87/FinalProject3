@@ -9,7 +9,7 @@ const { authMiddleware } = require('./utils/generateToken');
 const {  errorHandler } = require('./middleware/errorMiddleware');
 
 const { typeDefs, resolvers } = require('./schemas');
-const userRoutes = require('./routes/userRoutes');
+// const userRoutes = require('./routes/userRoutes');
 const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
@@ -25,7 +25,7 @@ app.use(express.json());
 
 app.use(cookieParser());
 
-app.use('/api/users', userRoutes);
+// app.use('/api/users', userRoutes);
 
 
 
