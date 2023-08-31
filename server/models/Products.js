@@ -25,7 +25,6 @@ const productSchema = new Schema({
     type: String,
     required: true,
   },
-  
   model: {
     type: String,
   },
@@ -37,11 +36,5 @@ const productSchema = new Schema({
 });
 
 const Product = model('Product', productSchema);
-const Review = model('Review', reviewSchema);
 
-module.exports = {
-  Product,
-  Review
-};
-
-
+module.exports = Product;

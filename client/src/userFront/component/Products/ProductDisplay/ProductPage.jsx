@@ -12,8 +12,8 @@ import { useQuery } from '@apollo/client';
 import { GET_PRODUCT_DETAILS, GET_ALL_PRODUCT_IDS } from '../../../../utils/queries';
 import Reviews from './Review';
 
-
 function ProductPage() {
+    
     const { addToCart } = useCart();
     const { selectedProductId, setSelectedProductId } = useContext(ProductContext);
 
@@ -21,6 +21,9 @@ function ProductPage() {
     const [selectedColor, setSelectedColor] = React.useState(null);
     const [productName, setProductName] = React.useState('');
     const [productDescription, setProductDescription] = React.useState('');
+
+    console.log("Selected Product ID in ProductPage:", selectedProductId);
+
 
 
     const { data: productData, loading: productLoading, error: productError } = useQuery(GET_PRODUCT_DETAILS, {
@@ -31,11 +34,18 @@ function ProductPage() {
     const { data: allProductsData, loading: allProductsLoading, error: allProductsError } = useQuery(GET_ALL_PRODUCT_IDS);
 
     React.useEffect(() => {
-        if (productData && productData.getProduct) {
-            setProductName(productData.getProduct.name);
-            setProductDescription(productData.getProduct.description);
+        if (productData && productData.productById) {            
+            setProductName(productData.productById.name);
+            setProductDescription(productData.productById.description);
         }
     }, [productData]);
+    
+    
+    React.useEffect(() => {
+        console.log("Product Name:", productName);
+        console.log("Product Description:", productDescription);
+    }, [productName, productDescription]);
+    
 
     const handleAddToCart = () => {
         // ... [same as before]
@@ -75,30 +85,31 @@ function ProductPage() {
                         <Display modelPath={productData?.getProduct?.model} />
                     </div> */}
                 <div style={productStyle}>
-                    <div style={shadow}>
-                        {productData?.getProduct?.model && <Display modelPath={productData.getProduct.model} />}
-                    </div>
+    <div style={shadow}>
+        {productData?.productById?.model && <Display modelPath={productData.productById.model} />}
+    </div>
 
-                    <div style={{ flex: 1, padding: '2%' }}>
-                        <h1 className="productTitle">{productName}</h1>
-                        <div className='productDecription'>{productDescription}</div>
-                        <div id='rightSideStuff'>
-                            <div id='sizesContainer'>
-                                <SizeButtons sizes={productData?.getProduct?.sizes} setSelectedSize={setSelectedSize} />
-                            </div>
-                            <div id='colorContainer'>
-                                <ColorButtons colors={productData?.getProduct?.colors} setSelectedColor={setSelectedColor} />
-                            </div>
-                            <div style={{ paddingTop: '2%' }}>
-                                <CheckoutBtn handleAddToCart={handleAddToCart} />
-                            </div>
-                            <Reviews
-                                productName={productData?.getProduct?.name}
-                                reviews={productData?.getProduct?.reviews ?? []}
-                            />
-                        </div>
-                    </div>
-                </div>
+    <div style={{ flex: 1, padding: '2%' }}>
+        <h1 className="productTitle">{productName}</h1>
+        <div className='productDecription'>{productDescription}</div>
+        <div id='rightSideStuff'>
+            <div id='sizesContainer'>
+                <SizeButtons sizes={productData?.productById?.sizes} setSelectedSize={setSelectedSize} />
+            </div>
+            <div id='colorContainer'>
+                <ColorButtons colors={productData?.productById?.colors} setSelectedColor={setSelectedColor} />
+            </div>
+            <div style={{ paddingTop: '2%' }}>
+                <CheckoutBtn handleAddToCart={handleAddToCart} />
+            </div>
+            <Reviews
+                productName={productData?.productById?.name}
+                reviews={productData?.productById?.reviews ?? []}
+            />
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
     );

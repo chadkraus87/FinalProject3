@@ -1,6 +1,5 @@
 import { gql } from '@apollo/client';
 
-// Mutation to update order status
 export const ADMIN_UPDATE_ORDER_STATUS = gql`
   mutation AdminUpdateOrderStatus($orderId: ID!, $status: String!) {
     adminUpdateOrderStatus(orderId: $orderId, status: $status) {
@@ -10,7 +9,6 @@ export const ADMIN_UPDATE_ORDER_STATUS = gql`
   }
 `;
 
-// Subscription for New Messages 
 export const NEW_MESSAGE_SUBSCRIPTION = gql`
   subscription {
     messageCreated {
@@ -25,7 +23,6 @@ export const NEW_MESSAGE_SUBSCRIPTION = gql`
   }
 `;
 
-// Add a Message
 export const ADD_MESSAGE = gql`
   mutation AddMessage($userId: ID!, $subject: String!, $content: String!) {
     addMessage(userId: $userId, subject: $subject, content: $content) {
@@ -40,7 +37,6 @@ export const ADD_MESSAGE = gql`
   }
 `;
 
-// Create Review Reply
 export const CREATE_REPLY = gql`
 mutation createReply($reviewId: ID!, $text: String!) {
   createReply(reviewId: $reviewId, text: $text) {
@@ -52,7 +48,6 @@ mutation createReply($reviewId: ID!, $text: String!) {
 }
 `;
 
-// Update Review Reply
 export const UPDATE_REPLY = gql`
 mutation updateReply($id: ID!, $text: String!) {
   updateReply(id: $id, text: $text) {
@@ -64,14 +59,12 @@ mutation updateReply($id: ID!, $text: String!) {
 }
 `;
 
-// Delete Review Reply
 export const DELETE_REPLY = gql `
 mutation deleteReply($id: ID!) {
   deleteReply(id: $id)
 }
 `;
 
-// Add new product
 export const CREATE_PRODUCT = gql`
 mutation CreateProduct($productdata: CreateProductInput!) {
   createProduct(productdata: $productdata) {
@@ -87,7 +80,6 @@ mutation CreateProduct($productdata: CreateProductInput!) {
 }
 `;
 
-// Update product
 export const UPDATE_PRODUCT = gql`
 mutation UpdateProduct($productdata: UpdateProductInput!) {
   updateProduct(productdata: $productdata) {
@@ -103,7 +95,6 @@ mutation UpdateProduct($productdata: UpdateProductInput!) {
 }
 `;
 
-// Add Task
 export const ADD_TASK = gql`
 mutation AddTask($text: String!) {
   addTask(text: $text) {
@@ -114,14 +105,12 @@ mutation AddTask($text: String!) {
 }
 `;
 
-// Delete Task
 export const DELETE_TASK = gql`
 mutation deleteTask($id: ID!) {
   deleteTask(id: $id)
 }
 `;
 
-// Complete task
 export const TOGGLE_TASK = gql`
 mutation toggleTaskCompletion($id: ID!) {
   toggleTask(id: $id) {

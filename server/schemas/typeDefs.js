@@ -18,7 +18,7 @@ const typeDefs = gql`
     rating: Float!
     text: String
     date: String!
-    replies: [Reply]
+    ReviewReply: [ReviewReply]
   }
   
   type ReviewReply {
@@ -115,6 +115,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    getOrdersByUser(userId: ID!): [Order!]!
     getAllUsers: [User!]!
     adminGetAllOrders: [Order!]!
     isAdmin: Boolean
