@@ -8,6 +8,7 @@ Furry Feet Friends is a collaborative application that was created using React, 
 Furry Feet Friends is an E-commerce management application that features an Admin Dashboard, a Products page, and optional user login using authentication. This project was built with React, Three.JS, GraphQL, Node.js, Express.js, MongoDB, and Mongoose ODM. This product also offers a polished, responsive, and interactive UI that is user-friendly.
 
 [GitHub Repository](https://github.com/chadkraus87/FinalProject3)
+
 [Deployed App](https://furryfeetfinal-db9205523da5.herokuapp.com/)
 
 ![Furry Feet Friends Landing Page](/client/public/assets/images/FurryFeetFriends.png)
