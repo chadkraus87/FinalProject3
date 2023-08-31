@@ -1,6 +1,6 @@
-const { AuthenticationError} = require('apollo-server-express');
 const { PubSub, withFilter } = require("graphql-subscriptions") 
 const {  User, Product, Review, Task, Message, Order } = require('../models');
+const { AuthenticationError } = require('apollo-server-express');
 const { protect, isAdmin } = require('../utils/helpers');
 
 const pubsub = new PubSub();

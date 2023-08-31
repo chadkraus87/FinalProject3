@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import ProductContext from './ProductContext';
 import SizeButtons from './Sizes';
 import ColorButtons from './Colors';
-import Display from './ThreeDDisplay';
+// import Display from './ThreeDDisplay';
 import { useCart } from '../Cart/cartContext';
 import ProductButtons from './ProductButtons';
 import CheckoutBtn from './CheckoutBtn';
@@ -85,9 +85,9 @@ function ProductPage() {
                         <Display modelPath={productData?.getProduct?.model} />
                     </div> */}
                 <div style={productStyle}>
-    <div style={shadow}>
+    {/* <div style={shadow}>
         {productData?.productById?.model && <Display modelPath={productData.productById.model} />}
-    </div>
+    </div> */}
 
     <div style={{ flex: 1, padding: '2%' }}>
         <h1 className="productTitle">{productName}</h1>
