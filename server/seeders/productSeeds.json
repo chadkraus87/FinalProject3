@@ -7,14 +7,7 @@
     "description": "Comfortable and stylish shoes for your dog.",
     "model": "/assets/3D/sock/sock.gltf",
     "price": 9.99,
-    "reviews": [
-      {
-        "_id": "someUserIdForEthanTA", 
-        "rating": 4.5,
-        "text": "Great socks for my dog, or myself!",
-        "date": "2023-07-25"
-      }
-    ]
+    "reviews": []
   },
   {
     "name": "Dog Clogs",

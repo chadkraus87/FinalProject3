@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const User = require('../models/userModel.js');
+const User = require('../models/User');
 const asyncHandler = require('../middleware/asyncHandler.js');
 
 //Protect Routes
