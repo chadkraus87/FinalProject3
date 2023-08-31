@@ -1,8 +1,11 @@
+const { AuthenticationError} = require('apollo-server-express');
+const { PubSub, withFilter } = require("graphql-subscriptions") 
 const {  User, Product, Review, Task, Message, Order } = require('../models');
 const { signToken } = require('../utils/generateToken');
 const { AuthenticationError } = require('apollo-server-express');
 const { withFilter } = require('graphql-subscriptions');
-const { PubSub } = require('graphql-subscriptions');
+const { PubSub } = require('graphql-subscriptions');const { protect, isAdmin } = require('../utils/helpers');
+
 const pubsub = new PubSub();
 const MESSAGE_CREATED = 'MESSAGE_CREATED';
 
@@ -10,84 +13,71 @@ const MESSAGE_CREATED = 'MESSAGE_CREATED';
 const resolvers = {
   Query: {
     getAllUsers: async (parent, args, context) => {
-      if (!context.user) {
-        throw new AuthenticationError('You need to be logged in!');
-      }
+      protect(context);
       return User.find();
+    
     },
     
     isAdmin: async (parent, args, context) => {
-      if (!context.user) {
-        throw new AuthenticationError('You need to be logged in!');
-      }
+      protect(context);
+      isAdmin(context);
       const user = await User.findOne({ _id: context.user._id });
       return user.isAdmin;
+      
     },
 
     userById: async (parent, { userId }, context) => {
-      if (!context.user) {
-        throw new AuthenticationError('You need to be logged in!');
-      }
+      protect(context);
       return User.findOne({ _id: userId });
+     
     },
 
-    me: async (parent, args, context) => {
-      if (context.user) {
-        return User.findOne({ _id: context.user._id });
-      }
-      throw new AuthenticationError('You need to be logged in!');
+    getUserProfile: async (parent, args, context) => {
+      protect(context);
+      return User.findOne({ _id: context.user._id });
+      
     },
 
     productById: async (parent, { _id }) => {
       try {
-        return Product.findOne({ _id });
+        const product = await Product.findOne({ _id });
+        if (!product) {
+          throw new Error('Product not found');
+        }
+        return product;
       } catch (error) {
         console.error("Error retrieving product:", error);
-        throw new Error("Unable to fetch the product");
+        throw new Error(`Unable to fetch the product: ${error.message}`);
       }
+     
     },
 
     getAllProducts: async () => {
-      return Product.find();
-    },
-    orderById: async (parent, { _id }) => {
       try {
-        return Order.findOne({_id});
+        const products = await Product.find();
+        if (!products) {
+          throw new Error('No Products found');
+        } 
+        return products;
       } catch (error) {
-        console.error("Error retrieving order:", error);
-        throw new Error("Unable to fetch the order");
+        console.error("Error retrieving products:", error);
+        throw new Error(`Unable to fetch the products: ${error.message}`);
       }
+    
     },
 
     getAllOrders: async (_, args, context) => {
-      if (!context.user) {
-        throw new AuthenticationError("You must be logged in to view orders.");
-      }
-    
-      try {
-        if (context.user.isAdmin) {
-          return Order.find({});
-        }
-        return Order.find({ userId: context.user._id }); 
-      } catch (error) {
-        console.error("Error retrieving orders:", error);
-        throw new Error("Unable to fetch orders");
-      }
+      protect(context);
+      isAdmin(context);
+      return Order.find({});
+      
     },
 
     getAllMessages: async (_, args, context) => {
-      if (!context.user) {
-        throw new AuthenticationError("You must be logged in to view messages.");
-      }
-      try {
-        if (context.user.isAdmin) {
-          return Message.find({});
-        }
-        return Message.find({ userId: context.user._id });
-      } catch (error) {
-        console.error("Error retrieving messages:", error);
-        throw new Error("Unable to fetch messages");
-      }
+      protect(context);
+      isAdmin(context);
+      return Message.find({});
+     
     },
  
     getAllReviews: async () => {
@@ -96,17 +86,25 @@ const resolvers = {
   
     reviewById: async (parent, { _id }) => {
       try {
-        return Review.findOne({_id});
+        const review = await Review.findOne({_id});
+        if (!review) {
+          throw new Error('Review not found')
+        }
+        return review;
       } catch (error) {
         console.error("Error retrieving review:", error);
-        throw new Error("Unable to fetch the review");
+          throw new Error(`Unable to fetch the review: ${error.message}`);
       }
+    
     },
 
     tasks: async (_, __, context) => {
+      protect(context);
+      isAdmin(context);
       const adminId = context.user.id;
       return await Task.find({ admin: adminId });
     },
+    
 
   },
 
@@ -114,9 +112,7 @@ const resolvers = {
 
   Mutation: {
     addUser: async (parent, { name, email, password }) => {
-      // const { name, email, password } = input;
-  
-      // Check if the email already exists
+    
       const existingUser = await User.findOne({ email });
   
       if (existingUser) {
@@ -146,6 +142,25 @@ const resolvers = {
       return { token, user };
     },
 
+    async logout(_, __, { res }) {
+      res.cookie('jwt', '', {
+        httpOnly: true,
+        expires: new Date(0)
+      });
+      return true;
+    },
+
+    updateUser: async (_, { name, email, password, isAdmin  }, context) => {
+        protect(context);
+  
+        const user = await User.findOneAndUpdate(
+          { _id: id },
+          { name, email, password, isAdmin },
+          { new: true }
+        );
+        return user;
+    },
+
     removeUser: async (parent, args, context) => {
       if (context.user) {
         return User.findOneAndDelete({ _id: context.user._id });
@@ -153,35 +168,36 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
 
-    createProduct: async (parent, { productdata }, context) => {
-      if (!context.user || !context.user.isAdmin) {
-        throw new AuthenticationError('You need to be an admin to create a product!');
-      }
-      const product = await Product.create(productdata);
+    createProduct: async (_, { name, animalType, size, color, description, model, price }, context) => {
+      protect(context);
+      isAdmin(context);
+      const product = await Product.create({ name, animalType, size, color, description, model, price });
       return product;
+     
     },
 
-    editProduct : async (parent, { productdata } , context) => {
-      if (!context.user || !context.user.isAdmin) {
-        throw new AuthenticationError('You need to be an admin to edit a product!');
-      }
-      const product = await Product.findOneAndUpdate({ _id: productdata._id }, productdata, { new: true });
+    editProduct: async (_, { id, name, animalType, size, color, description, model, price }, context) => {
+      protect(context);
+      isAdmin(context);
+      const product = await Product.findOneAndUpdate(
+        { _id: id },
+        { name, animalType, size, color, description, model, price },
+        { new: true }
+      );
       return product;
+     
     },
 
-    addOrder: async (parent, { input }, context) => {
-      if (!context.user) {
-        throw new AuthenticationError('You must be logged in to place an order.');
-      }
-    
+    addOrder: async (_, { invoiceAmount, status, products }, context) => {
+      protect(context);
       const newOrder = new Order({
         userId: context.user._id,
-        invoiceAmount: input.invoiceAmount,
-        status: input.status,
-        products: input.products.map(p => ({ product: p.productId, quantity: p.quantity }))
+        invoiceAmount,
+        status,
+        products: products.map(p => ({ product: p.productId, quantity: p.quantity }))
       });
-    
       return await newOrder.save();
+      
     },
     
     addMessage: async (_, { userId, subject, content, date }, context) => {
@@ -192,7 +208,7 @@ const resolvers = {
     },
 
     replyToMessage: async (parent, { messageId, content, date }, context) => {
-      // Find the message to which the reply will be added
+    
       const message = await Message.findById(messageId);
       if (!message) {
         throw new Error('Message not found');
@@ -284,3 +300,106 @@ const resolvers = {
 };
 
 module.exports = resolvers;
+
+
+ // if (!context.user) {
+      //   throw new AuthenticationError('You need to be logged in!');
+      // }
+      // return User.find();
+
+       // if (!context.user) {
+      //   throw new AuthenticationError('You need to be logged in!');
+      // }
+      // const user = await User.findOne({ _id: context.user._id });
+      // return user.isAdmin;
+
+// if (!context.user) {
+      //   throw new AuthenticationError('You need to be logged in!');
+      // }
+      // return User.findOne({ _id: userId });
+
+ // if (context.user) {
+      //   return User.findOne({ _id: context.user._id });
+      // }
+      // throw new AuthenticationError('You need to be logged in!');
+
+      // try {
+      //   return Product.findOne({ _id });
+      // } catch (error) {
+      //   console.error("Error retrieving product:", error);
+      //   throw new Error("Unable to fetch the product");
+      // }
+
+       //   return Product.find();
+    // },
+    // orderById: async (parent, { _id }) => {
+    //   try {
+    //     return Order.findOne({_id});
+    //   } catch (error) {
+    //     console.error("Error retrieving order:", error);
+    //     throw new Error("Unable to fetch the order");
+    //   }
+
+
+      // if (!context.user) {
+      //   throw new AuthenticationError("You must be logged in to view orders.");
+      // }
+    
+      // try {
+      //   if (context.user.isAdmin) {
+      //     return Order.find({});
+      //   }
+      //   return Order.find({ userId: context.user._id }); 
+      // } catch (error) {
+      //   console.error("Error retrieving orders:", error);
+      //   throw new Error("Unable to fetch orders");
+      // }
+
+// if (!context.user) {
+      //   throw new AuthenticationError("You must be logged in to view messages.");
+      // }
+      // try {
+      //   if (context.user.isAdmin) {
+      //     return Message.find({});
+      //   }
+      //   return Message.find({ userId: context.user._id });
+      // } catch (error) {
+      //   console.error("Error retrieving messages:", error);
+      //   throw new Error("Unable to fetch messages");
+      // }
+
+      // try {
+      //   return Review.findOne({_id});
+      // } catch (error) {
+      //   console.error("Error retrieving review:", error);
+      //   throw new Error("Unable to fetch the review");
+      // }
+
+      // const { name, email, password } = input;
+      // Check if the email already exists
+
+ // if (!context.user || !context.user.isAdmin) {
+      //   throw new AuthenticationError('You need to be an admin to create a product!');
+      // }
+      // const product = await Product.create(productdata);
+      // return product;
+
+  // if (!context.user || !context.user.isAdmin) {
+      //   throw new AuthenticationError('You need to be an admin to edit a product!');
+      // }
+      // const product = await Product.findOneAndUpdate({ _id: productdata._id }, productdata, { new: true });
+      // return product;
+
+ // if (!context.user) {
+      //   throw new AuthenticationError('You must be logged in to place an order.');
+      // }
+    
+      // const newOrder = new Order({
+      //   userId: context.user._id,
+      //   invoiceAmount: input.invoiceAmount,
+      //   status: input.status,
+      //   products: input.products.map(p => ({ product: p.productId, quantity: p.quantity }))
+      // });
+    
+      // return await newOrder.save();
+

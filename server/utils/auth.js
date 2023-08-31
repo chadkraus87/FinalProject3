@@ -1,39 +1,39 @@
-require('dotenv').config();
-const jwt = require('jsonwebtoken');
-const secret = process.env.JWT_SECRET;
-const expiration = '30d';
+// require('dotenv').config();
+// const jwt = require('jsonwebtoken');
+// const secret = process.env.JWT_SECRET;
+// const expiration = '30d';
 
-module.exports = {
-  authMiddleware: function ({ req }) {
-    let token = req.query.token || req.headers.authorization;
+// module.exports = {
+//   authMiddleware: function ({ req }) {
+//     let token = req.query.token || req.headers.authorization;
 
-    // If the authorization header is available, extract the actual token
-    if (token) {
-      token = token.split(' ').pop().trim();
-    }
+//     // If the authorization header is available, extract the actual token
+//     if (token) {
+//       token = token.split(' ').pop().trim();
+//     }
 
-    // If there's a token, attempt to verify it
-    if (token) {
-      try {
-        const { data } = jwt.verify(token, secret, { maxAge: expiration });
-        req.user = data;
-      } catch (err) {
-        console.log('Token verification error:', err);
-        // throw new Error('Invalid token');
-      }
-    } else {
-        throw new Error('You must be logged in to access this!');
-      }
+//     // If there's a token, attempt to verify it
+//     if (token) {
+//       try {
+//         const { data } = jwt.verify(token, secret, { maxAge: expiration });
+//         req.user = data;
+//       } catch (err) {
+//         console.log('Token verification error:', err);
+//         // throw new Error('Invalid token');
+//       }
+//     } else {
+//         throw new Error('You must be logged in to access this!');
+//       }
 
-    // Return the modified request object
-    return req;
-  },
+//     // Return the modified request object
+//     return req;
+//   },
 
-  signToken: function ({ email, name, _id }) {
-    const payload = { email, name, _id };
-    return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
-  },
-};
+//   signToken: function ({ email, name, _id }) {
+//     const payload = { email, name, _id };
+//     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
+//   },
+// };
 
 
 

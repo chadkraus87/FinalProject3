@@ -22,7 +22,7 @@ const authUser = asyncHandler(async (req, res) => {
         });
     } else {
         res.status(401);
-        throw new Error('Invalid email or password');
+        throw new Error('Not authorized, invalid email or password');
     }
     
     }
@@ -32,7 +32,18 @@ const authUser = asyncHandler(async (req, res) => {
 // route POST /api/users
 // Public route
 const registerUser = asyncHandler(async (req, res) => {
-    const { name, email, password } = req.body;
+    const { name, email, password, isAdmin = false } = req.body;
+
+    // Validation
+    if (!email.match(/.+@.+\..+/)) {
+        res.status(400);
+        throw new Error('Invalid email format');
+    }
+
+    if (password.length < 5) {
+        res.status(400);
+        throw new Error('Password should have at least 5 characters');
+    }
 
     const userExists = await User.findOne({ email });
 
@@ -44,7 +55,8 @@ const registerUser = asyncHandler(async (req, res) => {
     const user = await User.create({
         name,
         email,
-        password
+        password,
+        isAdmin  // Optional
     });
 
     if(user) {

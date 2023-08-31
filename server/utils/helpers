@@ -1,0 +1,15 @@
+const { AuthenticationError } = require('apollo-server-express');
+
+const protect = (context) => {
+  if (!context.user) {
+    throw new AuthenticationError('You need to be logged in!');
+  }
+};
+
+const isAdmin = (context) => {
+  if (!context.user.isAdmin) {
+    throw new AuthenticationError('You need to be an admin to perform this action!');
+  }
+};
+
+module.exports = { protect, isAdmin };

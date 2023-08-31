@@ -76,43 +76,10 @@ const typeDefs = gql`
     completed: Boolean!
   }
 
-  input CreateProductInput {
-    name: String!
-    animalType: String!
-    size: String!
-    color: String!
-    description: String!
-    model: String
-    price: Float!
-  }
-
-  input EditProductInput {
-    id: ID!
-    name: String
-    animalType: String
-    size: String
-    color: String
-    description: String
-    threedModel: String
-    price: Float
-  }
-
-  # input AddUserInput {
-  #   name: String!
-  #   email: String!
-  #   password: String!
-  # }
-
   input OrderedProductInput {
-    productId: ID!
-    quantity: Int!
-  }
-  
-  input AddOrderInput {
-    invoiceAmount: Float!
-    status: String!
-    products: [OrderedProductInput!]!
-  }
+   productId: ID!
+   quantity: Int!
+ }
 
   type Query {
     getOrdersByUser(userId: ID!): [Order!]!
@@ -120,7 +87,7 @@ const typeDefs = gql`
     adminGetAllOrders: [Order!]!
     isAdmin: Boolean
     userById(userId: ID!): User
-    me: User
+    getUserProfile: User
     productById(_id: ID!): Product
     getAllProducts: [Product!]!
     orderById(_id: ID!): Order
@@ -133,19 +100,48 @@ const typeDefs = gql`
 
   type Mutation {
     addUser(name: String!, email: String!, password: String!): Auth
-    login(email: String!, password: String!): Auth
-    removeUser: User
-    createProduct(input: CreateProductInput!): Product
-    editProduct(input: EditProductInput!): Product
-    addOrder(input: AddOrderInput!): Order
-    addMessage(userId: ID!, subject: String!, content: String!): Message
-    replyToMessage(messageId: ID!, content: String!): MessageReply
-    createReviewReply(reviewId: ID!, text: String!): ReviewReply  
-    updateReviewReply(id: ID!, text: String!): ReviewReply        
-    deleteReviewReply(id: ID!): ID
-    addTask(text: String!): Task
-    deleteTask(id: ID!): ID
-    toggleTaskCompletion(id: ID!): Task
+  login(email: String!, password: String!): Auth
+  logout: Boolean
+  updateUser(name: String, email: String, password: String, , isAdmin: Boolean): User
+  removeUser: User
+  
+  createProduct(
+    name: String!, 
+    animalType: String!, 
+    size: String!, 
+    color: String!, 
+    description: String!, 
+    model: String, 
+    price: Float!
+  ): Product
+
+  editProduct(
+    id: ID!, 
+    name: String, 
+    animalType: String, 
+    size: String, 
+    color: String, 
+    description: String, 
+    model: String, 
+    price: Float
+  ): Product
+  
+  addOrder(
+    invoiceAmount: Float!, 
+    status: String!, 
+    products: [OrderedProductInput!]!
+  ): Order
+
+  addMessage(userId: ID!, subject: String!, content: String!): Message
+  replyToMessage(messageId: ID!, content: String!): MessageReply
+  createReviewReply(reviewId: ID!, text: String!): ReviewReply  
+  updateReviewReply(id: ID!, text: String!): ReviewReply        
+  deleteReviewReply(id: ID!): ID
+  addTask(text: String!): Task
+  deleteTask(id: ID!): ID
+  toggleTaskCompletion(id: ID!): Task
+
+ 
   }
   
 
@@ -157,3 +153,54 @@ const typeDefs = gql`
 
 module.exports = typeDefs;
 
+//  # input CreateProductInput {
+//   #   name: String!
+//   #   animalType: String!
+//   #   size: String!
+//   #   color: String!
+//   #   description: String!
+//   #   model: String
+//   #   price: Float!
+//   # }
+
+//   # input EditProductInput {
+//   #   id: ID!
+//   #   name: String
+//   #   animalType: String
+//   #   size: String
+//   #   color: String
+//   #   description: String
+//   #   threedModel: String
+//   #   price: Float
+//   # }
+
+//   # input AddUserInput {
+//   #   name: String!
+//   #   email: String!
+//   #   password: String!
+//   # }
+
+//   # input OrderedProductInput {
+//   #   productId: ID!
+//   #   quantity: Int!
+//   # }
+  
+//   # input AddOrderInput {
+//   #   invoiceAmount: Float!
+//   #   status: String!
+//   #   products: [OrderedProductInput!]!
+//   # }
+//    # addUser(name: String!, email: String!, password: String!): Auth
+//     # login(email: String!, password: String!): Auth
+//     # removeUser: User
+//     # createProduct(input: CreateProductInput!): Product
+//     # editProduct(input: EditProductInput!): Product
+//     # addOrder(input: AddOrderInput!): Order
+//     # addMessage(userId: ID!, subject: String!, content: String!): Message
+//     # replyToMessage(messageId: ID!, content: String!): MessageReply
+//     # createReviewReply(reviewId: ID!, text: String!): ReviewReply  
+//     # updateReviewReply(id: ID!, text: String!): ReviewReply        
+//     # deleteReviewReply(id: ID!): ID
+//     # addTask(text: String!): Task
+//     # deleteTask(id: ID!): ID
+//     # toggleTaskCompletion(id: ID!): Task
