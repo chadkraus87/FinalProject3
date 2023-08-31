@@ -1,25 +1,15 @@
+require('dotenv').config();
 const jwt = require('jsonwebtoken');
-const secret = 'mysecretssshhhhhhh';
-const expiration = '2h';
+const secret = process.env.JWT_SECRET;
+const expiration = '30d';
 
 module.exports = {
   authMiddleware: function ({ req }) {
-    let token = req.body.token || req.query.token || req.headers.authorization;
+    let token = req.query.token || req.headers.authorization;
 
     // If the authorization header is available, extract the actual token
-    if (req.headers.authorization) {
+    if (token) {
       token = token.split(' ').pop().trim();
-    }
-
-    // Check if the request is for getProduct or getAllProducts
-    const isProductQuery = req.body.query && (
-      req.body.query.includes("getProduct") || 
-      req.body.query.includes("getAllProducts")
-    );
-
-    // If the request is NOT a product query and there's no token, throw an error
-    if (!isProductQuery && !token) {
-      throw new Error('You must be logged in to access this!');
     }
 
     // If there's a token, attempt to verify it
@@ -31,7 +21,9 @@ module.exports = {
         console.log('Token verification error:', err);
         // throw new Error('Invalid token');
       }
-    }
+    } else {
+        throw new Error('You must be logged in to access this!');
+      }
 
     // Return the modified request object
     return req;

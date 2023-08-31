@@ -114,11 +114,20 @@ const resolvers = {
 
   Mutation: {
     addUser: async (parent, { name, email, password }) => {
+      // const { name, email, password } = input;
+  
+      // Check if the email already exists
+      const existingUser = await User.findOne({ email });
+  
+      if (existingUser) {
+          throw new Error("Email already in use");
+      }
+  
       const user = await User.create({ name, email, password });
-      const token = signToken(user);
-
+      const token = generateToken(user);
+  
       return { token, user };
-    },
+  },
 
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
@@ -127,13 +136,13 @@ const resolvers = {
         throw new AuthenticationError('No user with this email found!');
       }
 
-      const correctPw = await user.isCorrectPassword(password);
+      const correctPw = await user.matchPassword(password);
 
       if (!correctPw) {
         throw new AuthenticationError('Incorrect password!');
       }
 
-      const token = signToken(user);
+      const token = generateToken(user);
       return { token, user };
     },
 
