@@ -21,6 +21,9 @@
     "url": "https://github.com/chadkraus87/FinalProject3/issues"
   },
   "homepage": "https://github.com/chadkraus87/FinalProject3#readme",
+  "engines": {
+    "node": "16.20.2"
+  },
   "devDependencies": {
     "concurrently": "^8.2.1"
   },
