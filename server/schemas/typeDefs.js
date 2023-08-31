@@ -18,8 +18,7 @@ const typeDefs = gql`
     rating: Float!
     text: String
     date: String!
-    replies: [ReviewReply]
-
+    ReviewReply: [ReviewReply]
   }
   
   type ReviewReply {
