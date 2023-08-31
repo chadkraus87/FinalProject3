@@ -82,7 +82,6 @@ const typeDefs = gql`
  }
 
   type Query {
-    getOrdersByUser(userId: ID!): [Order!]!
     getAllUsers: [User!]!
     adminGetAllOrders: [Order!]!
     isAdmin: Boolean
@@ -90,6 +89,7 @@ const typeDefs = gql`
     getUserProfile: User
     productById(_id: ID!): Product
     getAllProducts: [Product!]!
+    getOrdersByUser(userId: ID!): [Order!]!
     orderById(_id: ID!): Order
     getAllOrders: [Order!]!
     getAllMessages: [Message!]!

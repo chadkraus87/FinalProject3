@@ -1,5 +1,58 @@
 import { gql } from '@apollo/client';
 
+
+
+
+
+export const GET_ALL_CUSTOMERS = gql`
+  query GetAllCustomers {
+    getAllUsers {
+      _id
+      name
+      email
+    }
+  }
+`;
+
+export const ADMIN_GET_ALL_ORDERS = gql`
+  query AdminGetAllOrders {
+    getAllOrders {
+      _id
+      products {
+        product {
+          name
+          price
+        }
+      }
+      date
+      status
+      invoiceAmount
+    }
+  }
+`;
+
+export const GET_USER_BY_ID = gql`
+  query GetUserById($id: ID!) {
+    userById(userId: $id) {
+      _id
+      name
+      email
+      isAdmin
+    }
+  }
+`;
+
+export const PROFILE_QUERY = gql`
+  query Profile($uid: ID!) {
+    getUserProfile(userId: $id) {
+      _id
+      name
+      email
+    }
+  }
+`;
+
+
 export const GET_PRODUCT_DETAILS = gql`
 query GetProduct($id: ID!) {
   productById(_id: $id) {
@@ -32,29 +85,65 @@ query GetAllProductIds {
 }
 `;
 
-export const ADMIN_GET_ALL_ORDERS = gql`
-  query AdminGetAllOrders {
-    getAllOrders {
+export const GET_ORDERS_BY_USER = gql`
+  query GetOrdersByUser($userId: ID!) {
+    getOrdersByUser(userId: $userId) {
       _id
       products {
-        product {
-          name
-          price
-        }
+        name
+        price
       }
-      date
-      status
-      invoiceAmount
+      orderDate
     }
   }
 `;
 
-export const GET_ALL_CUSTOMERS = gql`
-  query GetAllCustomers {
-    getAllUsers {
+export const GET_ORDER_BY_ID = gql`
+  query GetOrderById($id: ID!) {
+    orderById(_id: $id) {
       _id
-      name
-      email
+      userId
+      invoiceAmount
+      status
+      date
+      products {
+        product {
+          _id
+          name
+          animalType
+          sizes
+          colors
+          description
+          model
+          price
+        }
+        quantity
+      }
+    }
+  }
+`;
+
+export const GET_ALL_ORDERS = gql`
+  query GetAllOrders {
+    getAllOrders {
+      _id
+      userId
+      invoiceAmount
+      status
+      date
+      products {
+        product {
+          _id
+          name
+          animalType
+          sizes
+          colors
+          description
+          model
+          price
+        }
+        quantity
+      }
     }
   }
 `;
@@ -104,29 +193,12 @@ query GetTasks {
 
 
 
-export const GET_ORDERS_BY_USER = gql`
-  query GetOrdersByUser($userId: ID!) {
-    getOrdersByUser(userId: $userId) {
-      _id
-      products {
-        name
-        price
-      }
-      orderDate
-    }
-  }
-`;
 
 
 
-export const PROFILE_QUERY = gql`
-  query Profile($uid: ID!) {
-    userById(userId: $uid) {
-      _id
-      name
-      email
-    }
-  }
-`;
+
+
+
+
 
 

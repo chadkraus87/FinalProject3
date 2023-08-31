@@ -14,7 +14,7 @@ const handleAddProduct = async (event) => {
   event.preventDefault();
 
   try{ 
-    const data = await createProduct({
+    await createProduct({
       variables: {
         productdata: {
           name: event.target.title.value,
@@ -27,7 +27,6 @@ const handleAddProduct = async (event) => {
         },
       },
     });
-      
   } catch (err) {
     console.log(err);
   }

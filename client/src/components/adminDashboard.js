@@ -1,5 +1,5 @@
-import { Route, Routes, Switch } from 'react-router-dom';
-import AdminNav from './pages/adminNav';
+import { Route, Routes } from 'react-router-dom';
+
 import Header from './pages/header';
 import Orders from './pages/orders';
 import Products from './pages/products';
